@@ -1,0 +1,101 @@
+import json
+import os
+import csv
+import sys
+from datetime import datetime, timedelta, timezone
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from data import DataSet
+
+configurations = DataSet.get_schema(os.path.join('..', 'historicConfigurations.json'))
+class HistoricDataManager:
+    def __init__(self, devices, house, stop_event):
+        self._house = house
+        self._devices = {}
+        self._algorithmFormat = configurations.get('AlgorithmAtributes')
+        self._stop_event = stop_event
+        self.header_written = False
+    
+        for device in devices:
+            if 'label' in device:
+                self._devices[device.get('id')] = device.get('label')
+        self._nDev = len(self._devices)
+        self._nDevF = 0
+        self._data = {}
+        self._stop_callback = None 
+
+    def newMessage(self, ch, method, properties, body):
+        body_str = body.decode('utf-8')
+        jsonbody = json.loads(body_str)
+        device_id = jsonbody.get('id')
+        data = jsonbody.get('data')
+        if data is not None:
+            for inst in data:
+                timestamp = datetime.fromisoformat(inst)
+                if timestamp not in self._data:
+                    self._data[timestamp] = []
+                self._data[timestamp].append({'label': self._devices.get(device_id), 'data': data[inst]})  
+        else:
+            self._nDevF = self._nDevF + 1
+
+        if self._nDevF == self._nDev:  
+            sorted(self._data.keys())
+            self.algorithm_format()
+
+
+    def algorithm_format(self):
+        timestamps = list(self._data.keys())
+        timestampsL = len(timestamps) - 1
+        sd = timestamps[0].strftime("%Y-%m-%d")
+        ed = timestamps[timestampsL].strftime("%Y-%m-%d")
+        filename = f"{self._house}.csv"
+        all_rows = []
+
+        for timestamp in timestamps: 
+            batteryChargingEnergy = 0
+            self._algorithmFormat['month'] = timestamp.month
+            self._algorithmFormat['hour'] = timestamp.hour
+            self._algorithmFormat['day_type'] = timestamp.weekday() 
+            self._algorithmFormat['daylight_savings_status'] = self.is_daylight_saving(timestamp)
+            for device in self._data.get(timestamp):
+                label = device.get('label')
+                if label == "non_shiftable_load":
+                    for other_device in self._data.get(timestamp):
+                        if other_device.get('label') == "battery_charging_energy":
+                            batteryChargingEnergy =  other_device.get('data')
+                    self._algorithmFormat['non_shiftable_load'] = device.get('data') - batteryChargingEnergy
+                else:
+                    if label in self._algorithmFormat.keys():
+                        self._algorithmFormat[label] = device.get('data')
+                        #SO ESTOU A CONSIDERAR UM DISPOSITIVO DE CADA
+
+            for key in self._algorithmFormat.keys():
+                if self._algorithmFormat[key] == "":
+                    self._algorithmFormat[key] = 0
+                    
+            all_rows.append(self._algorithmFormat.copy())
+            
+            # Resetting the values in _algorithmFormat
+            for key in self._algorithmFormat.keys():
+                self._algorithmFormat[key] = 0 if isinstance(self._algorithmFormat[key], (int, float)) else ""
+
+        with open(filename, mode='w', newline='') as file:
+            writer = csv.DictWriter(file, fieldnames=self._algorithmFormat.keys())
+            writer.writeheader()
+            writer.writerows(all_rows)
+            self.close_connection()
+        print(f"File {filename} created")
+
+    def is_daylight_saving(self, date):
+        year = date.year
+        lastSundayMarch = datetime(year,4,1,2,tzinfo=timezone.utc)
+        lastSundayMarch += timedelta(6-lastSundayMarch.weekday())
+        lastSundayMarch -= timedelta(days=7) 
+
+        lastSundayOctober = datetime(year,11,1,2,tzinfo=timezone.utc)
+        lastSundayOctober += timedelta(6-lastSundayOctober.weekday())
+        lastSundayOctober -= timedelta(days=7) 
+
+        return lastSundayMarch <= date < lastSundayOctober
+
+    def close_connection(self):
+        self._stop_event.set()

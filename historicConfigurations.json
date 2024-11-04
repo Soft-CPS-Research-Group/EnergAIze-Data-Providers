@@ -1,0 +1,27 @@
+{
+    "internalAMQPServer": {
+        "host": "localhost",
+        "port": 5672
+    },
+    "CWhistoricalServer": "https://ks.innov.cleanwatts.energy/api/2.0/data/request/Instant?instantType=avg",
+    "maxReconnectAttempts": 3,
+    "CWfile":{
+        "path": "house_files/CWData.json" 
+    },
+    "AlgorithmAtributes": {
+        "month": "",
+        "day_type": "",
+        "hour": "",
+        "daylight_savings_status": "",
+        "non_shiftable_load": "",
+        "solar_generation": ""
+    },
+    "ElectricityPrice": {
+        "OMIE":[
+            {
+                "id":13389,
+                "label": "price"
+            }
+        ]
+    }
+}

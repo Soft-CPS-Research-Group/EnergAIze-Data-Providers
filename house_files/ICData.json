@@ -1,0 +1,117 @@
+{
+    "provider":"i-charging",
+    "House1": [
+        {
+            "label":"ChargersSession",
+            "id":"asd_p1",
+            "serialNumber": "asd",
+            "plug": "p1"
+        },
+        {
+            "label":"ChargersSession",
+            "id":"asd_p2",
+            "serialNumber": "asd",
+            "plug": "p2"
+        }, 
+        {
+            "label":"ChargersSession",
+            "id":"asd_p3",
+            "serialNumber": "asd",
+            "plug": "p3"
+        },
+        {
+            "label":"ChargersSession",
+            "id":"asn_p1",
+            "serialNumber": "asn",
+            "plug": "p1"
+        }, 
+        {
+            "label":"ChargersSession",
+            "id":"asn_p2",
+            "serialNumber": "asn",
+            "plug": "p2"
+        }
+    ],
+    "House2": [
+        {
+            "label":"Non Shiftable Load [kWh]",
+            "id":"meter1",
+            "name":"Imported Active Energy",
+            "measurementunit": "Kilowatt Hour" 
+        },
+        {
+            "label": "Solar Generation [kWh]",
+            "id":"solar1",
+            "name":"Total Generated Active Energy",
+            "measurementunit": "Kilowatt Hour" 
+        }, 
+        {
+            "label": "Battery Charging Energy [kWh]",
+            "id":"battery1",
+            "name":"Battery charging energy",
+            "measurementunit": "Kilowatt Hour" 
+        },
+        {   
+            "label":"ChargersSession",
+            "id":"cdf_p1",
+            "serialNumber": "cdf",
+            "plug": "p1"
+        },
+        {
+            "label":"ChargersSession",
+            "id":"cdf_p2",
+            "serialNumber": "cdf",
+            "plug": "p2"
+        }, 
+        {
+            "label":"ChargersSession",
+            "id":"cdd_p3",
+            "serialNumber": "cdd",
+            "plug": "p3"
+        },
+        {
+            "label":"ChargersSession",
+            "id":"cgb_p1",
+            "serialNumber": "cgb",
+            "plug": "p1"
+        }, 
+        {
+            "label":"ChargersSession",
+            "id":"cgb_p2",
+            "serialNumber": "cgb",
+            "plug": "p2"
+        }
+    ],
+    "House4": [
+        {
+            "label":"Non Shiftable Load [kWh]",
+            "id":"meter2",
+            "name":"Imported Active Energy",
+            "measurementunit": "Kilowatt Hour" 
+        },
+        {
+            "label": "Solar Generation [kWh]",
+            "id":"solar2",
+            "name":"Total Generated Active Energy",
+            "measurementunit": "Kilowatt Hour" 
+        },
+        {
+            "label": "ChargersSession",
+            "id":"rft_p3",
+            "serialNumber": "rft",
+            "plug": "p3"
+        },
+        {
+            "label": "ChargersSession",
+            "id":"rft_p1",
+            "serialNumber": "rft",
+            "plug": "p1"
+        }, 
+        {
+            "label": "ChargersSession",
+            "id":"dee_p2",
+            "serialNumber": "dee",
+            "plug": "p2"
+        }
+    ]
+}
