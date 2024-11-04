@@ -31,6 +31,13 @@ class CWHistoricDataTranslator(Translator):
         
     @staticmethod
     def _data_format(data, period, start_date, end_date, columns_to_keep):
+        if not data:
+            full_date_range = pd.date_range(start=start_date, end=end_date, freq=f'{period}min', tz='UTC')
+            df_full = pd.DataFrame(full_date_range, columns=['Date'])
+            df_full['Value'] = float('nan')
+            df_full.set_index('Date', inplace=True)
+            return df_full
+        
         df = pd.DataFrame(data)[columns_to_keep]
         
         df['Date'] = pd.to_datetime(df['Date'], utc=True)

@@ -1,24 +1,191 @@
 {
-    "R-H-02": [
+    "R-H-09": [
         {
-            "id": 30690,
+            "id": 29722,
             "type": "Active energy-",
             "measurementUnit": "Kilowatt Hour"
         },
         {
-            "id": 30688,
+            "id": 29720,
+            "type": "Active energy+",
+            "measurementUnit": "Kilowatt Hour",
+            "label": "non_shiftable_load"
+        },
+        {
+            "id": 29725,
+            "type": "PV energy",
+            "measurementUnit": "Kilowatt Hour",
+            "label": "solar_generation"
+        }
+    ],
+    "R-H-08": [
+        {
+            "id": 28391,
+            "type": "Active energy-",
+            "measurementUnit": "Kilowatt Hour"
+        },
+        {
+            "id": 28387,
+            "type": "Active energy+",
+            "measurementUnit": "Kilowatt Hour",
+            "label": "non_shiftable_load"
+        }
+    ],
+    "R-H-15": [
+        {
+            "id": 30636,
+            "type": "Active energy-",
+            "measurementUnit": "Kilowatt Hour"
+        },
+        {
+            "id": 30634,
+            "type": "Active energy+",
+            "measurementUnit": "Kilowatt Hour",
+            "label": "non_shiftable_load"
+        },
+        {
+            "id": 30642,
+            "type": "PV energy",
+            "measurementUnit": "Kilowatt Hour",
+            "label": "solar_generation"
+        }
+    ],
+    "R-H-14": [
+        {
+            "id": 28378,
+            "type": "Active energy-",
+            "measurementUnit": "Kilowatt Hour"
+        },
+        {
+            "id": 28375,
+            "type": "Active energy+",
+            "measurementUnit": "Kilowatt Hour",
+            "label": "non_shiftable_load"
+        },
+        {
+            "id": 29658,
+            "type": "PV energy",
+            "measurementUnit": "Kilowatt Hour",
+            "label": "solar_generation"
+        }
+    ],
+    "R-H-13": [
+        {
+            "id": 33425,
+            "type": "Active energy-",
+            "measurementUnit": "Kilowatt Hour"
+        },
+        {
+            "id": 33423,
+            "type": "Active energy+",
+            "measurementUnit": "Kilowatt Hour",
+            "label": "non_shiftable_load"
+        },
+        {
+            "id": 31049,
+            "type": "Active energy+",
+            "measurementUnit": "Kilowatt Hour",
+            "label": "non_shiftable_load"
+        },
+        {
+            "id": 31051,
+            "type": "Active energy-",
+            "measurementUnit": "Kilowatt Hour"
+        },
+        {
+            "id": 31139,
+            "type": "PV active energy+",
+            "measurementUnit": "Kilowatt Hour"
+        },
+        {
+            "id": 31030,
+            "type": "Battery charging power",
+            "measurementUnit": "Kilowatt"
+        },
+        {
+            "id": 31031,
+            "type": "Battery level/SoC",
+            "measurementUnit": "Percentage"
+        }
+    ],
+    "R-H-07": [
+        {
+            "id": 31095,
+            "type": "Active energy-",
+            "measurementUnit": "Kilowatt Hour"
+        },
+        {
+            "id": 31093,
+            "type": "Active energy+",
+            "measurementUnit": "Kilowatt Hour",
+            "label": "non_shiftable_load"
+        }
+    ],
+    "R-H-05": [
+        {
+            "id": 28390,
+            "type": "Active energy-",
+            "measurementUnit": "Kilowatt Hour"
+        },
+        {
+            "id": 28386,
+            "type": "Active energy+",
+            "measurementUnit": "Kilowatt Hour",
+            "label": "non_shiftable_load"
+        },
+        {
+            "id": 29373,
+            "type": "PV energy",
+            "measurementUnit": "Kilowatt Hour",
+            "label": "solar_generation"
+        }
+    ],
+    "R-H-10": [
+        {
+            "id": 29853,
+            "type": "Active energy-",
+            "measurementUnit": "Kilowatt Hour"
+        },
+        {
+            "id": 29851,
+            "type": "Active energy+",
+            "measurementUnit": "Kilowatt Hour",
+            "label": "non_shiftable_load"
+        }
+    ],
+    "R-H-11": [
+        {
+            "id": 29498,
+            "type": "PV energy",
+            "measurementUnit": "Kilowatt Hour",
+            "label": "solar_generation"
+        },
+        {
+            "id": 30082,
+            "type": "Active energy-",
+            "measurementUnit": "Kilowatt Hour"
+        },
+        {
+            "id": 30080,
+            "type": "Active energy+",
+            "measurementUnit": "Kilowatt Hour",
+            "label": "non_shiftable_load"
+        }
+    ],
+    "R-H-12": [
+        {
+            "id": 29662,
+            "type": "Active energy-",
+            "measurementUnit": "Kilowatt Hour"
+        },
+        {
+            "id": 29660,
             "type": "Active energy+",
             "measurementUnit": "Kilowatt Hour",
             "label": "non_shiftable_load"
         }
     ],
     "R-H-04": [
-        {
-            "id": 36769,
-            "type": "PV energy",
-            "measurementUnit": "Kilowatt Hour",
-            "label": "solar_generation"
-        },
         {
             "id": 36768,
             "type": "Active energy-",
@@ -31,9 +198,28 @@
             "label": "non_shiftable_load"
         },
         {
+            "id": 36769,
+            "type": "PV energy",
+            "measurementUnit": "Kilowatt Hour",
+            "label": "solar_generation"
+        },
+        {
             "id": 37252,
             "type": "PV self-used energy",
             "measurementUnit": "Kilowatt Hour"
+        }
+    ],
+    "R-H-02": [
+        {
+            "id": 30690,
+            "type": "Active energy-",
+            "measurementUnit": "Kilowatt Hour"
+        },
+        {
+            "id": 30688,
+            "type": "Active energy+",
+            "measurementUnit": "Kilowatt Hour",
+            "label": "non_shiftable_load"
         }
     ],
     "R-H-01": [

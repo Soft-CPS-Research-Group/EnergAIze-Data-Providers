@@ -60,12 +60,11 @@ class CWHistoricDataRequest():
                     data = response.json()
                     if data:
                         print(f"Data received for tag {tagId}. The translation will start.")
-                        thread = threading.Thread(target=self._translator_class.translate, args=(tagId, data, self._tag_dict.get(tagId), self._start_date, self._end_date, self._period))
-                        thread.start()
-
                     else:
-                        print(f"The {tagId} tag has no content in the dates passed by parameter. The system will exit.")
-                        sys.exit(1)
+                        print(f"The {tagId} tag has no content in the dates passed by parameter")
+
+                    thread = threading.Thread(target=self._translator_class.translate, args=(tagId, data, self._tag_dict.get(tagId), self._start_date, self._end_date, self._period))
+                    thread.start()
                 else:
                     print(f"Error: {response.status_code} - {response.text}")
 

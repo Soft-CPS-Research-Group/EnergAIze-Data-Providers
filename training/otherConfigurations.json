@@ -4,7 +4,7 @@
         "TagInfo": "https://ks.innov.cleanwatts.energy/api/2.0/tag/",
         "MeasurementUnit": "https://ks.innov.cleanwatts.energy/api/2.0/measurementUnits/"
     },
-    "housesGroups": {"Managed Houses":[]},
+    "housesGroups": {"Managed Houses":[], "Monitor Only Houses":["Living Lab OPEVA"]},
     "labelsMap":{
         "Active energy+":"non_shiftable_load",
         "PV energy":"solar_generation",
