@@ -39,7 +39,6 @@ class HistoricDataProducer():
         try:
             # Decode the message
             message = json.loads(body)
-            print(message)
             message_type = message.get("type")
             message_value = message.get("value")
             if message_type == "historic":
@@ -64,7 +63,7 @@ class HistoricDataProducer():
         house = value.get("installation")
         date = datetime.strptime(value.get("date"), "%Y-%m-%d %H:%M:%S%z")
         
-        observations = [self.generate_random_observation(date + timedelta(minutes=i)) for i in range(10)]
+        observations = [self.generate_random_observation(date + timedelta(minutes=i)) for i in range(1440)]
         
         # Estrutura do JSON a ser salvo
         data = {

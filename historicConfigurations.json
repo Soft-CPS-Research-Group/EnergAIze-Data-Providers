@@ -34,5 +34,10 @@
                 "label": "price"
             }
         ]
+    },
+    "messageIC":{
+        "meter.values":"non_shiftable_load",
+        "pv.production":"solar_generation",
+        "battery.soc":"battery_charging_energy"
     }
 }

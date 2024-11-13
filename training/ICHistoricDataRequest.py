@@ -46,7 +46,6 @@ class ICHistoricDataRequest():
                         "date": date.strftime("%Y-%m-%d %H:%M:%S%z")
                     }
                 }
-                print(message)
                 message_json = json.dumps(message)
                 date += timedelta(days=1)
                 self._send_message(message_json, house)
