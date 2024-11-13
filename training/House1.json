@@ -1,0 +1,352 @@
+[
+    {
+        "time": "2024-10-27T00:00:00+00:00",
+        "battery.soc": 9,
+        "pv.production": 72,
+        "charging.session": [
+            {
+                "id": "session_269",
+                "serialnumber": "SN8915",
+                "user.id": "user39@mail.com",
+                "card.id": "6841",
+                "plug": 0,
+                "soc": 54,
+                "power": 42,
+                "flexibility": {
+                    "arrival.time": "09:00:00",
+                    "departure.time": "18:00:00",
+                    "vehicle.model": "Model_9",
+                    "energy.min": 9,
+                    "energy.total": 91,
+                    "prioritary": false,
+                    "optimization": true,
+                    "departure.soc": 97
+                }
+            }
+        ],
+        "meter.values": [
+            {
+                "id": "meter_5",
+                "l1": 9,
+                "l2": 5,
+                "l3": 4,
+                "l123": 13
+            }
+        ]
+    },
+    {
+        "time": "2024-10-27T00:01:00+00:00",
+        "battery.soc": 19,
+        "pv.production": 72,
+        "charging.session": [
+            {
+                "id": "session_126",
+                "serialnumber": "SN8839",
+                "user.id": "user68@mail.com",
+                "card.id": "4142",
+                "plug": 1,
+                "soc": 46,
+                "power": 22,
+                "flexibility": {
+                    "arrival.time": "09:00:00",
+                    "departure.time": "18:00:00",
+                    "vehicle.model": "Model_3",
+                    "energy.min": 8,
+                    "energy.total": 73,
+                    "prioritary": true,
+                    "optimization": true,
+                    "departure.soc": 89
+                }
+            }
+        ],
+        "meter.values": [
+            {
+                "id": "meter_5",
+                "l1": 4,
+                "l2": 1,
+                "l3": 0,
+                "l123": 10
+            }
+        ]
+    },
+    {
+        "time": "2024-10-27T00:02:00+00:00",
+        "battery.soc": 19,
+        "pv.production": 75,
+        "charging.session": [
+            {
+                "id": "session_660",
+                "serialnumber": "SN8894",
+                "user.id": "user57@mail.com",
+                "card.id": "8487",
+                "plug": 0,
+                "soc": 32,
+                "power": 17,
+                "flexibility": {
+                    "arrival.time": "09:00:00",
+                    "departure.time": "18:00:00",
+                    "vehicle.model": "Model_7",
+                    "energy.min": 9,
+                    "energy.total": 56,
+                    "prioritary": false,
+                    "optimization": true,
+                    "departure.soc": 92
+                }
+            }
+        ],
+        "meter.values": [
+            {
+                "id": "meter_10",
+                "l1": 3,
+                "l2": 6,
+                "l3": 3,
+                "l123": 18
+            }
+        ]
+    },
+    {
+        "time": "2024-10-27T00:03:00+00:00",
+        "battery.soc": 48,
+        "pv.production": 55,
+        "charging.session": [
+            {
+                "id": "session_666",
+                "serialnumber": "SN4283",
+                "user.id": "user88@mail.com",
+                "card.id": "2236",
+                "plug": 1,
+                "soc": 18,
+                "power": 8,
+                "flexibility": {
+                    "arrival.time": "09:00:00",
+                    "departure.time": "18:00:00",
+                    "vehicle.model": "Model_9",
+                    "energy.min": 7,
+                    "energy.total": 99,
+                    "prioritary": false,
+                    "optimization": false,
+                    "departure.soc": 81
+                }
+            }
+        ],
+        "meter.values": [
+            {
+                "id": "meter_5",
+                "l1": 0,
+                "l2": 6,
+                "l3": 0,
+                "l123": 28
+            }
+        ]
+    },
+    {
+        "time": "2024-10-27T00:04:00+00:00",
+        "battery.soc": 90,
+        "pv.production": 98,
+        "charging.session": [
+            {
+                "id": "session_76",
+                "serialnumber": "SN4436",
+                "user.id": "user83@mail.com",
+                "card.id": "6765",
+                "plug": 0,
+                "soc": 12,
+                "power": 23,
+                "flexibility": {
+                    "arrival.time": "09:00:00",
+                    "departure.time": "18:00:00",
+                    "vehicle.model": "Model_5",
+                    "energy.min": 4,
+                    "energy.total": 39,
+                    "prioritary": false,
+                    "optimization": true,
+                    "departure.soc": 88
+                }
+            }
+        ],
+        "meter.values": [
+            {
+                "id": "meter_3",
+                "l1": 9,
+                "l2": 8,
+                "l3": 9,
+                "l123": 13
+            }
+        ]
+    },
+    {
+        "time": "2024-10-27T00:05:00+00:00",
+        "battery.soc": 14,
+        "pv.production": 71,
+        "charging.session": [
+            {
+                "id": "session_533",
+                "serialnumber": "SN1481",
+                "user.id": "user87@mail.com",
+                "card.id": "8665",
+                "plug": 1,
+                "soc": 94,
+                "power": 46,
+                "flexibility": {
+                    "arrival.time": "09:00:00",
+                    "departure.time": "18:00:00",
+                    "vehicle.model": "Model_10",
+                    "energy.min": 2,
+                    "energy.total": 88,
+                    "prioritary": true,
+                    "optimization": false,
+                    "departure.soc": 90
+                }
+            }
+        ],
+        "meter.values": [
+            {
+                "id": "meter_6",
+                "l1": 4,
+                "l2": 0,
+                "l3": 1,
+                "l123": 0
+            }
+        ]
+    },
+    {
+        "time": "2024-10-27T00:06:00+00:00",
+        "battery.soc": 58,
+        "pv.production": 32,
+        "charging.session": [
+            {
+                "id": "session_371",
+                "serialnumber": "SN3557",
+                "user.id": "user24@mail.com",
+                "card.id": "6562",
+                "plug": 0,
+                "soc": 84,
+                "power": 27,
+                "flexibility": {
+                    "arrival.time": "09:00:00",
+                    "departure.time": "18:00:00",
+                    "vehicle.model": "Model_4",
+                    "energy.min": 2,
+                    "energy.total": 56,
+                    "prioritary": true,
+                    "optimization": true,
+                    "departure.soc": 92
+                }
+            }
+        ],
+        "meter.values": [
+            {
+                "id": "meter_2",
+                "l1": 6,
+                "l2": 8,
+                "l3": 1,
+                "l123": 15
+            }
+        ]
+    },
+    {
+        "time": "2024-10-27T00:07:00+00:00",
+        "battery.soc": 3,
+        "pv.production": 74,
+        "charging.session": [
+            {
+                "id": "session_970",
+                "serialnumber": "SN6037",
+                "user.id": "user27@mail.com",
+                "card.id": "8567",
+                "plug": 0,
+                "soc": 93,
+                "power": 23,
+                "flexibility": {
+                    "arrival.time": "09:00:00",
+                    "departure.time": "18:00:00",
+                    "vehicle.model": "Model_7",
+                    "energy.min": 5,
+                    "energy.total": 85,
+                    "prioritary": false,
+                    "optimization": true,
+                    "departure.soc": 80
+                }
+            }
+        ],
+        "meter.values": [
+            {
+                "id": "meter_1",
+                "l1": 8,
+                "l2": 1,
+                "l3": 7,
+                "l123": 23
+            }
+        ]
+    },
+    {
+        "time": "2024-10-27T00:08:00+00:00",
+        "battery.soc": 61,
+        "pv.production": 11,
+        "charging.session": [
+            {
+                "id": "session_100",
+                "serialnumber": "SN4946",
+                "user.id": "user39@mail.com",
+                "card.id": "9253",
+                "plug": 1,
+                "soc": 0,
+                "power": 16,
+                "flexibility": {
+                    "arrival.time": "09:00:00",
+                    "departure.time": "18:00:00",
+                    "vehicle.model": "Model_2",
+                    "energy.min": 4,
+                    "energy.total": 33,
+                    "prioritary": true,
+                    "optimization": false,
+                    "departure.soc": 90
+                }
+            }
+        ],
+        "meter.values": [
+            {
+                "id": "meter_7",
+                "l1": 0,
+                "l2": 10,
+                "l3": 6,
+                "l123": 24
+            }
+        ]
+    },
+    {
+        "time": "2024-10-27T00:09:00+00:00",
+        "battery.soc": 68,
+        "pv.production": 75,
+        "charging.session": [
+            {
+                "id": "session_967",
+                "serialnumber": "SN6745",
+                "user.id": "user64@mail.com",
+                "card.id": "9455",
+                "plug": 0,
+                "soc": 37,
+                "power": 50,
+                "flexibility": {
+                    "arrival.time": "09:00:00",
+                    "departure.time": "18:00:00",
+                    "vehicle.model": "Model_8",
+                    "energy.min": 10,
+                    "energy.total": 66,
+                    "prioritary": false,
+                    "optimization": false,
+                    "departure.soc": 100
+                }
+            }
+        ],
+        "meter.values": [
+            {
+                "id": "meter_2",
+                "l1": 9,
+                "l2": 10,
+                "l3": 5,
+                "l123": 18
+            }
+        ]
+    }
+]

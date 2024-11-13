@@ -46,7 +46,7 @@ class CWHistoricDataTranslator(Translator):
 
         full_date_range = pd.date_range(start=start_date, end=end_date, freq=f'{period}min', tz='UTC')
         
-        df_full = pd.DataFrame(full_date_range, columns=['Date']).merge(df, on='Date', how='left')
+        df_full = pd.DataFrame(full_date_range, columns=['Date']).merge(df, on='Date', how='outer') #Alterei para outer de maneira a que todas as datas fiquem
         df_full.set_index('Date', inplace=True)
         df_full.sort_index(inplace=True)
         

@@ -87,7 +87,7 @@ def main(start_date, end_date, period):
   
 if __name__ == "__main__":
     if len(sys.argv) != 4:
-        print("python CWHistoricDataRequest.py <start date> <end date>")
+        print("python CWHistoricDataRequest.py <start date> <end date> <period>")
         sys.exit(1)
     
     start_date = datetime.strptime(sys.argv[1], "%Y-%m-%dT%H:%M:%S%z")
