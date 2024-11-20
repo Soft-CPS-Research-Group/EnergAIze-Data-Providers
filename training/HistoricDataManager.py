@@ -16,7 +16,7 @@ class HistoricDataManager:
         self.header_written = False
     
         for device in devices:
-            if 'label' in device and device.get('label') != "ChargersSession":
+            if 'label' in device and device['label'] != "ChargersSession":
                 self._devices[device.get('id')] = device.get('label')
         print(f"Devices: {self._devices}")
         self._nDev = len(self._devices)
@@ -31,6 +31,8 @@ class HistoricDataManager:
         jsonbody = json.loads(body_str)
         device_id = jsonbody.get('id')
         data = jsonbody.get('data')
+        print(f"Device hejwksl: {device_id}")
+        #print(f"Data: {data}")
         if data is not None:
             for inst in data:
                 timestamp = datetime.fromisoformat(inst)
@@ -43,6 +45,7 @@ class HistoricDataManager:
         if self._nDevF == self._nDev:  
             sorted(self._data.keys())
             self.algorithm_format()
+        #print(f"Data: {self._data}")
 
 
     def algorithm_format(self):
@@ -50,10 +53,14 @@ class HistoricDataManager:
         timestampsL = len(timestamps) - 1
         sd = timestamps[0].strftime("%Y-%m-%d")
         ed = timestamps[timestampsL].strftime("%Y-%m-%d")
-        filename = f"{self._house}.csv"
+        directory = 'datasets'
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+        filename = os.path.join(directory, f"{self._house}.csv")
         all_rows = []
 
         for timestamp in timestamps: 
+            #print(f"Timestamp: {timestamp}")
             batteryChargingEnergy = 0
             self._algorithmFormat['month'] = timestamp.month
             self._algorithmFormat['hour'] = timestamp.hour
@@ -61,6 +68,7 @@ class HistoricDataManager:
             self._algorithmFormat['daylight_savings_status'] = self.is_daylight_saving(timestamp)
             for device in self._data.get(timestamp):
                 label = device.get('label')
+                #print(f"Dados uhgyhjj: {label} {device.get('data')}")
                 if label == "non_shiftable_load":
                     for other_device in self._data.get(timestamp):
                         if other_device.get('label') == "battery_charging_energy":
@@ -74,13 +82,13 @@ class HistoricDataManager:
             for key in self._algorithmFormat.keys():
                 if self._algorithmFormat[key] == "":
                     self._algorithmFormat[key] = 0
-                    
+            #print(f"Data to send: {self._algorithmFormat}")       
             all_rows.append(self._algorithmFormat.copy())
             
             # Resetting the values in _algorithmFormat
             for key in self._algorithmFormat.keys():
                 self._algorithmFormat[key] = 0 if isinstance(self._algorithmFormat[key], (int, float)) else ""
-
+        #print(f"Data to send: {all_rows}")
         with open(filename, mode='w', newline='') as file:
             writer = csv.DictWriter(file, fieldnames=self._algorithmFormat.keys())
             writer.writeheader()

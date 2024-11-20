@@ -27,7 +27,7 @@ class Translator:
         df = pd.DataFrame(data)[columns_to_keep]
         
         df['Date'] = pd.to_datetime(df['Date'], utc=True)
-        print(f'{df} and {df.dtypes}')
+        #print(f'{df} and {df.dtypes}')
         df.set_index('Date', inplace=True)
         df = df.resample(f'{period}min').sum(min_count=1)
 
@@ -36,7 +36,7 @@ class Translator:
         df_full = pd.DataFrame(full_date_range, columns=['Date']).merge(df, on='Date', how='outer') #Alterei para outer de maneira a que todas as datas fiquem
         df_full.set_index('Date', inplace=True)
         df_full.sort_index(inplace=True)
-        print(f'{df} and {df_full}')
+        #print(f'{df} and {df_full}')
         Translator._remove_outliers(df_full)
         return df_full  
                        

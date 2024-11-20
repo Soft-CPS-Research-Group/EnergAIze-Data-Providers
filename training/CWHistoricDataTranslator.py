@@ -19,7 +19,11 @@ class CWHistoricDataTranslator(Translator):
 
         tosend = {date: value for date, value in tosend.items() if start_date <= pd.to_datetime(date) <= end_date}
         tosend = OrderedDict(sorted(tosend.items()))
-
+        #print(f"Data to send: {tosend}")
         CWHistoricDataTranslator._send(house, tagId, tosend)
-        CWHistoricDataTranslator._tocsv(f'{tagId}.csv', tosend, ['Date', 'Value'])      
+        directory = 'devicesAndTags'
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+        filename = os.path.join(directory, f"{tagId}.csv")
+        CWHistoricDataTranslator._tocsv(filename, tosend, ['Date', 'Value'])      
                     
