@@ -4,8 +4,7 @@ import sys
 import time
 import pika
 import json
-from CWHistoricDataTranslator import CWHistoricDataTranslator
-from CWPriceDataTranslatorAndManager import CWPriceDataTranslatorAndManager
+from ICHistoricDataTranslator import ICHistoricDataTranslator
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from data import DataSet
 
@@ -21,6 +20,7 @@ class ICHistoricDataRequest():
         self._end_date = end_date
         self._houses = houses_list
         self._data = {}
+        self._itsTheLastOne = False
         
 
     '''def _stop(self):
@@ -38,7 +38,7 @@ class ICHistoricDataRequest():
         for house in self._houses.keys():
             print(house)
             date = self._start_date
-            while date < self._end_date:
+            while date <= self._end_date:
                 message = {
                     "type": "historic",
                     "value": {
@@ -48,7 +48,10 @@ class ICHistoricDataRequest():
                 }
                 message_json = json.dumps(message)
                 date += timedelta(days=1)
+                if (date == self._end_date):
+                    self._itsTheLastOne = True # Talvez precise de alguma proteção aqui
                 self._send_message(message_json, house)
+            
 
     def _on_response(self, body):
         data = json.loads(body)
@@ -59,7 +62,12 @@ class ICHistoricDataRequest():
         if self._data.get(house) is None:
             self._data[house] = observations
         else:
-            self._data[house].append(observations)
+            self._data[house].extend(observations)
+        #print(f'{self._data[house]}\n\n')
+        if self._itsTheLastOne:
+            self._itsTheLastOne = False
+            ICHistoricDataTranslator.translate(house, self._houses.get(house), self._data.get(house), self._start_date, self._end_date, self._period)
+            
 
     def _send_message(self, message, house):
         returnQueueName = f"{house}_historic"

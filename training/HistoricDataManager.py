@@ -16,9 +16,12 @@ class HistoricDataManager:
         self.header_written = False
     
         for device in devices:
-            if 'label' in device:
+            if 'label' in device and device.get('label') != "ChargersSession":
                 self._devices[device.get('id')] = device.get('label')
+        print(f"Devices: {self._devices}")
         self._nDev = len(self._devices)
+        if self._nDev == 0:
+            self.close_connection()
         self._nDevF = 0
         self._data = {}
         self._stop_callback = None 

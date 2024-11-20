@@ -64,14 +64,14 @@ class AcummulatorThread(threading.Thread):
 def main():
     print("Starting Accumulator...")
 
-    CWHouses = DataSet.get_schema(os.path.join('..', configurations.get('CWfile').get('path')))
-    CWHouses.pop('provider')
+    houses = {}
+    DataSet.process_json_files_in_folder(os.path.join('..', 'house_files'), houses)
     connection_params = configurations.get('internalAMQPServer')
-
+    
     threads = []
     try:
-        for house in CWHouses.keys():
-            accumulator_thread = AcummulatorThread(house, CWHouses[house],connection_params)
+        for house in houses.keys():
+            accumulator_thread = AcummulatorThread(house, houses[house],connection_params)
             accumulator_thread.start()
             threads.append(accumulator_thread)
 

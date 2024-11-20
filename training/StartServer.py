@@ -6,8 +6,10 @@ def run_in_terminal(script_name, *args):
     subprocess.Popen(command, shell=True)
 
 def start_servers():
+    '''startDate = "2023-09-15T00:00:00+0000"
+    endDate = "2024-10-28T00:00:00+0000"'''
     startDate = "2023-09-15T00:00:00+0000"
-    endDate = "2024-10-28T00:00:00+0000"
+    endDate = "2023-10-28T00:00:00+0000"
     period = "60"
     run_in_terminal("ICHistoricDataProducer.py")
     time.sleep(1)

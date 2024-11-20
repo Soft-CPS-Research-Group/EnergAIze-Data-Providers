@@ -14,20 +14,20 @@ configurations = DataSet.get_schema(os.path.join('..', 'historicConfigurations.j
 
 class HistoricDataProducer():
     def __init__(self, connection_params, houses):
-        self.delete_house_json_files(houses)
+        #self.delete_house_json_files(houses)
         self._connection_params = pika.ConnectionParameters(host=connection_params.get('host'), port=connection_params.get('port'),credentials=pika.PlainCredentials(connection_params.get('credentials').get('username'), connection_params.get('credentials').get('password')), heartbeat=660)
         self._connection = None
         self._channel = None
         self._max_reconnect_attempts = configurations.get('maxReconnectAttempts')
     
-    def delete_house_json_files(self, houses):
+    '''def delete_house_json_files(self, houses):
         for house_dir in houses:
             file_path = os.path.join(house_dir, "house.json")
             if os.path.isfile(file_path):
                 os.remove(file_path)
                 print(f"Deleted: {file_path}")
             else:
-                print(f"No house.json file found in: {house_dir}")
+                print(f"No house.json file found in: {house_dir}")'''
 
     def connect(self):
         self._connection = pika.BlockingConnection(self._connection_params) #Just processes one message at a time
@@ -39,6 +39,7 @@ class HistoricDataProducer():
         try:
             # Decode the message
             message = json.loads(body)
+            #print(f"Received message: {message}")
             message_type = message.get("type")
             message_value = message.get("value")
             if message_type == "historic":
@@ -71,9 +72,9 @@ class HistoricDataProducer():
             "observations": observations
         }
 
-        filename = f'{house}.json'
+        '''filename = f'{house}_.json'
         with open(filename, 'w') as f:
-            json.dump(observations, f, indent=4)
+            json.dump(observations, f, indent=4)'''
 
         return data
     
@@ -103,13 +104,7 @@ class HistoricDataProducer():
                     "departure.soc": random.randint(80, 100)
                 }
             }],
-            "meter.values": [{
-                "id": f"meter_{random.randint(1, 10)}", 
-                "l1": random.randint(0, 10), 
-                "l2": random.randint(0, 10), 
-                "l3": random.randint(0, 10), 
-                "l123": random.randint(0, 30)
-            }]
+            "meter.values": random.randint(0, 10) # depois tenho de alterar
         }
         return observation
 
