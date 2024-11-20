@@ -34,19 +34,19 @@
     ],
     "House2": [
         {
-            "label":"Non Shiftable Load [kWh]",
+            "label":"non_shiftable_load",
             "id":"meter1",
             "name":"Imported Active Energy",
             "measurementunit": "Kilowatt Hour" 
         },
         {
-            "label": "Solar Generation [kWh]",
+            "label": "solar_generation",
             "id":"solar1",
             "name":"Total Generated Active Energy",
             "measurementunit": "Kilowatt Hour" 
         }, 
         {
-            "label": "Battery Charging Energy [kWh]",
+            "label": "battery_charging_energy",
             "id":"battery1",
             "name":"Battery charging energy",
             "measurementunit": "Kilowatt Hour" 
@@ -84,13 +84,13 @@
     ],
     "House4": [
         {
-            "label":"Non Shiftable Load [kWh]",
+            "label":"non_shiftable_load",
             "id":"meter2",
             "name":"Imported Active Energy",
             "measurementunit": "Kilowatt Hour" 
         },
         {
-            "label": "Solar Generation [kWh]",
+            "label": "solar_generation",
             "id":"solar2",
             "name":"Total Generated Active Energy",
             "measurementunit": "Kilowatt Hour" 
