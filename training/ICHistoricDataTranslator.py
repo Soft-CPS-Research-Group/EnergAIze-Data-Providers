@@ -40,7 +40,11 @@ class ICHistoricDataTranslator(Translator):
             tosend = {date: value for date, value in tosend.items() if start_date <= pd.to_datetime(date) <= end_date}
             tosend = OrderedDict(sorted(tosend.items()))
             ICHistoricDataTranslator._send(house, deviceId, tosend)
-            ICHistoricDataTranslator._tocsv(f'{deviceId}.csv', tosend, ['Date', 'Value'])
+            directory = 'devicesAndTags'
+            if not os.path.exists(directory):
+                os.makedirs(directory)
+            filename = os.path.join(directory, f"{deviceId}.csv")
+            ICHistoricDataTranslator._tocsv(filename, tosend, ['Date', 'Value'])
 
 
     

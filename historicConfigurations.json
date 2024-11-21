@@ -5,7 +5,7 @@
     },
     "CWhistoricalServer": "https://ks.innov.cleanwatts.energy/api/2.0/data/request/Instant?instantType=avg",
     "IChistoricalServer": {
-        "host": "opevaisep.duckdns.org",
+        "host": "193.136.60.47",
         "port": 5672,
         "credentials": {
             "username": "icharging",
