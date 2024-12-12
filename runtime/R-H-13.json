@@ -1,0 +1,15 @@
+{
+    "AlgorithmAtributes": [
+        {
+            "Month": 12,
+            "Hour": 18,
+            "Minute": 10,
+            "Day Type": 3,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [],
+            "Generated": 0
+        }
+    ]
+}

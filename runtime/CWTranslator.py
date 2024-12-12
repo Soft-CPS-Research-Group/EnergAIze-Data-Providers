@@ -3,6 +3,8 @@ import json
 import datetime
 import os
 import time
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from data import DataSet
 
 # Load configurations

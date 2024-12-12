@@ -3,9 +3,12 @@ import requests
 import time
 import datetime
 import os
+import sys
+from CWTranslator import CWTranslator
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from data import DataSet
 from cwlogin import CWLogin
-from CWTranslator import CWTranslator
+
 
 # Load configurations
 configurations = DataSet.get_schema(os.path.join('..', 'runtimeConfigurations.json'))

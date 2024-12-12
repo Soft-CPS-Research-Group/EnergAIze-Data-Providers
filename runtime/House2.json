@@ -1,0 +1,61 @@
+{
+    "AlgorithmAtributes": [
+        {
+            "Month": 12,
+            "Hour": 18,
+            "Minute": 10,
+            "Day Type": 3,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "cdf_p1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 83,
+                    "power": 44
+                },
+                {
+                    "Charger Id": "cdf_p2",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 39,
+                    "power": 54
+                },
+                {
+                    "Charger Id": "cdd_p3",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 76,
+                    "power": 61
+                },
+                {
+                    "Charger Id": "cgb_p1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 56,
+                    "power": 66
+                },
+                {
+                    "Charger Id": "cgb_p2",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 89,
+                    "power": 63
+                }
+            ],
+            "Generated": 0
+        }
+    ]
+}

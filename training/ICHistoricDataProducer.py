@@ -104,7 +104,12 @@ class HistoricDataProducer():
                     "departure.soc": random.randint(80, 100)
                 }
             }],
-            "meter.values": random.randint(0, 10) # depois tenho de alterar
+            "meter.values": [
+                {
+                    "id": "PT",
+                    "value": random.randint(0, 10)
+                }
+            ] 
         }
         return observation
 

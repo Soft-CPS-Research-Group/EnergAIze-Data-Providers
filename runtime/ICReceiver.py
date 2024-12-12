@@ -2,8 +2,10 @@ import pika
 import threading
 import time
 import os
-from data import DataSet
+import sys
 from ICTranslator import ICTranslator
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from data import DataSet
 
 # Load configurations
 configurations = DataSet.get_schema(os.path.join('..', 'runtimeConfigurations.json'))

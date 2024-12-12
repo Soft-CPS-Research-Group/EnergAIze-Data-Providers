@@ -5,6 +5,8 @@ import time
 import random
 import json
 import os
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from data import DataSet
 
 # Load configurations
@@ -65,7 +67,12 @@ class ProducerThread(threading.Thread):
                                 "battery.soc": random.randint(1, 100),
                                 "pv.production": random.randint(1, 100),
                                 "charging.session": message_devices,
-                                "meter.values": random.randint(1, 100)
+                                "meter.values": [
+                                    {
+                                        "id": "PT",
+                                        "value": random.randint(0, 10)
+                                    }
+                                ] 
                             }
                     print(f"House: {self._house} {json.dumps(message, indent=2)}")
                     message_bytes = json.dumps(message).encode('utf-8')    
