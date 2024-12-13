@@ -21,7 +21,6 @@ class ICTranslator:
         queue_name = house_name + configurations['QueueSuffixes']['MessageAggregator']
       
         message = json.loads(message.decode('utf-8'))
-
         while max_reconnect_attempts > 0:
             try:
                 connection = pika.BlockingConnection(pika.ConnectionParameters(
@@ -35,40 +34,29 @@ class ICTranslator:
                 for device in devices:
                     for pm in messageIC.keys():
                         if pm in message and device.get('label') == messageIC[pm]:
-                            
-                            if pm == 'meters.value':
+                            if pm == 'meter.values':
                                 for meter in message[pm]:
-                                    if meter.get('id') == 'PT':
-                                        id = 'PT'
+                                    if meter.get('id') == device.get('id'):
                                         value = meter.get('l123')
                             else:
                                 value = message[pm]
-                                id = device.get('id')
 
                             newmessage = {
-                                "id": id,
+                                "id": device.get('id'),
                                 "value": value,
                                 "timestamp": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                             }
                             print(f"House: {house_name} {json.dumps(newmessage, indent=2)}")
-                            message_bytes = json.dumps(newmessage).encode('utf-8')   
+                            message_bytes = json.dumps(newmessage).encode('utf-8') 
                             time.sleep(5)
                             channel.basic_publish(exchange='', routing_key=queue_name, body=message_bytes)
 
-                #users = DataSet.get_schema(os.path.join('..', configurations.get('Users').get('path')))[house_name]
-
                 chargerSessionFormat = configurations.get('ChargersSessionFormat')
                 chargersSession = message.get('charging.session')
-            
                 for chargerSession in chargersSession:
                     cs = copy.deepcopy(chargerSessionFormat)
                     chargerId = f"{chargerSession.get('serialnumber')}_{chargerSession.get('plug')}"
                     cs['Charger Id'] = chargerId
-                    '''if chargerSession.get('user.id') != None:
-                        userPreferences = users.get(chargerSession.get('user.id'))
-                        for key in userPreferences.keys():
-                            if key in cs.keys():
-                                cs[key] = userPreferences[key]'''
                     cs['EsocA'] = -1
                     cs['soc'] = chargerSession.get('soc')
                     cs['power'] = chargerSession.get('power')
@@ -81,8 +69,7 @@ class ICTranslator:
                     message_bytes = json.dumps(newmessage).encode('utf-8')   
                     time.sleep(5)
                     channel.basic_publish(exchange='', routing_key=queue_name, body=message_bytes)
-                
-                print(f"House: {house_name} {json.dumps(message, indent=2)}")
+                    print(f"House: {house_name} {json.dumps(newmessage, indent=2)}")
                 break
             except pika.exceptions.AMQPConnectionError as e:
                 max_reconnect_attempts -= 1  # Decrement the retry counter

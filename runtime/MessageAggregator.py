@@ -47,6 +47,7 @@ class MessageAggregator(IManager):
         bodyTimestamp = jsonbody['timestamp']
         bodyValue = jsonbody['value']
         self._dict[bodyId] = {'timestamp': bodyTimestamp, 'data': bodyValue, 'generated':0}
+        print(f"Id: {bodyId}, received message: {self._dict[bodyId]}\n")
 
 
     def stop(self):
@@ -58,7 +59,9 @@ class MessageAggregator(IManager):
     def send(self):
         self._timerEnded = True
         #verificar se chegaram dados de todos os dispositivos, se não, recorrer ao substitute_dict
+        print(self._dict.keys())
         for device in self._devices:
+            print(f"Device: {device.get('id')}, {device.get('label')}")
             if device.get('id') not in self._dict.keys():
                 if device.get('label') != "ChargersSession":
                     if device.get('id') in self._substitute_dict.keys():

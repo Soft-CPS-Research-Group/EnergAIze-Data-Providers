@@ -35,8 +35,7 @@ class ProducerThread(threading.Thread):
     def connect(self):
         self._connection = pika.BlockingConnection(self._connection_params)
         self._channel = self._connection.channel()
-        self._channel.queue_declare(self._house, durable=True)
-
+        self._channel.exchange_declare(exchange=self._house, exchange_type='fanout')
 
     def run(self):
         
@@ -70,13 +69,13 @@ class ProducerThread(threading.Thread):
                                 "meter.values": [
                                     {
                                         "id": "PT",
-                                        "value": random.randint(0, 10)
+                                        "l123": random.randint(0, 10)
                                     }
                                 ] 
                             }
                     print(f"House: {self._house} {json.dumps(message, indent=2)}")
                     message_bytes = json.dumps(message).encode('utf-8')    
-                    self._channel.basic_publish(exchange='', routing_key=self._house, body=message_bytes)
+                    self._channel.basic_publish(exchange=self._house, routing_key='', body=message_bytes)
                     message_devices.clear()
                     time.sleep(timesleep) 
             except pika.exceptions.AMQPConnectionError: 

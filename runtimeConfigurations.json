@@ -53,9 +53,9 @@
         "AlgorithmReceiver": "_alg"
     },
     "messageIC":{
-        "meter.values":"Non Shiftable Load [kWh]",
-        "pv.production":"Solar Generation [kWh]",
-        "battery.soc":"Battery Charging Energy [kWh]"
+        "meter.values":"non_shiftable_load",
+        "pv.production":"solar_generation",
+        "battery.soc":"battery_charging_energy"
     },
     "Providers":{
         "i-charging": "ICDecisionForwarder.ICDecisionForwarder",

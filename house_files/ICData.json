@@ -1,117 +1,119 @@
 {
     "provider":"i-charging",
-    "House1": [
+    "Garage": [
         {
             "label":"ChargersSession",
-            "id":"asd_p1",
-            "serialNumber": "asd",
-            "plug": "p1"
+            "id":"AC000001_1",
+            "serialNumber": "AC000001",
+            "plug": "1"
         },
         {
             "label":"ChargersSession",
-            "id":"asd_p2",
-            "serialNumber": "asd",
-            "plug": "p2"
+            "id":"AC000004_1",
+            "serialNumber": "AC000004",
+            "plug": "1"
         }, 
         {
             "label":"ChargersSession",
-            "id":"asd_p3",
-            "serialNumber": "asd",
-            "plug": "p3"
+            "id":"AC000007_1",
+            "serialNumber": "AC000007",
+            "plug": "1"
         },
         {
             "label":"ChargersSession",
-            "id":"asn_p1",
-            "serialNumber": "asn",
-            "plug": "p1"
+            "id":"AC000010_1",
+            "serialNumber": "AC000010",
+            "plug": "1"
         }, 
         {
             "label":"ChargersSession",
-            "id":"asn_p2",
-            "serialNumber": "asn",
-            "plug": "p2"
-        }
-    ],
-    "House2": [
+            "id":"AC000013_1",
+            "serialNumber": "AC000013",
+            "plug": "1"
+        }, 
+        {
+            "label":"ChargersSession",
+            "id":"AC000002_1",
+            "serialNumber": "AC000002",
+            "plug": "1"
+        }, 
+        {
+            "label":"ChargersSession",
+            "id":"AC000003_1",
+            "serialNumber": "AC000003",
+            "plug": "1"
+        }, 
+        {
+            "label":"ChargersSession",
+            "id":"AC000005_1",
+            "serialNumber": "AC000005",
+            "plug": "1"
+        }, 
+        {
+            "label":"ChargersSession",
+            "id":"AC000006_1",
+            "serialNumber": "AC000006",
+            "plug": "1"
+        }, 
+        {
+            "label":"ChargersSession",
+            "id":"AC000008_1",
+            "serialNumber": "AC000008",
+            "plug": "1"
+        }, 
+        {
+            "label":"ChargersSession",
+            "id":"AC000009_1",
+            "serialNumber": "AC000009",
+            "plug": "1"
+        }, 
+        {
+            "label":"ChargersSession",
+            "id":"AC000011_1",
+            "serialNumber": "AC000011",
+            "plug": "1"
+        }, 
+        {
+            "label":"ChargersSession",
+            "id":"AC000012_1",
+            "serialNumber": "AC000012",
+            "plug": "1"
+        }, 
+        {
+            "label":"ChargersSession",
+            "id":"AC000014_1",
+            "serialNumber": "AC000014",
+            "plug": "1"
+        }, 
+        {
+            "label":"ChargersSession",
+            "id":"ACEXT001_1",
+            "serialNumber": "ACEXT001",
+            "plug": "1"
+        }, 
+        {
+            "label":"ChargersSession",
+            "id":"ACEXT002_1",
+            "serialNumber": "ACEXT002",
+            "plug": "1"
+        }, 
+        {
+            "label":"ChargersSession",
+            "id":"ACEXT003_1",
+            "serialNumber": "ACEXT003",
+            "plug": "1"
+        }, 
+        {
+            "label":"ChargersSession",
+            "id":"ACEXT004_1",
+            "serialNumber": "ACEXT004",
+            "plug": "1"
+        },
         {
             "label":"non_shiftable_load",
-            "id":"meter1",
+            "id":"PT",
             "name":"Imported Active Energy",
             "measurementunit": "Kilowatt Hour" 
-        },
-        {
-            "label": "solar_generation",
-            "id":"solar1",
-            "name":"Total Generated Active Energy",
-            "measurementunit": "Kilowatt Hour" 
-        }, 
-        {
-            "label": "battery_charging_energy",
-            "id":"battery1",
-            "name":"Battery charging energy",
-            "measurementunit": "Kilowatt Hour" 
-        },
-        {   
-            "label":"ChargersSession",
-            "id":"cdf_p1",
-            "serialNumber": "cdf",
-            "plug": "p1"
-        },
-        {
-            "label":"ChargersSession",
-            "id":"cdf_p2",
-            "serialNumber": "cdf",
-            "plug": "p2"
-        }, 
-        {
-            "label":"ChargersSession",
-            "id":"cdd_p3",
-            "serialNumber": "cdd",
-            "plug": "p3"
-        },
-        {
-            "label":"ChargersSession",
-            "id":"cgb_p1",
-            "serialNumber": "cgb",
-            "plug": "p1"
-        }, 
-        {
-            "label":"ChargersSession",
-            "id":"cgb_p2",
-            "serialNumber": "cgb",
-            "plug": "p2"
-        }
-    ],
-    "House4": [
-        {
-            "label":"non_shiftable_load",
-            "id":"meter2",
-            "name":"Imported Active Energy",
-            "measurementunit": "Kilowatt Hour" 
-        },
-        {
-            "label": "solar_generation",
-            "id":"solar2",
-            "name":"Total Generated Active Energy",
-            "measurementunit": "Kilowatt Hour" 
-        },
-        {
-            "label": "ChargersSession",
-            "id":"rft_p3",
-            "serialNumber": "rft",
-            "plug": "p3"
-        },
-        {
-            "label": "ChargersSession",
-            "id":"rft_p1",
-            "serialNumber": "rft",
-            "plug": "p1"
-        }, 
-        {
-            "label": "ChargersSession",
-            "id":"dee_p2",
-            "serialNumber": "dee",
-            "plug": "p2"
         }
     ]
 }
