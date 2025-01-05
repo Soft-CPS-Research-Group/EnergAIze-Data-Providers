@@ -23,12 +23,12 @@ class ICHistoricDataRequest():
         self._itsTheLastOne = False
         
 
-    '''def _stop(self):
+    def _stop(self):
         print(f"Stopping thread {self._house}...")
         self._channel.stop_consuming()
         self._channel.close()
         self._connection.close()
-        print(f"Thread {self._house} stopped.")'''
+        print(f"Thread {self._house} stopped.")
 
     def _connect(self):
         self._connection = pika.BlockingConnection(self._connection_params)
@@ -61,7 +61,7 @@ class ICHistoricDataRequest():
         data = json.loads(body)
         observations = data.get('observation')
         house = data.get('installation')
-      
+        print(observations)
 
         if self._data.get(house) is None:
             self._data[house] = observations
@@ -73,7 +73,7 @@ class ICHistoricDataRequest():
             print("ola")
             with open(f'{house}_historicreal.json', 'w') as file:
                 json.dump(self._data[house], file, indent=4)
-            #ICHistoricDataTranslator.translate(house, self._houses.get(house), self._data.get(house), self._start_date, self._end_date, self._period)
+            ICHistoricDataTranslator.translate(house, self._houses.get(house), self._data.get(house), self._start_date, self._end_date, self._period)
             
 
     def _send_message(self, message, house):

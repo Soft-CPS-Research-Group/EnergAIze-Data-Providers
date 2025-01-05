@@ -9,11 +9,11 @@ def start_servers():
     '''startDate = "2023-09-15T00:00:00+0000"
     endDate = "2024-10-28T00:00:00+0000"'''
     startDate = "2023-09-15T00:00:00+0000"
-    endDate = "2024-10-28T00:00:00+0000"
+    endDate = "2025-01-02T00:00:00+0000"
     period = "60"
     #run_in_terminal("ICHistoricDataProducer.py")
     time.sleep(1)
-    run_in_terminal("ICHistoricDataRequest.py", startDate, endDate, period)
+    #run_in_terminal("ICHistoricDataRequest.py", startDate, endDate, period)
     run_in_terminal("CWHistoricDataRequest.py", startDate, endDate, period)
     run_in_terminal("Accumulator.py")
     

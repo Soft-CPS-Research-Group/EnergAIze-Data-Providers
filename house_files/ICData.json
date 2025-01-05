@@ -108,12 +108,6 @@
             "id":"ACEXT004_1",
             "serialNumber": "ACEXT004",
             "plug": "1"
-        },
-        {
-            "label":"non_shiftable_load",
-            "id":"PT",
-            "name":"Imported Active Energy",
-            "measurementunit": "Kilowatt Hour" 
         }
     ]
 }

@@ -15,7 +15,7 @@ class ICReceiver(threading.Thread):
         threading.Thread.__init__(self)
         self._devices = devices
         self._house = house_name
-        self._connection_params = pika.ConnectionParameters(host=connection_params.get('host'), port=connection_params.get('port'),heartbeat=660)
+        self._connection_params = pika.ConnectionParameters(host=connection_params.get('host'), port=connection_params.get('port'),credentials=pika.PlainCredentials(connection_params.get('credentials').get('username'), connection_params.get('credentials').get('password')), heartbeat=660)
         self._connection = None
         self._channel = None
         self._stop_event = threading.Event()
@@ -37,13 +37,14 @@ class ICReceiver(threading.Thread):
         self._queue_name = result.method.queue
         print(f"Queue name: {self._queue_name}")
         self._channel.queue_bind(exchange=self._house, queue=self._queue_name)
-        #self._channel.basic_consume(queue=queue_name, on_message_callback=lambda ch, method, properties, body:ICTranslator.translate(self._house,self._devices,body), auto_ack=True)
-
+        self._channel.basic_consume(queue=self._queue_name, on_message_callback=lambda ch, method, properties, body:ICTranslator.translate(self._house,self._devices,body), auto_ack=True)
+        self._channel.start_consuming()
+        
     def run(self):
         while not self._stop_event.is_set() and self._max_reconnect_attempts > 0:
             try:
                 self.connect()
-                print(f"Thread {self._house} connected and consuming.")
+                '''print(f"Thread {self._house} connected and consuming.")
                 for message in self._channel.consume(self._queue_name, inactivity_timeout=1):
                     if self._stop_event.is_set():
                         break
@@ -51,7 +52,7 @@ class ICReceiver(threading.Thread):
                         continue
                     method, properties, body = message
                     ICTranslator.translate(self._house, self._devices, body)
-                '''while not self._stop_event.is_set():
+                while not self._stop_event.is_set():
                     self._channel.connection.process_data_events(time_limit=1)'''  # Process events with a timeout
             except pika.exceptions.AMQPConnectionError:
                 if self._max_reconnect_attempts == 0:

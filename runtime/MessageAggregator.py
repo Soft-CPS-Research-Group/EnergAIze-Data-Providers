@@ -30,11 +30,15 @@ class MessageAggregator(IManager):
         self._timer = None
         self._timerEnded = False
         self._stopTimer = False
-        self.start_timer()
+        self._first = False
 
         self._message = ''
 
     def newMessage(self, ch, method, properties, body):
+        if not self._first:
+            self._first = True
+            self.start_timer()
+            
         body_str = body.decode('utf-8')
         jsonbody = json.loads(body_str)
         '''se estiver a ser enviado um dicionário, não é possível processar a próxima mensagem, não é critico se uma mensagem

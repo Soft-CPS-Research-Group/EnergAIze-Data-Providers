@@ -14,13 +14,15 @@ configurations = DataSet.get_schema(os.path.join('..', 'runtimeConfigurations.js
 class ICTranslator:
     @staticmethod
     def translate(house_name, devices, message):
+        print("VOLTEI A SER CHAMADO")
         # Load Internal AMQP Server configurations
         connection_params = configurations['internalAMQPServer']
         max_reconnect_attempts = configurations['maxReconnectAttempts']
         # Define the queue name
         queue_name = house_name + configurations['QueueSuffixes']['MessageAggregator']
       
-        message = json.loads(message.decode('utf-8'))
+        message = json.loads(message.decode('utf-8')).get('observation')
+        print(f"House: {house_name} {json.dumps(message, indent=2)}")
         while max_reconnect_attempts > 0:
             try:
                 connection = pika.BlockingConnection(pika.ConnectionParameters(
@@ -34,7 +36,7 @@ class ICTranslator:
                 for device in devices:
                     for pm in messageIC.keys():
                         if pm in message and device.get('label') == messageIC[pm]:
-                            if pm == 'meter.values':
+                            if pm == 'meter.values' and message[pm]:
                                 for meter in message[pm]:
                                     if meter.get('id') == device.get('id'):
                                         value = meter.get('l123')
@@ -48,7 +50,7 @@ class ICTranslator:
                             }
                             print(f"House: {house_name} {json.dumps(newmessage, indent=2)}")
                             message_bytes = json.dumps(newmessage).encode('utf-8') 
-                            time.sleep(5)
+                            time.sleep(2)
                             channel.basic_publish(exchange='', routing_key=queue_name, body=message_bytes)
 
                 chargerSessionFormat = configurations.get('ChargersSessionFormat')
@@ -67,9 +69,9 @@ class ICTranslator:
                         }
                   
                     message_bytes = json.dumps(newmessage).encode('utf-8')   
-                    time.sleep(5)
+                    time.sleep(2)
                     channel.basic_publish(exchange='', routing_key=queue_name, body=message_bytes)
-                    print(f"House: {house_name} {json.dumps(newmessage, indent=2)}")
+                    #print(f"House: {house_name} {json.dumps(newmessage, indent=2)}")
                 break
             except pika.exceptions.AMQPConnectionError as e:
                 max_reconnect_attempts -= 1  # Decrement the retry counter

@@ -18,7 +18,7 @@ class ProducerThread(threading.Thread):
         self._users_list = users_list
         self._devices_list = devices_list
         self._house = house
-        self._connection_params = pika.ConnectionParameters(host=connection_params.get('host'), port=connection_params.get('port'),heartbeat=660)
+        self._connection_params = pika.ConnectionParameters(host=connection_params.get('host'), port=connection_params.get('port'),credentials=pika.PlainCredentials(connection_params.get('credentials').get('username'), connection_params.get('credentials').get('password')), heartbeat=660)
         self._connection = None
         self._channel = None
         self._stop_event = threading.Event()

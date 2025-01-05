@@ -3479,6 +3479,5400 @@
                 }
             ],
             "Generated": 0
+        },
+        {
+            "Month": 12,
+            "Hour": 10,
+            "Minute": 22,
+            "Day Type": 0,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "AC000001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 87,
+                    "power": 44
+                },
+                {
+                    "Charger Id": "AC000004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 47,
+                    "power": 27
+                },
+                {
+                    "Charger Id": "AC000007_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 4,
+                    "power": 23
+                },
+                {
+                    "Charger Id": "AC000010_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 11,
+                    "power": 28
+                },
+                {
+                    "Charger Id": "AC000013_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 38,
+                    "power": 27
+                },
+                {
+                    "Charger Id": "AC000002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 95,
+                    "power": 93
+                },
+                {
+                    "Charger Id": "AC000003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 81,
+                    "power": 7
+                },
+                {
+                    "Charger Id": "AC000005_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 86,
+                    "power": 23
+                },
+                {
+                    "Charger Id": "AC000006_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 95,
+                    "power": 58
+                },
+                {
+                    "Charger Id": "AC000008_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 30,
+                    "power": 7
+                },
+                {
+                    "Charger Id": "AC000009_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 96,
+                    "power": 20
+                },
+                {
+                    "Charger Id": "AC000011_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 57,
+                    "power": 20
+                },
+                {
+                    "Charger Id": "AC000012_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 33,
+                    "power": 83
+                },
+                {
+                    "Charger Id": "AC000014_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 86,
+                    "power": 30
+                },
+                {
+                    "Charger Id": "ACEXT001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 46,
+                    "power": 42
+                },
+                {
+                    "Charger Id": "ACEXT002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 44,
+                    "power": 28
+                },
+                {
+                    "Charger Id": "ACEXT003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 18,
+                    "power": 52
+                },
+                {
+                    "Charger Id": "ACEXT004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 52,
+                    "power": 43
+                }
+            ],
+            "Generated": 0
+        },
+        {
+            "Month": 12,
+            "Hour": 11,
+            "Minute": 0,
+            "Day Type": 0,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "AC000001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000007_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000010_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000013_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000005_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000006_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000008_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000009_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000011_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000012_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000014_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                }
+            ],
+            "Generated": 1
+        },
+        {
+            "Month": 12,
+            "Hour": 11,
+            "Minute": 4,
+            "Day Type": 0,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "AC000001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000007_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000010_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000013_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000005_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000006_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000008_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000009_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000011_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000012_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000014_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                }
+            ],
+            "Generated": 1
+        },
+        {
+            "Month": 12,
+            "Hour": 11,
+            "Minute": 6,
+            "Day Type": 0,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "AC000001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000007_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000010_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000013_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000005_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000006_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000008_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000009_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000011_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000012_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000014_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                }
+            ],
+            "Generated": 1
+        },
+        {
+            "Month": 12,
+            "Hour": 11,
+            "Minute": 8,
+            "Day Type": 0,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "AC000001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000007_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000010_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000013_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000005_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000006_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000008_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000009_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000011_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000012_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000014_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                }
+            ],
+            "Generated": 1
+        },
+        {
+            "Month": 12,
+            "Hour": 11,
+            "Minute": 13,
+            "Day Type": 0,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "AC000001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000007_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000010_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000013_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000005_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000006_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000008_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000009_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000011_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000012_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000014_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                }
+            ],
+            "Generated": 1
+        },
+        {
+            "Month": 12,
+            "Hour": 11,
+            "Minute": 15,
+            "Day Type": 0,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "AC000001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000007_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000010_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000013_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000005_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000006_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000008_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000009_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000011_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000012_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000014_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                }
+            ],
+            "Generated": 1
+        },
+        {
+            "Month": 12,
+            "Hour": 11,
+            "Minute": 17,
+            "Day Type": 0,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "AC000001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000007_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000010_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000013_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000005_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000006_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000008_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000009_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000011_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000012_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000014_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                }
+            ],
+            "Generated": 1
+        },
+        {
+            "Month": 12,
+            "Hour": 11,
+            "Minute": 19,
+            "Day Type": 0,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "AC000001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000007_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000010_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000013_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000005_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000006_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000008_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000009_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000011_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000012_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000014_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                }
+            ],
+            "Generated": 1
+        },
+        {
+            "Month": 12,
+            "Hour": 11,
+            "Minute": 21,
+            "Day Type": 0,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "AC000001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000007_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000010_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000013_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000005_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000006_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000008_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000009_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000011_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000012_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000014_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                }
+            ],
+            "Generated": 1
+        },
+        {
+            "Month": 12,
+            "Hour": 11,
+            "Minute": 23,
+            "Day Type": 0,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "AC000001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000007_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000010_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000013_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000005_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000006_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000008_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000009_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000011_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000012_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000014_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                }
+            ],
+            "Generated": 1
+        },
+        {
+            "Month": 12,
+            "Hour": 11,
+            "Minute": 25,
+            "Day Type": 0,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "AC000001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000007_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000010_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000013_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000005_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000006_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000008_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000009_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000011_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000012_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000014_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                }
+            ],
+            "Generated": 1
+        },
+        {
+            "Month": 12,
+            "Hour": 11,
+            "Minute": 30,
+            "Day Type": 0,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "AC000001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000007_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000010_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000013_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000005_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000006_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000008_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000009_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000011_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000012_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000014_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                }
+            ],
+            "Generated": 1
+        },
+        {
+            "Month": 12,
+            "Hour": 11,
+            "Minute": 32,
+            "Day Type": 0,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "AC000001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000007_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000010_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000013_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000005_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000006_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000008_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000009_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000011_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000012_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000014_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                }
+            ],
+            "Generated": 1
+        },
+        {
+            "Month": 12,
+            "Hour": 11,
+            "Minute": 34,
+            "Day Type": 0,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "AC000001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000007_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000010_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000013_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000005_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000006_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000008_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000009_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000011_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000012_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000014_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                }
+            ],
+            "Generated": 1
+        },
+        {
+            "Month": 12,
+            "Hour": 11,
+            "Minute": 38,
+            "Day Type": 0,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "AC000001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000007_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000010_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000013_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000005_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000006_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000008_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000009_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000011_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000012_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000014_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                }
+            ],
+            "Generated": 1
+        },
+        {
+            "Month": 12,
+            "Hour": 11,
+            "Minute": 43,
+            "Day Type": 0,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "AC000001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000007_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000010_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000013_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000005_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000006_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000008_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000009_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000011_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000012_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000014_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                }
+            ],
+            "Generated": 1
+        },
+        {
+            "Month": 12,
+            "Hour": 11,
+            "Minute": 47,
+            "Day Type": 0,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "AC000001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 2.595
+                },
+                {
+                    "Charger Id": "AC000004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000007_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000010_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000013_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 2.64
+                },
+                {
+                    "Charger Id": "AC000003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 2.548
+                },
+                {
+                    "Charger Id": "AC000005_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 2.636
+                },
+                {
+                    "Charger Id": "AC000006_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 2.562
+                },
+                {
+                    "Charger Id": "AC000008_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000009_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000011_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000012_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000014_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                }
+            ],
+            "Generated": 1
+        },
+        {
+            "Month": 12,
+            "Hour": 11,
+            "Minute": 51,
+            "Day Type": 0,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "AC000001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 2.632
+                },
+                {
+                    "Charger Id": "AC000004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000007_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 2.575
+                },
+                {
+                    "Charger Id": "AC000010_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 2.624
+                },
+                {
+                    "Charger Id": "AC000013_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 2.7
+                },
+                {
+                    "Charger Id": "AC000002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 2.613
+                },
+                {
+                    "Charger Id": "AC000003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 2.578
+                },
+                {
+                    "Charger Id": "AC000005_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 2.636
+                },
+                {
+                    "Charger Id": "AC000006_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 2.623
+                },
+                {
+                    "Charger Id": "AC000008_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 2.611
+                },
+                {
+                    "Charger Id": "AC000009_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 2.51
+                },
+                {
+                    "Charger Id": "AC000011_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000012_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000014_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 2.645
+                },
+                {
+                    "Charger Id": "ACEXT001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 0.0
+                },
+                {
+                    "Charger Id": "ACEXT002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                }
+            ],
+            "Generated": 1
+        },
+        {
+            "Month": 12,
+            "Hour": 11,
+            "Minute": 54,
+            "Day Type": 0,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "AC000001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 2.603
+                },
+                {
+                    "Charger Id": "AC000004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000007_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 2.555
+                },
+                {
+                    "Charger Id": "AC000010_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000013_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 2.648
+                },
+                {
+                    "Charger Id": "AC000003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 2.591
+                },
+                {
+                    "Charger Id": "AC000005_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 2.661
+                },
+                {
+                    "Charger Id": "AC000006_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 2.611
+                },
+                {
+                    "Charger Id": "AC000008_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000009_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000011_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000012_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000014_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                }
+            ],
+            "Generated": 1
+        },
+        {
+            "Month": 12,
+            "Hour": 15,
+            "Minute": 16,
+            "Day Type": 0,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "AC000001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000007_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000010_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.517
+                },
+                {
+                    "Charger Id": "AC000013_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.521
+                },
+                {
+                    "Charger Id": "AC000002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.438
+                },
+                {
+                    "Charger Id": "AC000003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.447
+                },
+                {
+                    "Charger Id": "AC000005_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 0.0
+                },
+                {
+                    "Charger Id": "AC000006_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.489
+                },
+                {
+                    "Charger Id": "AC000008_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.353
+                },
+                {
+                    "Charger Id": "AC000009_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.432
+                },
+                {
+                    "Charger Id": "AC000011_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000012_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000014_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                }
+            ],
+            "Generated": 1
+        },
+        {
+            "Month": 12,
+            "Hour": 15,
+            "Minute": 18,
+            "Day Type": 0,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "AC000001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000007_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000010_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.397
+                },
+                {
+                    "Charger Id": "AC000013_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.526
+                },
+                {
+                    "Charger Id": "AC000002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.55
+                },
+                {
+                    "Charger Id": "AC000003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.441
+                },
+                {
+                    "Charger Id": "AC000005_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 0.0
+                },
+                {
+                    "Charger Id": "AC000006_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.426
+                },
+                {
+                    "Charger Id": "AC000008_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.363
+                },
+                {
+                    "Charger Id": "AC000009_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.377
+                },
+                {
+                    "Charger Id": "AC000011_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000012_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000014_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                }
+            ],
+            "Generated": 1
+        },
+        {
+            "Month": 12,
+            "Hour": 15,
+            "Minute": 25,
+            "Day Type": 0,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "AC000001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000007_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000010_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.462
+                },
+                {
+                    "Charger Id": "AC000013_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.547
+                },
+                {
+                    "Charger Id": "AC000002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.444
+                },
+                {
+                    "Charger Id": "AC000003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.398
+                },
+                {
+                    "Charger Id": "AC000005_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 0.0
+                },
+                {
+                    "Charger Id": "AC000006_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.426
+                },
+                {
+                    "Charger Id": "AC000008_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.357
+                },
+                {
+                    "Charger Id": "AC000009_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.441
+                },
+                {
+                    "Charger Id": "AC000011_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000012_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000014_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                }
+            ],
+            "Generated": 1
+        },
+        {
+            "Month": 12,
+            "Hour": 15,
+            "Minute": 27,
+            "Day Type": 0,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "AC000001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000007_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000010_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.462
+                },
+                {
+                    "Charger Id": "AC000013_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.547
+                },
+                {
+                    "Charger Id": "AC000002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.444
+                },
+                {
+                    "Charger Id": "AC000003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.398
+                },
+                {
+                    "Charger Id": "AC000005_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 0.0
+                },
+                {
+                    "Charger Id": "AC000006_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.426
+                },
+                {
+                    "Charger Id": "AC000008_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.357
+                },
+                {
+                    "Charger Id": "AC000009_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.441
+                },
+                {
+                    "Charger Id": "AC000011_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000012_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000014_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                }
+            ],
+            "Generated": 1
+        },
+        {
+            "Month": 12,
+            "Hour": 15,
+            "Minute": 29,
+            "Day Type": 0,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "AC000001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000007_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000010_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.371
+                },
+                {
+                    "Charger Id": "AC000013_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.516
+                },
+                {
+                    "Charger Id": "AC000002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.489
+                },
+                {
+                    "Charger Id": "AC000003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.425
+                },
+                {
+                    "Charger Id": "AC000005_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 0.0
+                },
+                {
+                    "Charger Id": "AC000006_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.439
+                },
+                {
+                    "Charger Id": "AC000008_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.413
+                },
+                {
+                    "Charger Id": "AC000009_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.473
+                },
+                {
+                    "Charger Id": "AC000011_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000012_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000014_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                }
+            ],
+            "Generated": 1
+        },
+        {
+            "Month": 12,
+            "Hour": 15,
+            "Minute": 31,
+            "Day Type": 0,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "AC000001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000007_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000010_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.371
+                },
+                {
+                    "Charger Id": "AC000013_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.516
+                },
+                {
+                    "Charger Id": "AC000002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.489
+                },
+                {
+                    "Charger Id": "AC000003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.425
+                },
+                {
+                    "Charger Id": "AC000005_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 0.0
+                },
+                {
+                    "Charger Id": "AC000006_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.439
+                },
+                {
+                    "Charger Id": "AC000008_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.413
+                },
+                {
+                    "Charger Id": "AC000009_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.473
+                },
+                {
+                    "Charger Id": "AC000011_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000012_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000014_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                }
+            ],
+            "Generated": 1
+        },
+        {
+            "Month": 12,
+            "Hour": 15,
+            "Minute": 33,
+            "Day Type": 0,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "AC000001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000007_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000010_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.371
+                },
+                {
+                    "Charger Id": "AC000013_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.516
+                },
+                {
+                    "Charger Id": "AC000002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.489
+                },
+                {
+                    "Charger Id": "AC000003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.425
+                },
+                {
+                    "Charger Id": "AC000005_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 0.0
+                },
+                {
+                    "Charger Id": "AC000006_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.439
+                },
+                {
+                    "Charger Id": "AC000008_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.413
+                },
+                {
+                    "Charger Id": "AC000009_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.473
+                },
+                {
+                    "Charger Id": "AC000011_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000012_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000014_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                }
+            ],
+            "Generated": 1
+        },
+        {
+            "Month": 12,
+            "Hour": 15,
+            "Minute": 35,
+            "Day Type": 0,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "AC000001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000007_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000010_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.371
+                },
+                {
+                    "Charger Id": "AC000013_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.516
+                },
+                {
+                    "Charger Id": "AC000002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.489
+                },
+                {
+                    "Charger Id": "AC000003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.425
+                },
+                {
+                    "Charger Id": "AC000005_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 0.0
+                },
+                {
+                    "Charger Id": "AC000006_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.439
+                },
+                {
+                    "Charger Id": "AC000008_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.413
+                },
+                {
+                    "Charger Id": "AC000009_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.473
+                },
+                {
+                    "Charger Id": "AC000011_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000012_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000014_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                }
+            ],
+            "Generated": 1
+        },
+        {
+            "Month": 12,
+            "Hour": 15,
+            "Minute": 37,
+            "Day Type": 0,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "AC000001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000007_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000010_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.371
+                },
+                {
+                    "Charger Id": "AC000013_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.516
+                },
+                {
+                    "Charger Id": "AC000002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.489
+                },
+                {
+                    "Charger Id": "AC000003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.425
+                },
+                {
+                    "Charger Id": "AC000005_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 0.0
+                },
+                {
+                    "Charger Id": "AC000006_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.439
+                },
+                {
+                    "Charger Id": "AC000008_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.413
+                },
+                {
+                    "Charger Id": "AC000009_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.473
+                },
+                {
+                    "Charger Id": "AC000011_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000012_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000014_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                }
+            ],
+            "Generated": 1
+        },
+        {
+            "Month": 12,
+            "Hour": 15,
+            "Minute": 39,
+            "Day Type": 0,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "AC000001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000007_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000010_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.384
+                },
+                {
+                    "Charger Id": "AC000013_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.497
+                },
+                {
+                    "Charger Id": "AC000002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.518
+                },
+                {
+                    "Charger Id": "AC000003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.424
+                },
+                {
+                    "Charger Id": "AC000005_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 0.0
+                },
+                {
+                    "Charger Id": "AC000006_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.471
+                },
+                {
+                    "Charger Id": "AC000008_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.429
+                },
+                {
+                    "Charger Id": "AC000009_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.459
+                },
+                {
+                    "Charger Id": "AC000011_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000012_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000014_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                }
+            ],
+            "Generated": 1
+        },
+        {
+            "Month": 12,
+            "Hour": 15,
+            "Minute": 41,
+            "Day Type": 0,
+            "Non Shiftable Load [kWh]": "",
+            "Solar Generation [kWh]": "",
+            "Energy Price": 0.14501,
+            "ChargersSession": [
+                {
+                    "Charger Id": "AC000001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000007_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000010_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.384
+                },
+                {
+                    "Charger Id": "AC000013_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.497
+                },
+                {
+                    "Charger Id": "AC000002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.518
+                },
+                {
+                    "Charger Id": "AC000003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.424
+                },
+                {
+                    "Charger Id": "AC000005_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 0.0
+                },
+                {
+                    "Charger Id": "AC000006_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.471
+                },
+                {
+                    "Charger Id": "AC000008_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 4.429
+                },
+                {
+                    "Charger Id": "AC000009_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": -1,
+                    "soc": 0,
+                    "power": 3.459
+                },
+                {
+                    "Charger Id": "AC000011_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000012_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "AC000014_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT001_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT002_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT003_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                },
+                {
+                    "Charger Id": "ACEXT004_1",
+                    "EOT": 0,
+                    "EsocD": 0,
+                    "EAT": 0,
+                    "EsocA": 0,
+                    "soc": 0,
+                    "power": 0
+                }
+            ],
+            "Generated": 1
         }
     ]
 }
