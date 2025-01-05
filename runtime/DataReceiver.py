@@ -4,8 +4,10 @@ import threading
 import time
 import sys
 from pydoc import locate
-from data import DataSet
 from IManager import IManager
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from data import DataSet
+
 
 # Load configurations
 configurations = DataSet.get_schema(os.path.join('..', 'runtimeConfigurations.json'))
@@ -71,7 +73,7 @@ def main(manager):
     connection_params = configurations['internalAMQPServer']
     
     houses = {}
-    DataSet.process_json_files_in_folder(os.path.join('..', 'house_files/without_type/test4'), houses)
+    DataSet.process_json_files_in_folder(os.path.join('..', 'house_files'), houses)
     threads = []
     try:
         for house in houses.keys():

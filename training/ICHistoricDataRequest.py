@@ -23,12 +23,12 @@ class ICHistoricDataRequest():
         self._itsTheLastOne = False
         
 
-    '''def _stop(self):
+    def _stop(self):
         print(f"Stopping thread {self._house}...")
         self._channel.stop_consuming()
         self._channel.close()
         self._connection.close()
-        print(f"Thread {self._house} stopped.")'''
+        print(f"Thread {self._house} stopped.")
 
     def _connect(self):
         self._connection = pika.BlockingConnection(self._connection_params)
@@ -39,25 +39,29 @@ class ICHistoricDataRequest():
             print(house)
             date = self._start_date
             while date <= self._end_date:
+                print(f'{date.isoformat()}\n')
                 message = {
                     "type": "historic",
                     "value": {
                         "installation": house,
-                        "date": date.strftime("%Y-%m-%d %H:%M:%S%z")
+                        "date": date.isoformat()
                     }
                 }
                 message_json = json.dumps(message)
-                date += timedelta(days=1)
+                print(message_json)
+                
                 if (date == self._end_date):
+                    print("olaa")
                     self._itsTheLastOne = True # Talvez precise de alguma proteção aqui
+                date += timedelta(days=1)
                 self._send_message(message_json, house)
             
 
     def _on_response(self, body):
         data = json.loads(body)
-        observations = data.get('observations')
+        observations = data.get('observation')
         house = data.get('installation')
-
+        print(observations)
 
         if self._data.get(house) is None:
             self._data[house] = observations
@@ -66,17 +70,20 @@ class ICHistoricDataRequest():
         #print(f'{self._data[house]}\n\n')
         if self._itsTheLastOne:
             self._itsTheLastOne = False
+            print("ola")
+            with open(f'{house}_historicreal.json', 'w') as file:
+                json.dump(self._data[house], file, indent=4)
             ICHistoricDataTranslator.translate(house, self._houses.get(house), self._data.get(house), self._start_date, self._end_date, self._period)
             
 
     def _send_message(self, message, house):
         returnQueueName = f"{house}_historic"
         self._connect()
-        self._channel.queue_declare(queue='Request', durable=True)
+        self._channel.queue_declare(queue='RPC', durable=True)
         self._channel.queue_declare(queue=returnQueueName, exclusive=True)
         self._channel.basic_publish(
             exchange='',
-            routing_key='Request',
+            routing_key='RPC',
             body=message,
             properties=pika.BasicProperties(
                 reply_to=returnQueueName
@@ -98,8 +105,10 @@ def main(start_date, end_date, period):
 
     connection_params = configurations.get('IChistoricalServer')
 
-    schema = DataSet.get_schema(os.path.join('..',configurations.get('ICfile').get('path')))
-    schema.pop('provider')
+    '''schema = DataSet.get_schema(os.path.join('..',configurations.get('ICfile').get('path')))
+    schema.pop('provider')'''
+    schema = {'Garage':[]}
+    print(schema)
 
     historicData = ICHistoricDataRequest(schema, connection_params, start_date, end_date, period)
     historicData.run()
@@ -114,7 +123,7 @@ if __name__ == "__main__":
     end_date = datetime.strptime(sys.argv[2], "%Y-%m-%dT%H:%M:%S%z")
     period = int(sys.argv[3])
     
-    if start_date >= end_date:
+    if start_date > end_date:
         print("The start date must be before the end date.")
         sys.exit(1)
     

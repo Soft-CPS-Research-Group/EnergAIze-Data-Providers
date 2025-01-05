@@ -5,8 +5,12 @@
     },
     "CWserver": "https://ks.innov.cleanwatts.energy/api/2.0/data/lastvalue/Instant?from=2003-06-11&tags=",
     "ICserver": {
-        "host": "localhost",
-        "port": 5672
+        "host": "opevaisep.duckdns.org",
+        "port": 5672,
+        "credentials": {
+            "username": "softcps",
+            "password": "softcpsmq"
+        }
     },
     "CarSpecsserver": {
         "host": "mqtt.eclipseprojects.io"
@@ -53,9 +57,9 @@
         "AlgorithmReceiver": "_alg"
     },
     "messageIC":{
-        "meter.values":"Non Shiftable Load [kWh]",
-        "pv.production":"Solar Generation [kWh]",
-        "battery.soc":"Battery Charging Energy [kWh]"
+        "meter.values":"non_shiftable_load",
+        "pv.production":"solar_generation",
+        "battery.soc":"battery_charging_energy"
     },
     "Providers":{
         "i-charging": "ICDecisionForwarder.ICDecisionForwarder",

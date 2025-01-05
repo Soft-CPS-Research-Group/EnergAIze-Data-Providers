@@ -3,6 +3,8 @@ import json
 import datetime
 import os
 import time
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from data import DataSet
 
 # Load configurations
@@ -29,11 +31,10 @@ class CWTranslator:
                     "value": message[0]['Read'],
                     "timestamp": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 }
-                print(f"Mensagem antiga: {json.dumps(message, indent=4)}\nMensagem nova: {json.dumps(newmessage, indent=4)}")
                 message_bytes = json.dumps(newmessage).encode('utf-8')
                 time.sleep(5)  
                 channel.basic_publish(exchange='', routing_key=queue_name, body=message_bytes)
-
+                print(f"Mensagem antiga: {json.dumps(message, indent=4)}\nMensagem nova: {json.dumps(newmessage, indent=4)}")
                 channel.close()
                 connection.close()
                 break  # Break out of the retry loop if successful
@@ -46,5 +47,5 @@ class CWTranslator:
                     print(f"{house_name} translator lost connection, attempting to reconnect...")
                     time.sleep(5) 
             except Exception as e:
-                print(f"An unexpected error occurred: {e}")
+                print(f"An unexpected error occurred: {e} {house_name}")
                 break

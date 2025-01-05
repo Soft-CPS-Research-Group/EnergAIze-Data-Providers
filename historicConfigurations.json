@@ -5,11 +5,11 @@
     },
     "CWhistoricalServer": "https://ks.innov.cleanwatts.energy/api/2.0/data/request/Instant?instantType=avg",
     "IChistoricalServer": {
-        "host": "193.136.60.47",
+        "host": "opevaisep.duckdns.org",
         "port": 5672,
         "credentials": {
-            "username": "icharging",
-            "password": "ichargingmq"
+            "username": "softcps",
+            "password": "softcpsmq"
         }
     },
     "maxReconnectAttempts": 3,

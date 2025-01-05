@@ -6,9 +6,10 @@ import copy
 import sys	
 import time
 from threading import Timer
-from data import DataSet
 from IManager import IManager
 from EnergyPrice import EnergyPrice
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from data import DataSet
 
 # Load configurations
 configurations = DataSet.get_schema(os.path.join('..', 'runtimeConfigurations.json'))
@@ -29,11 +30,15 @@ class MessageAggregator(IManager):
         self._timer = None
         self._timerEnded = False
         self._stopTimer = False
-        self.start_timer()
+        self._first = False
 
         self._message = ''
 
     def newMessage(self, ch, method, properties, body):
+        if not self._first:
+            self._first = True
+            self.start_timer()
+            
         body_str = body.decode('utf-8')
         jsonbody = json.loads(body_str)
         '''se estiver a ser enviado um dicionário, não é possível processar a próxima mensagem, não é critico se uma mensagem
@@ -46,6 +51,7 @@ class MessageAggregator(IManager):
         bodyTimestamp = jsonbody['timestamp']
         bodyValue = jsonbody['value']
         self._dict[bodyId] = {'timestamp': bodyTimestamp, 'data': bodyValue, 'generated':0}
+        print(f"Id: {bodyId}, received message: {self._dict[bodyId]}\n")
 
 
     def stop(self):
@@ -57,7 +63,9 @@ class MessageAggregator(IManager):
     def send(self):
         self._timerEnded = True
         #verificar se chegaram dados de todos os dispositivos, se não, recorrer ao substitute_dict
+        print(self._dict.keys())
         for device in self._devices:
+            print(f"Device: {device.get('id')}, {device.get('label')}")
             if device.get('id') not in self._dict.keys():
                 if device.get('label') != "ChargersSession":
                     if device.get('id') in self._substitute_dict.keys():

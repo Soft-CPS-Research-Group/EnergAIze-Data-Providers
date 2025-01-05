@@ -32,17 +32,17 @@ class HistoricDataProducer():
     def connect(self):
         self._connection = pika.BlockingConnection(self._connection_params) #Just processes one message at a time
         self._channel = self._connection.channel()
-        self._channel.queue_declare("Request", durable=True)
+        self._channel.queue_declare("RPC", durable=True)
 
     def on_request(self, ch, method, properties, body):
         
-        try:
+        #try:
             # Decode the message
             message = json.loads(body)
-            #print(f"Received message: {message}")
+            print(f"Received message: {message}")
             message_type = message.get("type")
             message_value = message.get("value")
-            if message_type == "historic":
+            '''if message_type == "historic":
                 # Process the "historic" type request
                 response_data = self.process_historic_data(message_value)
 
@@ -58,11 +58,11 @@ class HistoricDataProducer():
         
         except Exception as e:
             print(f"Error processing request: {e}")
-            ch.basic_nack(delivery_tag=method.delivery_tag)
+            ch.basic_nack(delivery_tag=method.delivery_tag)'''
     
     def process_historic_data(self, value):
         house = value.get("installation")
-        date = datetime.strptime(value.get("date"), "%Y-%m-%d %H:%M:%S%z")
+        date = datetime.fromisoformat(value.get("date"))
         
         observations = [self.generate_random_observation(date + timedelta(minutes=i)) for i in range(1440)]
         
@@ -104,34 +104,37 @@ class HistoricDataProducer():
                     "departure.soc": random.randint(80, 100)
                 }
             }],
-            "meter.values": random.randint(0, 10) # depois tenho de alterar
+            "meter.values": [
+                {
+                    "id": "PT",
+                    "value": random.randint(0, 10)
+                }
+            ] 
         }
+        print(f"Generated observation: {observation}\n")
         return observation
 
     def run(self):
         reconnect_attempts = 0
         while reconnect_attempts < self._max_reconnect_attempts:
-            #try:
-            self.connect()
-            reconnect_attempts = 0  # Reset on successful connection
-            
-            # Start consuming messages from the "Request" queue
-            self._channel.basic_consume(queue="Request", on_message_callback=self.on_request)
-            self._channel.start_consuming()
+            try:
+                self.connect()
+                reconnect_attempts = 0  # Reset on successful connection
                 
-            ''' except pika.exceptions.AMQPConnectionError:
+                # Start consuming messages from the "RPC" queue
+                self._channel.basic_consume(queue="RPC", on_message_callback=self.on_request)
+                self._channel.start_consuming()
+                
+            except pika.exceptions.AMQPConnectionError:
                 reconnect_attempts += 1
                 print(f"Lost connection, attempting to reconnect... Attempt {reconnect_attempts}")
                 time.sleep(5)
             except Exception as e:
                 print(f"Encountered an error: {e}")
-                break'''
-
-        if reconnect_attempts >= self._max_reconnect_attempts:
-            print("Reached maximum reconnection attempts. Stopping.")
-        
-        if reconnect_attempts >= self._max_reconnect_attempts:
-            print(f"Thread {self._house} reached maximum reconnection attempts. Stopping thread.")
+                break
+            
+            if reconnect_attempts >= self._max_reconnect_attempts:
+                print(f"Thread {self._house} reached maximum reconnection attempts. Stopping thread.")
 
     
 

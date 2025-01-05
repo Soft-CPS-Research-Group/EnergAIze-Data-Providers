@@ -5,6 +5,8 @@ import time
 import random
 import json
 import os
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from data import DataSet
 
 # Load configurations
@@ -16,7 +18,7 @@ class ProducerThread(threading.Thread):
         self._users_list = users_list
         self._devices_list = devices_list
         self._house = house
-        self._connection_params = pika.ConnectionParameters(host=connection_params.get('host'), port=connection_params.get('port'),heartbeat=660)
+        self._connection_params = pika.ConnectionParameters(host=connection_params.get('host'), port=connection_params.get('port'),credentials=pika.PlainCredentials(connection_params.get('credentials').get('username'), connection_params.get('credentials').get('password')), heartbeat=660)
         self._connection = None
         self._channel = None
         self._stop_event = threading.Event()
@@ -33,8 +35,7 @@ class ProducerThread(threading.Thread):
     def connect(self):
         self._connection = pika.BlockingConnection(self._connection_params)
         self._channel = self._connection.channel()
-        self._channel.queue_declare(self._house, durable=True)
-
+        self._channel.exchange_declare(exchange=self._house, exchange_type='fanout')
 
     def run(self):
         
@@ -65,11 +66,16 @@ class ProducerThread(threading.Thread):
                                 "battery.soc": random.randint(1, 100),
                                 "pv.production": random.randint(1, 100),
                                 "charging.session": message_devices,
-                                "meter.values": random.randint(1, 100)
+                                "meter.values": [
+                                    {
+                                        "id": "PT",
+                                        "l123": random.randint(0, 10)
+                                    }
+                                ] 
                             }
                     print(f"House: {self._house} {json.dumps(message, indent=2)}")
                     message_bytes = json.dumps(message).encode('utf-8')    
-                    self._channel.basic_publish(exchange='', routing_key=self._house, body=message_bytes)
+                    self._channel.basic_publish(exchange=self._house, routing_key='', body=message_bytes)
                     message_devices.clear()
                     time.sleep(timesleep) 
             except pika.exceptions.AMQPConnectionError: 

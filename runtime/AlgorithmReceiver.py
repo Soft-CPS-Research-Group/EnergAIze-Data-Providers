@@ -2,8 +2,9 @@ import os
 import random
 import sys
 from pydoc import locate
-from data import DataSet
 from IManager import IManager
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from data import DataSet
 
 # Load configurations
 configurations = DataSet.get_schema(os.path.join('..', 'runtimeConfigurations.json'))

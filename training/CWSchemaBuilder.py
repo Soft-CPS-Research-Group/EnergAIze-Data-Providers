@@ -53,7 +53,8 @@ class CWSchemaBuilder():
             tags = self._unitsAndTags.get(unit)
             self._unitsAndTags[unit] = []
             for tag in tags:
-                self._unitsAndTags[unit].append(self._getTagInfo(tag))
+                if 'label' in self._getTagInfo(tag):
+                    self._unitsAndTags[unit].append(self._getTagInfo(tag))
         
         self._unitsAndTags['provider'] = 'Cleanwatts'
         print(json.dumps(self._unitsAndTags, indent=4))

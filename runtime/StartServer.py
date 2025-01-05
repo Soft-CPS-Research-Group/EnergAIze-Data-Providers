@@ -6,13 +6,15 @@ def run_in_terminal(script_name, *args):
     subprocess.Popen(command, shell=True)
 
 def start_servers():
-    run_in_terminal("ICProducer.py")
+    run_in_terminal("ICRuntimeRequest.py")
     time.sleep(1)
     run_in_terminal("ICReceiver.py")
+    time.sleep(1)
+    '''run_in_terminal("ICProducer.py")
     time.sleep(1)
     run_in_terminal("CWReceiver.py")
     time.sleep(1)
     run_in_terminal("DataReceiver.py","MessageAggregator.MessageAggregator")
     time.sleep(1)
-    run_in_terminal("DataReceiver.py","AlgorithmReceiver.AlgorithmReceiver")
+    run_in_terminal("DataReceiver.py","AlgorithmReceiver.AlgorithmReceiver")'''
 start_servers()
