@@ -1,4 +1,4 @@
-import threading
+from threading import Thread, Timer, Event
 import requests
 import time
 import datetime
@@ -13,27 +13,39 @@ from cwlogin import CWLogin
 # Load configurations
 configurations = DataSet.get_schema(os.path.join('..', 'runtimeConfigurations.json'))
 
-class CWReceiver(threading.Thread):
+class CWReceiver(Thread):
     def __init__(self, house_name, tags_list, connection_params):
-        threading.Thread.__init__(self)
+        Thread.__init__(self)
         self._house = house_name
         self._tags_list = tags_list
 
-        self._stop_event = threading.Event()
+        self._time_interval = DataSet.calculate_interval(configurations.get('frequency'))
         self._connection_params = connection_params
+        self._stop_event = Event()
+        self._session_time = 0
 
     def stop(self):
         self._stop_event.set()
+        self._timer.cancel()
 
     def _job(self):
-        for tag in self._tags_list:
-            try:
-                lastvalue_url = f"{self._connection_params}{tag.get('id')}"
-                response = requests.get(lastvalue_url, headers=self._header)
-                if response.status_code == 200:               
-                    CWTranslator.translate(self._house, response.json())
-            except Exception as e:
-                print(f"Error processing tag {tag.get('id')}: {e}")
+        from_time = (datetime.datetime.now() - datetime.timedelta(seconds=self._time_interval)).isoformat()
+        if not self._stop_event.is_set():
+
+            if datetime.datetime.now().timestamp() - self._session_time > 3599:
+                self._login()
+
+            for tag in self._tags_list:
+                try:
+                    #url = f"{self._connection_params}{tag.get('id')}&from={from_time}"
+                    url = f"https://ks.innov.cleanwatts.energy/api/2.0/data/lastvalue/Instant?from=2003-06-11&tags={tag.get('id')}"
+                    response = requests.get(url, headers=self._header)
+                    if response.status_code == 200:               
+                        CWTranslator.translate(self._house, response.json())
+                except Exception as e:
+                    print(f"Error processing tag {tag.get('id')}: {e}")
+            
+            self._start_timer()
             
     def _login(self):
         try: 
@@ -44,20 +56,12 @@ class CWReceiver(threading.Thread):
         self._header = {'Authorization': f"CW {token}"}
         self._session_time = datetime.datetime.now().timestamp()
 
+    def _start_timer(self):
+        self._timer=Timer(self._time_interval,self._job) 
+        self._timer.start()
 
     def run(self):
-        # Calculate the time between each data request
-        timesleep = DataSet.calculate_interval(configurations.get('frequency'))
-        # Login to the server
-        self._login()
-        
-        while not self._stop_event.is_set():
-            # Check if the session has expired
-            if (datetime.datetime.now().timestamp() - self._session_time) >= 3599:
-                # If it has, login again
-                self._login()
-            self._job()
-            time.sleep(timesleep)
+        self._job()
 
 
 def main():

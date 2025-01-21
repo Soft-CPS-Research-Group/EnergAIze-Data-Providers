@@ -25,14 +25,23 @@ class CWTranslator:
                 ))
                 channel = connection.channel()
                 channel.queue_declare(queue=queue_name, durable=True)
+                if len(message) == 0:
+                    print(f"There is no data for one of the {house_name} tags.")
+                    break
+
+                id = message[0]['TagId']
+                value = 0
+
+                for msg in message:
+                    value+=msg['Read']
 
                 newmessage = {
-                    "id": message[0]['TagId'],
-                    "value": message[0]['Read'],
+                    "id": id,
+                    "value": value,
                     "timestamp": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 }
                 message_bytes = json.dumps(newmessage).encode('utf-8')
-                time.sleep(5)  
+
                 channel.basic_publish(exchange='', routing_key=queue_name, body=message_bytes)
                 print(f"Mensagem antiga: {json.dumps(message, indent=4)}\nMensagem nova: {json.dumps(newmessage, indent=4)}")
                 channel.close()

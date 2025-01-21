@@ -31,7 +31,7 @@ class HistoricDataManager:
         jsonbody = json.loads(body_str)
         device_id = jsonbody.get('id')
         data = jsonbody.get('data')
-        print(f"Device hejwksl: {device_id}")
+        print(f"Device: {device_id}")
         #print(f"Data: {data}")
         if data is not None:
             for inst in data:

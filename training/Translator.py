@@ -44,7 +44,8 @@ class Translator:
     def div_verification(sDate, fDate, days, df):
         div = days // 2
         rest = days % 2
-        values = Translator.value(sDate, div + rest, df, 'sub')
+        #values = Translator.value(sDate, div + rest, df, 'sub')
+        values = Translator.value(sDate, days, df, 'sub')
         if len(values) >= div + rest:
             values2 = Translator.value(fDate, div, df, 'sum')
             if len(values2) == div:
@@ -113,6 +114,7 @@ class Translator:
                 data[str(df.index[i])] = df.iloc[i]['Value']
 
             if i != len(df) and np.isnan(df.iloc[i]['Value']):
+                #print(f'{df.index[i]}')
                 x+=1
                 indexs.append(df.index[i])
             elif x > 0:

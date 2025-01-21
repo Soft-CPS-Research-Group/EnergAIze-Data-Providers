@@ -25,7 +25,7 @@ class ICHistoricDataTranslator(Translator):
         for entry in data:
             for device in devices:
                 for pm in messageIC.keys():
-                    #print(f'{pm} in {entry} and {device} \n')
+                    print(f'{pm} in {entry} and {device} \n')
                     if pm in entry and device.get('label') == messageIC[pm]:
                         deviceId = device.get('id')
                         dici = {'Date': entry.get('time'), 'Value': entry.get(pm)}
@@ -33,7 +33,8 @@ class ICHistoricDataTranslator(Translator):
                             dataById[deviceId] = [dici]
                         else:
                             dataById[deviceId].append(dici)
-    
+        print(dataById.keys())
+        
         for deviceId in dataById.keys():
             df = ICHistoricDataTranslator._data_format(dataById[deviceId], period, start_date, end_date, ['Date', 'Value'])
             tosend = ICHistoricDataTranslator._interpolateMissingValues(df)

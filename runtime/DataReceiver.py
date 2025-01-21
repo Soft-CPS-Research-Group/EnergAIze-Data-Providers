@@ -25,43 +25,47 @@ class DataReceiver(threading.Thread):
         self._max_reconnect_attempts = 3
 
     def stop(self):
-        self._manager.stop()
+        print(f"Stopping thread {self._house}...")
         self._stop_event.set()
-        self._channel.stop_consuming()
-        self._channel.close()
-        self._connection.close()
-        print(f"Thread {self._house} stopped.")
+    
+    def _callback(self, ch, method, properties, body):
+        if self._stop_event.is_set():
+            self._manager.stop()
+            self._channel.stop_consuming()
+            self._channel.close()
+            self._connection.close()
+            print(f"Thread {self._house} stopped.")
+        else:
+            if(self._manager.newMessage(body)):
+                self._channel.basic_ack(delivery_tag=method.delivery_tag)
+            else:
+                self._channel.basic_nack(delivery_tag=method.delivery_tag)
 
-    def connect(self):
+    def _connect(self):
         self._connection = pika.BlockingConnection(self._connection_params)
         self._channel = self._connection.channel()
         queue_name = self._house + self._suffix
         self._channel.queue_declare(queue_name, durable=True)
-        self._channel.basic_consume(queue=queue_name, on_message_callback=self._manager.newMessage, auto_ack=True)
+        self._channel.basic_consume(queue=queue_name, on_message_callback=self._callback)
+        self._channel.start_consuming()
 
     def run(self):
-        error = False
+
         reconnect_attempts = 0
         while not self._stop_event.is_set() and reconnect_attempts < self._max_reconnect_attempts:
             try:
-                self.connect()
-                print(f"Thread {self._house} connected and consuming.")
-                while not self._stop_event.is_set():
-                    self._channel.connection.process_data_events(time_limit=1)  # Process events with a timeout
+                self._connect()                
             except pika.exceptions.AMQPConnectionError:
                 reconnect_attempts += 1
                 print(f"Thread {self._house} lost connection, attempting to reconnect...")
                 time.sleep(5)  # Wait before attempting to reconnect
                 if reconnect_attempts >= self._max_reconnect_attempts:
                     print(f"Thread {self._house} reached maximum reconnection attempts. Stopping thread.")
-                    error = True
+            except KeyboardInterrupt:
+                self.stop()
             except Exception as e:
                 print(f"Thread {self._house} encountered an error: {e}")
-                error = True
                 break
-
-        if error:
-            self._manager.stop()
             
 
 def main(manager):

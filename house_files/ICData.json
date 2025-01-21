@@ -2,109 +2,109 @@
     "provider":"i-charging",
     "Garage": [
         {
-            "label":"ChargersSession",
+            "label":"charging_sessions",
             "id":"AC000001_1",
             "serialNumber": "AC000001",
             "plug": "1"
         },
         {
-            "label":"ChargersSession",
+            "label":"charging_sessions",
             "id":"AC000004_1",
             "serialNumber": "AC000004",
             "plug": "1"
         }, 
         {
-            "label":"ChargersSession",
+            "label":"charging_sessions",
             "id":"AC000007_1",
             "serialNumber": "AC000007",
             "plug": "1"
         },
         {
-            "label":"ChargersSession",
+            "label":"charging_sessions",
             "id":"AC000010_1",
             "serialNumber": "AC000010",
             "plug": "1"
         }, 
         {
-            "label":"ChargersSession",
+            "label":"charging_sessions",
             "id":"AC000013_1",
             "serialNumber": "AC000013",
             "plug": "1"
         }, 
         {
-            "label":"ChargersSession",
+            "label":"charging_sessions",
             "id":"AC000002_1",
             "serialNumber": "AC000002",
             "plug": "1"
         }, 
         {
-            "label":"ChargersSession",
+            "label":"charging_sessions",
             "id":"AC000003_1",
             "serialNumber": "AC000003",
             "plug": "1"
         }, 
         {
-            "label":"ChargersSession",
+            "label":"charging_sessions",
             "id":"AC000005_1",
             "serialNumber": "AC000005",
             "plug": "1"
         }, 
         {
-            "label":"ChargersSession",
+            "label":"charging_sessions",
             "id":"AC000006_1",
             "serialNumber": "AC000006",
             "plug": "1"
         }, 
         {
-            "label":"ChargersSession",
+            "label":"charging_sessions",
             "id":"AC000008_1",
             "serialNumber": "AC000008",
             "plug": "1"
         }, 
         {
-            "label":"ChargersSession",
+            "label":"charging_sessions",
             "id":"AC000009_1",
             "serialNumber": "AC000009",
             "plug": "1"
         }, 
         {
-            "label":"ChargersSession",
+            "label":"charging_sessions",
             "id":"AC000011_1",
             "serialNumber": "AC000011",
             "plug": "1"
         }, 
         {
-            "label":"ChargersSession",
+            "label":"charging_sessions",
             "id":"AC000012_1",
             "serialNumber": "AC000012",
             "plug": "1"
         }, 
         {
-            "label":"ChargersSession",
+            "label":"charging_sessions",
             "id":"AC000014_1",
             "serialNumber": "AC000014",
             "plug": "1"
         }, 
         {
-            "label":"ChargersSession",
+            "label":"charging_sessions",
             "id":"ACEXT001_1",
             "serialNumber": "ACEXT001",
             "plug": "1"
         }, 
         {
-            "label":"ChargersSession",
+            "label":"charging_sessions",
             "id":"ACEXT002_1",
             "serialNumber": "ACEXT002",
             "plug": "1"
         }, 
         {
-            "label":"ChargersSession",
+            "label":"charging_sessions",
             "id":"ACEXT003_1",
             "serialNumber": "ACEXT003",
             "plug": "1"
         }, 
         {
-            "label":"ChargersSession",
+            "label":"charging_sessions",
             "id":"ACEXT004_1",
             "serialNumber": "ACEXT004",
             "plug": "1"

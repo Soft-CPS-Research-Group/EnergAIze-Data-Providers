@@ -36,16 +36,16 @@ class HistoricDataProducer():
 
     def on_request(self, ch, method, properties, body):
         
-        #try:
+        try:
             # Decode the message
             message = json.loads(body)
             print(f"Received message: {message}")
             message_type = message.get("type")
             message_value = message.get("value")
-            '''if message_type == "historic":
+            if message_type == "historic":
                 # Process the "historic" type request
                 response_data = self.process_historic_data(message_value)
-
+                print(f"Response data: {response_data}")
                 # Send response to the 'reply_to' queue specified in message properties
                 ch.basic_publish(
                     exchange='',
@@ -58,18 +58,18 @@ class HistoricDataProducer():
         
         except Exception as e:
             print(f"Error processing request: {e}")
-            ch.basic_nack(delivery_tag=method.delivery_tag)'''
+            ch.basic_nack(delivery_tag=method.delivery_tag)
     
     def process_historic_data(self, value):
         house = value.get("installation")
         date = datetime.fromisoformat(value.get("date"))
         
-        observations = [self.generate_random_observation(date + timedelta(minutes=i)) for i in range(1440)]
+        observations = [self.generate_random_observation(date + timedelta(minutes=i)) for i in range(10)]
         
         # Estrutura do JSON a ser salvo
         data = {
             "installation": house,
-            "observations": observations
+            "observation": observations
         }
 
         '''filename = f'{house}_.json'
@@ -111,7 +111,7 @@ class HistoricDataProducer():
                 }
             ] 
         }
-        print(f"Generated observation: {observation}\n")
+        #print(f"Generated observation: {observation}\n")
         return observation
 
     def run(self):

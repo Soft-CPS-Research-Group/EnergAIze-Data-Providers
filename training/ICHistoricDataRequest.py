@@ -1,8 +1,9 @@
 from datetime import timedelta, datetime
 import os
 import sys
-import time
 import pika
+import threading
+from pika.exceptions import ProbableAuthenticationError
 import json
 from ICHistoricDataTranslator import ICHistoricDataTranslator
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -31,13 +32,24 @@ class ICHistoricDataRequest():
         print(f"Thread {self._house} stopped.")
 
     def _connect(self):
-        self._connection = pika.BlockingConnection(self._connection_params)
-        self._channel = self._connection.channel()
+        try:
+            self._connection = pika.BlockingConnection(self._connection_params)
+            self._channel = self._connection.channel()
+            self._channel.queue_declare(queue='RPC', durable=True)
+        except ProbableAuthenticationError as e:
+            print(f'Authentication Error: {e}')
+            sys.exit(1)
 
-    def run(self):   
+    def run(self): 
+        self._connect() 
+
         for house in self._houses.keys():
             print(house)
+
+            returnQueueName = f"{house}_historic"
+            threading.Thread(target=self._message_processor, args=(returnQueueName,)).start()
             date = self._start_date
+
             while date <= self._end_date:
                 print(f'{date.isoformat()}\n')
                 message = {
@@ -48,39 +60,40 @@ class ICHistoricDataRequest():
                     }
                 }
                 message_json = json.dumps(message)
-                print(message_json)
                 
-                if (date == self._end_date):
-                    print("olaa")
-                    self._itsTheLastOne = True # Talvez precise de alguma proteção aqui
                 date += timedelta(days=1)
-                self._send_message(message_json, house)
-            
+                self._send_message(message_json, returnQueueName)
 
-    def _on_response(self, body):
+        self._connection.close()
+
+    def _message_processor(self, returnQueueName):
+        connection = pika.BlockingConnection(self._connection_params)
+        newChannel = connection.channel()
+        newChannel.queue_declare(queue=returnQueueName, exclusive=True)
+        newChannel.basic_consume(queue=returnQueueName, on_message_callback=self._on_response, auto_ack=True)
+        print(f'Waiting for messages in {returnQueueName}...\n')
+        newChannel.start_consuming()
+        print(f'Channel {returnQueueName} stopped.\n')
+        connection.close()
+
+    def _on_response(self, ch, method, properties, body):
         data = json.loads(body)
         observations = data.get('observation')
         house = data.get('installation')
-        print(observations)
-
         if self._data.get(house) is None:
             self._data[house] = observations
         else:
             self._data[house].extend(observations)
-        #print(f'{self._data[house]}\n\n')
-        if self._itsTheLastOne:
-            self._itsTheLastOne = False
-            print("ola")
+
+        if observations[0].get('time') == self._end_date.isoformat():
             with open(f'{house}_historicreal.json', 'w') as file:
                 json.dump(self._data[house], file, indent=4)
             ICHistoricDataTranslator.translate(house, self._houses.get(house), self._data.get(house), self._start_date, self._end_date, self._period)
+            ch.stop_consuming()
+            ch.close()
             
 
-    def _send_message(self, message, house):
-        returnQueueName = f"{house}_historic"
-        self._connect()
-        self._channel.queue_declare(queue='RPC', durable=True)
-        self._channel.queue_declare(queue=returnQueueName, exclusive=True)
+    def _send_message(self, message, returnQueueName):
         self._channel.basic_publish(
             exchange='',
             routing_key='RPC',
@@ -89,25 +102,14 @@ class ICHistoricDataRequest():
                 reply_to=returnQueueName
             )
         )
-
-        while True:
-            method_frame, header_frame, body = self._channel.basic_get(queue=returnQueueName)
-            if method_frame:
-                self._channel.basic_ack(method_frame.delivery_tag)
-                self._on_response(body)
-                break 
-
-        self._connection.close()
-
    
 def main(start_date, end_date, period):
     print("Starting ICHistoricDataRequest...")
 
     connection_params = configurations.get('IChistoricalServer')
 
-    '''schema = DataSet.get_schema(os.path.join('..',configurations.get('ICfile').get('path')))
-    schema.pop('provider')'''
-    schema = {'Garage':[]}
+    schema = DataSet.get_schema(os.path.join('..',configurations.get('ICfile').get('path')))
+    schema.pop('provider')
     print(schema)
 
     historicData = ICHistoricDataRequest(schema, connection_params, start_date, end_date, period)

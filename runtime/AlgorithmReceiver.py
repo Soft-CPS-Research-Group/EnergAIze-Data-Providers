@@ -18,6 +18,7 @@ class AlgorithmReceiver(IManager):
     def newMessage(self, ch, method, properties, body):
         result = self.energAIzeSimulator(body)
         print(f"{self._house} - {body}")
+        ch.basic_ack(delivery_tag=method.delivery_tag)
         for item in result:
             provider = next((device['provider'] for device in self._devices if device['id'] == item['id']), None)
             decisionForwarder = self._providers[provider]

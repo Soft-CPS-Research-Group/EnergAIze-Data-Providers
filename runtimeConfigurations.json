@@ -3,7 +3,7 @@
         "host": "localhost",
         "port": 5672
     },
-    "CWserver": "https://ks.innov.cleanwatts.energy/api/2.0/data/lastvalue/Instant?from=2003-06-11&tags=",
+    "CWserver": "https://ks.innov.cleanwatts.energy/api/2.0/consumptions/instant?tags=",
     "ICserver": {
         "host": "opevaisep.duckdns.org",
         "port": 5672,
@@ -12,11 +12,16 @@
             "password": "softcpsmq"
         }
     },
-    "CarSpecsserver": {
-        "host": "mqtt.eclipseprojects.io"
+    "CPserver": {
+        "host": "340bdc42132d4343bacd97af91d51b29.s1.eu.hivemq.cloud",
+        "port": 8883,
+        "credentials": {
+            "username": "EnergAlze",
+            "password": "vqisKWSxKdGXqPT1"
+        }
     },
     "frequency": {
-        "value": 2,
+        "value": 60,
         "unit": "minutes"
     },
     "maxReconnectAttempts": 3,
@@ -29,28 +34,37 @@
     "Users":{
         "path": "house_files/others/Users.json"
     },
-    "Cars":{
-        "path": "house_files/others/Cars.json"
+    "CPfile":{
+        "path": "house_files/CPData.json"
     },
     "AlgorithmAtributes": {
-        "Month": "",
-        "Hour": "",
-        "Minute": "",
-        "Day Type": "",
-        "Non Shiftable Load [kWh]": "",
-        "Solar Generation [kWh]": "",
-        "Energy Price": "",
-        "ChargersSession": [],
-        "Generated": 0
+        "month": "",
+        "day_type": "",
+        "hour": "",
+        "non_shiftable_load": "",
+        "solar_generation": "",
+        "energy_price": "",
+        "charging_sessions": [],
+        "generated": 0
     },
-    "ChargersSessionFormat": {
+    "ChargingSessionsFormat": {
         "Charger Id": "",
         "EOT": 0,
         "EsocD": 0,
         "EAT": 0,
         "EsocA": 0,
         "soc": 0,
-        "power": 0
+        "power": 0,
+        "flexibility": {
+            "arrival.time": "",
+            "departure.time": "",
+            "vehicle.model": 0,
+            "energy.min": 0,
+            "energy.total": 0,
+            "prioritary": 0,
+            "optimization": 0,
+            "departure.soc": 0
+        }
     },
     "QueueSuffixes":{
         "MessageAggregator": "_prod",
@@ -66,6 +80,6 @@
         "Cleanwatts": "CWDecisionForwarder.CWDecisionForwarder"
     },
     "CarSpecsTranslators":{
-        "soc": "SOCCarSpecTranslator.SOCCarSpecTranslator"
+        "data": "SOCCarSpecTranslator.SOCCarSpecTranslator"
     }
 }

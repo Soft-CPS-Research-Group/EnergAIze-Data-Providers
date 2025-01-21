@@ -17,13 +17,18 @@ class CWPriceDataTranslatorAndManager(Translator):
     @staticmethod
     def translate(tagId, data, house, start_date, end_date, period):
         df = CWPriceDataTranslatorAndManager._data_format(data, period, start_date, end_date, ['Date', 'Value'])
-
+        #print(df)
         tosend = CWPriceDataTranslatorAndManager._interpolateMissingValues(df)
         
         pred = CWPriceDataTranslatorAndManager._predictions(tosend)
         pred = {date: value for date, value in pred.items() if start_date <= pd.to_datetime(date) <= end_date}
         pred = OrderedDict(sorted(pred.items()))
-        CWPriceDataTranslatorAndManager._tocsv("pricing.csv", pred, ['electricity_pricing', 'electricity_pricing_predicted_6h', 'electricity_pricing_predicted_12h', 'electricity_pricing_predicted_24h'])
+
+        directory = 'datasets'
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+        filename = os.path.join(directory, "pricing.csv")
+        CWPriceDataTranslatorAndManager._tocsv(filename, pred, ['electricity_pricing', 'electricity_pricing_predicted_6h', 'electricity_pricing_predicted_12h', 'electricity_pricing_predicted_24h'])
 
     @staticmethod
     def _data_format(data, period, start_date, end_date, columns_to_keep):

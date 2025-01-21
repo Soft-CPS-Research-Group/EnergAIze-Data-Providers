@@ -2,6 +2,7 @@ import pika
 import os
 import json
 import sys
+import uuid
 from ICTranslator import ICTranslator
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from data import DataSet
@@ -19,8 +20,8 @@ def main():
 
     frequency = DataSet.calculate_interval(configurations.get('frequency'))        
 
-    print(list(ICHouses.keys()))
-    print(frequency)
+    print(f"Houses: {list(ICHouses.keys())}")
+    print(f"Frequency sent: {frequency}")
 
     message = {
         "type": "runtime",
@@ -46,14 +47,15 @@ def _send_message(message):
             routing_key='RPC',
             body=message,
             properties=pika.BasicProperties(
-                reply_to=returnQueueName.method.queue
+                reply_to=returnQueueName.method.queue,
+                message_id=str(uuid.uuid4())
             )
         )
 
         channel.basic_consume(
             queue=returnQueueName.method.queue,
             on_message_callback=on_response,
-            auto_ack=False
+            auto_ack=True
         )
 
         # Start consuming
@@ -61,8 +63,8 @@ def _send_message(message):
 
 def on_response(ch, method, properties, body):
         print("Received response:", body.decode())
-        ch.basic_ack(delivery_tag=method.delivery_tag)
-  
+        ch.stop_consuming()
+        ch.close()
 
 
 if __name__ == "__main__":

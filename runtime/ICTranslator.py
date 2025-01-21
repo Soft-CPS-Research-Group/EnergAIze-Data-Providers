@@ -14,13 +14,12 @@ configurations = DataSet.get_schema(os.path.join('..', 'runtimeConfigurations.js
 class ICTranslator:
     @staticmethod
     def translate(house_name, devices, message):
-        print("VOLTEI A SER CHAMADO")
         # Load Internal AMQP Server configurations
         connection_params = configurations['internalAMQPServer']
         max_reconnect_attempts = configurations['maxReconnectAttempts']
         # Define the queue name
         queue_name = house_name + configurations['QueueSuffixes']['MessageAggregator']
-      
+
         message = json.loads(message.decode('utf-8')).get('observation')
         print(f"House: {house_name} {json.dumps(message, indent=2)}")
         while max_reconnect_attempts > 0:
@@ -50,10 +49,10 @@ class ICTranslator:
                             }
                             print(f"House: {house_name} {json.dumps(newmessage, indent=2)}")
                             message_bytes = json.dumps(newmessage).encode('utf-8') 
-                            time.sleep(2)
+                            #time.sleep(2)
                             channel.basic_publish(exchange='', routing_key=queue_name, body=message_bytes)
 
-                chargerSessionFormat = configurations.get('ChargersSessionFormat')
+                chargerSessionFormat = configurations.get('ChargingSessionsFormat')
                 chargersSession = message.get('charging.session')
                 for chargerSession in chargersSession:
                     cs = copy.deepcopy(chargerSessionFormat)
@@ -62,6 +61,7 @@ class ICTranslator:
                     cs['EsocA'] = -1
                     cs['soc'] = chargerSession.get('soc')
                     cs['power'] = chargerSession.get('power')
+                    cs['flexibility'] = chargerSession.get('flexibility')
                     newmessage = {
                             "id": chargerId,
                             "value": cs,
@@ -69,7 +69,7 @@ class ICTranslator:
                         }
                   
                     message_bytes = json.dumps(newmessage).encode('utf-8')   
-                    time.sleep(2)
+                    #time.sleep(2)
                     channel.basic_publish(exchange='', routing_key=queue_name, body=message_bytes)
                     #print(f"House: {house_name} {json.dumps(newmessage, indent=2)}")
                 break

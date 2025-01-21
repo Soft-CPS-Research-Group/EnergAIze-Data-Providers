@@ -38,7 +38,6 @@ class ProducerThread(threading.Thread):
         self._channel.exchange_declare(exchange=self._house, exchange_type='fanout')
 
     def run(self):
-        
         reconnect_attempts = 0
         # Calculate the time between each data request
         timesleep = DataSet.calculate_interval(configurations.get('frequency'))        
@@ -48,7 +47,7 @@ class ProducerThread(threading.Thread):
                 self.connect()    
                 while not self._stop_event.is_set():
                     for device in self._devices_list:
-                        if device.get('label') == "ChargersSession":
+                        if device.get('label') == "charging_sessions":
                             userID = random.choice(self._users_list)
                             devicedata = {
                                     "id": random.randint(1, 1000),
@@ -57,7 +56,17 @@ class ProducerThread(threading.Thread):
                                     "card.id": "xxxx",
                                     "plug": device.get('plug'),
                                     "soc": random.randint(1, 100),
-                                    "power": random.randint(1, 100)
+                                    "power": random.randint(1, 100),
+                                    "flexibility": {
+                                        "arrival.time": "08:00:00",
+                                        "departure.time": "17:00:00",
+                                        "vehicle.model": 2,
+                                        "energy.min": 0,
+                                        "energy.total": 0,
+                                        "prioritary": 0,
+                                        "optimization": 0,
+                                        "departure.soc": 80
+                                    }
                                 }
                             message_devices.append(devicedata)
 
@@ -73,6 +82,10 @@ class ProducerThread(threading.Thread):
                                     }
                                 ] 
                             }
+                        message = {
+                            "installation": self._house,
+                            "observation": message
+                        }
                     print(f"House: {self._house} {json.dumps(message, indent=2)}")
                     message_bytes = json.dumps(message).encode('utf-8')    
                     self._channel.basic_publish(exchange=self._house, routing_key='', body=message_bytes)
