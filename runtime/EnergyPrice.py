@@ -1,12 +1,9 @@
-import os
 import requests
-import sys
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from data import DataSet
+from utils.data import DataSet
 from cwlogin import CWLogin
 
 # Load configurations
-configurations = DataSet.get_schema(os.path.join('..', 'runtimeConfigurations.json'))
+configurations = DataSet.get_schema('./configs/runtimeConfigurations.json')
 
 class EnergyPrice:
     @staticmethod

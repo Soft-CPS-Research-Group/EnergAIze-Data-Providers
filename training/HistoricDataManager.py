@@ -4,7 +4,7 @@ import csv
 import sys
 from datetime import datetime, timedelta, timezone
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from data import DataSet
+from utils.data import DataSet
 
 configurations = DataSet.get_schema(os.path.join('..', 'historicConfigurations.json'))
 class HistoricDataManager:

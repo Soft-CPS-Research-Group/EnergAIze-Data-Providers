@@ -3,13 +3,10 @@ import threading
 import time
 import random
 import json
-import os
-import sys
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from data import DataSet
+from utils.data import DataSet
 
 # Load configurations
-configurations = DataSet.get_schema(os.path.join('..', 'runtimeConfigurations.json'))
+configurations = DataSet.get_schema('./configs/runtimeConfigurations.json')
 
 class ProducerThread(threading.Thread):
     def __init__(self, house_name, cars_list, connection_params):
@@ -72,7 +69,7 @@ def main():
    # Get connection parameters
     connection_params = configurations.get('CPserver')
     # Get CW Houses file and turn it into a dictionary
-    CPHouses = DataSet.get_schema(os.path.join('..', configurations.get('CPfile').get('path')))
+    CPHouses = DataSet.get_schema(configurations.get('CPfile').get('path'))
     
     CPHouses.pop('provider')
     

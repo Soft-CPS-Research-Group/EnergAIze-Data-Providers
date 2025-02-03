@@ -1,7 +1,8 @@
-from IDecisionForwarder import IDecisionForwarder
+from runtime.IDecisionForwarder import IDecisionForwarder
 
 class CWDecisionForwarder(IDecisionForwarder):
     @staticmethod
     def toForward(result):
-        print(result)
+        #print(result)
+        pass
     

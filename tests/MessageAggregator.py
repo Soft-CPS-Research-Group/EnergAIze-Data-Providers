@@ -9,7 +9,7 @@ from threading import Timer
 from IManager import IManager
 from EnergyPrice import EnergyPrice
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from data import DataSet
+from utils.data import DataSet
 
 # Load configurations
 configurations = DataSet.get_schema(os.path.join('..', 'runtimeConfigurations.json'))

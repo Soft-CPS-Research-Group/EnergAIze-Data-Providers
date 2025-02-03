@@ -1,27 +1,20 @@
 import pika
-import os
 import json
-import sys
 import uuid
-from ICTranslator import ICTranslator
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from data import DataSet
+from utils.data import DataSet
 
 # Load configurations
-configurations = DataSet.get_schema(os.path.join('..', 'runtimeConfigurations.json'))
+configurations = DataSet.get_schema('./configs/runtimeConfigurations.json')
 
-    
+
 def main():
     print("Starting ICRuntimeRequest...")
     # Get CW Houses file and turn it into a dictionary
-    ICHouses = DataSet.get_schema(os.path.join('..', configurations.get('ICfile').get('path')))
+    ICHouses = DataSet.get_schema(configurations.get('ICfile').get('path'))
     # Remove provider key because it does not contain any useful information here
     ICHouses.pop('provider')
 
-    frequency = DataSet.calculate_interval(configurations.get('frequency'))        
-
-    print(f"Houses: {list(ICHouses.keys())}")
-    print(f"Frequency sent: {frequency}")
+    frequency = DataSet.calculate_interval(configurations.get('frequency'))
 
     message = {
         "type": "runtime",
@@ -30,6 +23,8 @@ def main():
             "frequency": frequency
         } 
     }
+
+    print(message)
 
     _send_message(json.dumps(message))
 

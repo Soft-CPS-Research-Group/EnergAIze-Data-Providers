@@ -4,7 +4,7 @@ from datetime import datetime
 import requests
 import json
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from data import DataSet
+from utils.data import DataSet
 from cwlogin import CWLogin
 
 configurations = DataSet.get_schema('otherConfigurations.json')

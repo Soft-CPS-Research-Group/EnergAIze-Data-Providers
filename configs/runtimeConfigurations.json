@@ -3,6 +3,11 @@
         "host": "localhost",
         "port": 5672
     },
+    "mongoDB":{
+        "database":"EnergAIzeData",
+        "host":"localhost",
+        "port":27017
+    },
     "CWserver": "https://ks.innov.cleanwatts.energy/api/2.0/consumptions/instant?tags=",
     "ICserver": {
         "host": "opevaisep.duckdns.org",
@@ -21,21 +26,21 @@
         }
     },
     "frequency": {
-        "value": 60,
+        "value": 1,
         "unit": "minutes"
     },
     "maxReconnectAttempts": 3,
     "ICfile":{
-        "path": "house_files/ICData.json"
+        "path": "./house_files/ICData.json"
     },
     "CWfile":{
-        "path": "house_files/CWData.json"
+        "path": "./house_files/CWData.json"
     },
     "Users":{
-        "path": "house_files/others/Users.json"
+        "path": "./house_files/others/Users.json"
     },
     "CPfile":{
-        "path": "house_files/CPData.json"
+        "path": "./house_files/CPData.json"
     },
     "AlgorithmAtributes": {
         "month": "",
@@ -66,20 +71,13 @@
             "departure.soc": 0
         }
     },
-    "QueueSuffixes":{
-        "MessageAggregator": "_prod",
-        "AlgorithmReceiver": "_alg"
-    },
     "messageIC":{
         "meter.values":"non_shiftable_load",
         "pv.production":"solar_generation",
         "battery.soc":"battery_charging_energy"
     },
     "Providers":{
-        "i-charging": "ICDecisionForwarder.ICDecisionForwarder",
-        "Cleanwatts": "CWDecisionForwarder.CWDecisionForwarder"
-    },
-    "CarSpecsTranslators":{
-        "data": "SOCCarSpecTranslator.SOCCarSpecTranslator"
+        "i-charging": "runtime.ICDecisionForwarder.ICDecisionForwarder",
+        "Cleanwatts": "runtime.CWDecisionForwarder.CWDecisionForwarder"
     }
 }

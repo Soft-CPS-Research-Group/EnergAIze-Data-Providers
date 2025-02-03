@@ -3,16 +3,13 @@ import paho.mqtt.client as mqtt
 import os
 import time
 import socket
-import sys
 import json
 import ssl
 
-from CPTranslator import CPTranslator
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from data import DataSet
+from utils.data import DataSet
 
 # Load configurations
-configurations = DataSet.get_schema(os.path.join('..', 'runtimeConfigurations.json'))
+configurations = DataSet.get_schema('./configs/runtimeConfigurations.json')
 
 class CPReceiver(threading.Thread):
     def __init__(self, house_name, cars_list, connection_params, subtopic):  #perceber onde meter este subtopico
@@ -27,7 +24,7 @@ class CPReceiver(threading.Thread):
             self._connection_params.get('credentials').get('username'),
             self._connection_params.get('credentials').get('password')
         )
-        self._client.tls_set("C:/Users/clari/Documents/EnergAIze-Data-Providers/runtime/tls.ca", tls_version=ssl.PROTOCOL_TLSv1_2)
+        self._client.tls_set("C:/Users/clari/Documents/EnergAIze_Data_Providers/runtime/tls.ca", tls_version=ssl.PROTOCOL_TLSv1_2)
         self._client.tls_insecure_set(True)
         self._max_reconnect_attempts = configurations.get('maxReconnectAttempts')
         self._stop_connection = threading.Event()

@@ -1,23 +1,18 @@
 import pika
-import os
 import threading
 import time
-import sys
-from pydoc import locate
-from IManager import IManager
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from data import DataSet
+from runtime.Manager import Manager
+from utils.data import DataSet
 
 
 # Load configurations
-configurations = DataSet.get_schema(os.path.join('..', 'runtimeConfigurations.json'))
+configurations = DataSet.get_schema('./configs/runtimeConfigurations.json')
 
-class DataReceiver(threading.Thread):
-    def __init__(self, house, devices, connection_params, manager_class: IManager, suffix):
+class Accumulator(threading.Thread):
+    def __init__(self, house, devices, connection_params):
         threading.Thread.__init__(self)
         self._house = house
-        self._manager = manager_class(devices, house)
-        self._suffix = suffix
+        self._manager = Manager(devices,house)
         self._connection_params = pika.ConnectionParameters(host=connection_params.get('host'), port=connection_params.get('port'),heartbeat=660)
         self._connection = None
         self._channel = None
@@ -44,9 +39,9 @@ class DataReceiver(threading.Thread):
     def _connect(self):
         self._connection = pika.BlockingConnection(self._connection_params)
         self._channel = self._connection.channel()
-        queue_name = self._house + self._suffix
-        self._channel.queue_declare(queue_name, durable=True)
-        self._channel.basic_consume(queue=queue_name, on_message_callback=self._callback)
+
+        self._channel.queue_declare(self._house, durable=True)
+        self._channel.basic_consume(queue=self._house, on_message_callback=self._callback)
         self._channel.start_consuming()
 
     def run(self):
@@ -68,20 +63,17 @@ class DataReceiver(threading.Thread):
                 break
             
 
-def main(manager):
-    managerClass = locate(manager)
-    managerClassName = managerClass.__name__
-    suffix = configurations['QueueSuffixes'].get(managerClassName)
-    
-    print(f"Starting Data Receiver... ({managerClassName})")
+def main():
+
+    print(f"Starting Accumulator... ")
     connection_params = configurations['internalAMQPServer']
     
     houses = {}
-    DataSet.process_json_files_in_folder(os.path.join('..', 'house_files'), houses)
+    DataSet.process_json_files_in_folder('./house_files', houses)
     threads = []
     try:
         for house in houses.keys():
-            accumulator_thread = DataReceiver(house, houses[house], connection_params, managerClass, suffix)
+            accumulator_thread = Accumulator(house, houses[house], connection_params)
             accumulator_thread.start()
             threads.append(accumulator_thread)
 
@@ -104,9 +96,4 @@ def main(manager):
        
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        sys.exit(1)
-    
-    manager = sys.argv[1]
-   
-    main(manager)
+    main()

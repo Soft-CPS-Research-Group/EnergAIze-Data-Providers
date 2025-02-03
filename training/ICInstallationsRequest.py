@@ -1,13 +1,12 @@
-from datetime import timedelta, datetime
 import os
 import sys
 import time
 import pika
 import json
 import uuid
-from ICHistoricDataTranslator import ICHistoricDataTranslator
+
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from data import DataSet
+from utils.data import DataSet
 
 configurations = DataSet.get_schema(os.path.join('..', 'historicConfigurations.json'))
 

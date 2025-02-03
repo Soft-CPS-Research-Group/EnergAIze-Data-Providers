@@ -4,13 +4,10 @@ import threading
 import time
 import random
 import json
-import os
-import sys
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from data import DataSet
+from utils.data import DataSet
 
 # Load configurations
-configurations = DataSet.get_schema(os.path.join('..', 'runtimeConfigurations.json'))
+configurations = DataSet.get_schema('./configs/runtimeConfigurations.json')
 
 class ProducerThread(threading.Thread):
     def __init__(self, house, devices_list, users_list, connection_params):
@@ -109,9 +106,9 @@ def main():
     # Get connection parameters
     connection_params = configurations.get('ICserver')
     # Get CW Houses file and turn it into a dictionary
-    ICHouses = DataSet.get_schema(os.path.join('..', configurations.get('ICfile').get('path')))
+    ICHouses = DataSet.get_schema(configurations.get('ICfile').get('path'))
     # Get Users file and turn it into a dictionary
-    users = DataSet.get_schema(os.path.join('..', configurations.get('Users').get('path')))
+    users = DataSet.get_schema(configurations.get('Users').get('path'))
     # Remove provider key because it does not contain any useful information here
     ICHouses.pop('provider')
     

@@ -1,14 +1,11 @@
 import pika
 import threading
 import time
-import os
-import sys
-from ICTranslator import ICTranslator
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from data import DataSet
+from runtime.ICTranslator import ICTranslator
+from utils.data import DataSet
 
 # Load configurations
-configurations = DataSet.get_schema(os.path.join('..', 'runtimeConfigurations.json'))
+configurations = DataSet.get_schema('./configs/runtimeConfigurations.json')
 
 class ICReceiver(threading.Thread):
     def __init__(self, house_name, devices, connection_params):
@@ -71,7 +68,7 @@ def main():
     # Get connection parameters
     connection_params = configurations.get('ICserver')
     # Get CW Houses file and turn it into a dictionary
-    ICHouses = DataSet.get_schema(os.path.join('..', configurations.get('ICfile').get('path')))
+    ICHouses = DataSet.get_schema(configurations.get('ICfile').get('path'))
     # Remove provider key because it does not contain any useful information here
     ICHouses.pop('provider')
 

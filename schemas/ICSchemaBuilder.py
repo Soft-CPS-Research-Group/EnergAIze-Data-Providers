@@ -1,11 +1,11 @@
-from datetime import timedelta, datetime
 import os
 import sys
 import time
 import pika
 import json
+import uuid
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from data import DataSet
+from utils.data import DataSet
 
 configurations = DataSet.get_schema(os.path.join('..', 'historicConfigurations.json'))
 
@@ -29,7 +29,6 @@ class ICSchemaBuilder():
 
     def _on_response(self, body):
         try:
-            print(body)
             data = json.loads(body)
             self._schema_builder(data)
         except json.JSONDecodeError as e:
@@ -47,28 +46,28 @@ class ICSchemaBuilder():
             pv = entry.get('pv')
             chargers = entry.get('chargers')
             list = []
-            if battery is not None:
+            if battery:
                 dic = {
                     "label": "battery_charging_energy",
                     "id": battery.get('id')
                 }
                 list.append(dic)
-            if pv is not None:
+            if pv:
                 dic = {
                     "label": "solar_generation",
                     "id": pv.get('id')
                 }
                 list.append(dic)
 
-            for meter in meters:
+            '''for meter in meters:
                 dic = {
                     "label": "non_shiftable_load",
                     "id": meter.get('id')
                 }
-                list.append(dic)
+                list.append(dic)'''
 
             for charger in chargers:
-                serial_number = charger.get('serial_number')
+                serial_number = charger.get('serialnumber')
                 for plug in charger.get('plugs'):
                     plugId = plug.get('id')
                     dic = {
@@ -81,8 +80,15 @@ class ICSchemaBuilder():
             
             houses_dict[installation] = list
 
-        print(houses_dict)
+        self._to_file(houses_dict)
 
+    def _to_file(self, data):
+        try:
+            with open('ICData.json', 'w') as file:
+                json.dump(data, file, indent = 4)
+
+        except Exception as e:
+            print("Unexpected error while saving the CSV file:", e)
 
     def _send_message(self, message):
         returnQueueName = f"installations_request_{int(time.time())}"
@@ -94,7 +100,8 @@ class ICSchemaBuilder():
             routing_key='RPC',
             body=message,
             properties=pika.BasicProperties(
-                reply_to=returnQueueName
+                reply_to=returnQueueName,
+                message_id=str(uuid.uuid4())
             )
         )
 
