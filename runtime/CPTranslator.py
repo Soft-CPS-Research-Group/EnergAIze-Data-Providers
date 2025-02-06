@@ -2,10 +2,10 @@ import pika
 import time
 import datetime
 import json
-from utils.data import DataSet
+from utils.config_loader import load_configurations
 
 # Load configurations
-configurations = DataSet.get_schema('./configs/runtimeConfigurations.json')
+configurations, logger = load_configurations('./configs/runtimeConfigurations.json',"cleanwatts")
 
 class CPTranslator():
     @staticmethod

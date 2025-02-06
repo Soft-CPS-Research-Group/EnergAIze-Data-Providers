@@ -79,5 +79,15 @@
     "Providers":{
         "i-charging": "runtime.ICDecisionForwarder.ICDecisionForwarder",
         "Cleanwatts": "runtime.CWDecisionForwarder.CWDecisionForwarder"
+    },
+    "LogFiles":{
+        "maxSize": "10MB",
+        "fileNames": {
+            "accumulator": "accumulator/accumulator.log",
+             "chargepulse": "chargepulse/chargepulse.log",
+             "cleanwatts": "cleanwatts/cleanwatts.log",
+             "icharging": "icharging/icharging.log",
+            "energyprice": "energyprice/energyprice.log"
+        }
     }
 }

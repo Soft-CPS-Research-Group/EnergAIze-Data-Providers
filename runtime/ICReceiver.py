@@ -3,9 +3,11 @@ import threading
 import time
 from runtime.ICTranslator import ICTranslator
 from utils.data import DataSet
+from utils.config_loader import load_configurations
 
 # Load configurations
-configurations = DataSet.get_schema('./configs/runtimeConfigurations.json')
+configurations, logger = load_configurations('./configs/runtimeConfigurations.json',"icharging")
+
 
 class ICReceiver(threading.Thread):
     def __init__(self, house_name, devices, connection_params):

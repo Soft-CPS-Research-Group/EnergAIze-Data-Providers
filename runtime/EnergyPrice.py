@@ -1,9 +1,9 @@
 import requests
-from utils.data import DataSet
 from cwlogin import CWLogin
+from utils.config_loader import load_configurations
 
 # Load configurations
-configurations = DataSet.get_schema('./configs/runtimeConfigurations.json')
+configurations, logger = load_configurations('./configs/runtimeConfigurations.json',"energyprice")
 
 class EnergyPrice:
     @staticmethod

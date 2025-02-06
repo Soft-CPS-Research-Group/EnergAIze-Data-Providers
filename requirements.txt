@@ -2,3 +2,6 @@ pika
 simplejson
 requests
 pymongo
+loguru
+apscheduler
+paho-mqtt

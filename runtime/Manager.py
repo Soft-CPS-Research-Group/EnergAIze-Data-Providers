@@ -6,10 +6,10 @@ from runtime.Predictor import Predictor
 from threading import Lock
 from runtime.EnergyPrice import EnergyPrice
 from utils.data import DataSet
+from utils.config_loader import load_configurations
 
 # Load configurations
-configurations = DataSet.get_schema('./configs/runtimeConfigurations.json')
-
+configurations, logger = load_configurations('./configs/runtimeConfigurations.json',"accumulator")
 
 class Manager():
     def __init__(self, devices, house):
@@ -89,12 +89,12 @@ class Manager():
     def _verify_and_replace_missing_data(self):
         for device in self._devices:
             if device.get('id') not in self._dict.keys():
-                self._log(device)
+                logger.warning(f"Device {device.get('id')} was not found.")
                 if device.get('label') != "charging_sessions":
                     if device.get('id') in self._substitute_dict.keys():
                         self._dict[device.get('id')] = self._substitute_dict[device.get('id')]
                     else:
-                        print("Device not found in substitute_dict: ",device.get('id'))
+                        logger.warning("Device not found in substitute_dict: ",device.get('id'))
                         self._dict[device.get('id')] = {'timestamp': 0, 'data': 0, 'generated': 1}
                 else:
                     aux = copy.deepcopy(self._charger_session_format)
@@ -104,12 +104,6 @@ class Manager():
                 self._substitute_dict[device.get('id')] = self._dict[device.get('id')]
                 self._substitute_dict[device.get('id')]['generated'] = 0
 
-    def _log(self,device):
-        if device.get('id') == "30688":
-            filename = "log.csv"
-            timestamp = datetime.datetime.now()
-            with open(filename, 'a') as file:
-                file.write(f"{timestamp} Data for device {device.get('id')} was not found. Label: {device.get('label')} House: {self._house}\n")
 
     def _format_data_for_model(self):
         timestamp = datetime.datetime.now()

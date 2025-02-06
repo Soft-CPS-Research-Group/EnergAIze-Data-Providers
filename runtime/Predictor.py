@@ -1,10 +1,10 @@
 import random
 import pymongo
 from pydoc import locate
-from utils.data import DataSet
+from utils.config_loader import load_configurations
 
 # Load configurations
-configurations = DataSet.get_schema('./configs/runtimeConfigurations.json')
+configurations, logger = load_configurations('./configs/runtimeConfigurations.json',"accumulator")
 
 class Predictor():
     def __init__(self, devices, house):

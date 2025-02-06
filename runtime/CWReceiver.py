@@ -5,11 +5,11 @@ import time
 import datetime
 from runtime.CWTranslator import CWTranslator
 from utils.data import DataSet
+from utils.config_loader import load_configurations
 from cwlogin import CWLogin
 
-
 # Load configurations
-configurations = DataSet.get_schema('./configs/runtimeConfigurations.json')
+configurations, logger = load_configurations('./configs/runtimeConfigurations.json',"cleanwatts")
 
 class CWReceiver(Thread):
     def __init__(self, house_name, tags_list, connection_params):
@@ -40,17 +40,14 @@ class CWReceiver(Thread):
                 if response.status_code == 200:               
                     CWTranslator.translate(self._house, response.json())
                 else:
-                    print(f"Error getting data from tag {tag.get('id')}: {response.status_code}")
+                    logger.warning(f"Error getting data from tag {tag.get('id')}: {response.status_code}")
             except requests.exceptions.Timeout:
-                print(f"Connection timeout.")
-
+                logger.error("Connection timeout.")
             except requests.exceptions.ConnectionError:
-                print(f"No internet connection.")
-
+                logger.error("No internet connection.")
             except requests.exceptions.RequestException as e:
-                print(f"Unexpected error - {e}")
-            
-        
+                logger.error(f"Unexpected error - {e}")
+
             
     def _login(self):
         try: 
@@ -67,14 +64,7 @@ class CWReceiver(Thread):
         self._scheduler.start()
 
         self._job()
-        self._stop_event.wait() 
-
-    def _log(self):
-        self._count+=1
-        filename = "logs2.csv"
-        timestamp = datetime.datetime.now()
-        with open(filename, 'a') as file:
-            file.write(f"{self._count}'s observation {timestamp}\n")
+        self._stop_event.wait()
 
 def main():
     print("Starting CWReceiver...")

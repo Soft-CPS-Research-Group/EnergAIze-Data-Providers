@@ -5,11 +5,11 @@ import time
 import socket
 import json
 import ssl
-
+from utils.config_loader import load_configurations
 from utils.data import DataSet
 
 # Load configurations
-configurations = DataSet.get_schema('./configs/runtimeConfigurations.json')
+configurations, logger = load_configurations('./configs/runtimeConfigurations.json',"cleanwatts")
 
 class CPReceiver(threading.Thread):
     def __init__(self, house_name, cars_list, connection_params, subtopic):  #perceber onde meter este subtopico

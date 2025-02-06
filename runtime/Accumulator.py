@@ -3,10 +3,10 @@ import threading
 import time
 from runtime.Manager import Manager
 from utils.data import DataSet
-
+from utils.config_loader import load_configurations
 
 # Load configurations
-configurations = DataSet.get_schema('./configs/runtimeConfigurations.json')
+configurations, logger = load_configurations('./configs/runtimeConfigurations.json',"accumulator")
 
 class Accumulator(threading.Thread):
     def __init__(self, house, devices, connection_params):
@@ -20,7 +20,7 @@ class Accumulator(threading.Thread):
         self._max_reconnect_attempts = 3
 
     def stop(self):
-        print(f"Stopping thread {self._house}...")
+        logger.info(f"Stopping thread {self._house}")
         self._stop_event.set()
     
     def _callback(self, ch, method, properties, body):
@@ -29,20 +29,20 @@ class Accumulator(threading.Thread):
             self._channel.stop_consuming()
             self._channel.close()
             self._connection.close()
-            print(f"Thread {self._house} stopped.")
         else:
             if(self._manager.newMessage(body)):
                 self._channel.basic_ack(delivery_tag=method.delivery_tag)
             else:
                 self._channel.basic_nack(delivery_tag=method.delivery_tag)
+                logger.warning("Error processing RabbitMQ message.")
 
     def _connect(self):
         self._connection = pika.BlockingConnection(self._connection_params)
         self._channel = self._connection.channel()
-
         self._channel.queue_declare(self._house, durable=True)
         self._channel.basic_consume(queue=self._house, on_message_callback=self._callback)
         self._channel.start_consuming()
+
 
     def run(self):
 
@@ -52,20 +52,20 @@ class Accumulator(threading.Thread):
                 self._connect()                
             except pika.exceptions.AMQPConnectionError:
                 reconnect_attempts += 1
-                print(f"Thread {self._house} lost connection, attempting to reconnect...")
+                logger.warning(f"Thread {self._house} lost connection, attempting to reconnect...")
                 time.sleep(5)  # Wait before attempting to reconnect
                 if reconnect_attempts >= self._max_reconnect_attempts:
-                    print(f"Thread {self._house} reached maximum reconnection attempts. Stopping thread.")
+                    logger.error(f"Thread {self._house} reached maximum reconnection attempts. Stopping thread.")
             except KeyboardInterrupt:
+                logger.info(f"Thread {self._house} RabbitMQ session manually closed.")
                 self.stop()
             except Exception as e:
-                print(f"Thread {self._house} encountered an error: {e}")
+                logger.error(f"Thread {self._house} encountered an error: {e}")
                 break
             
 
 def main():
-
-    print(f"Starting Accumulator... ")
+    print("Starting Accumulator...")
     connection_params = configurations['internalAMQPServer']
     
     houses = {}

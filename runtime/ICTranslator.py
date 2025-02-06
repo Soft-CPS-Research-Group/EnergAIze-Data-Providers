@@ -4,9 +4,10 @@ import json
 import time
 import copy
 from utils.data import DataSet
+from utils.config_loader import load_configurations
 
 # Load configurations
-configurations = DataSet.get_schema('./configs/runtimeConfigurations.json')
+configurations, logger = load_configurations('./configs/runtimeConfigurations.json',"icharging")
 
 class ICTranslator:
     @staticmethod
