@@ -1,5 +1,5 @@
 import requests
-from cwlogin import CWLogin
+from utils.cwlogin import CWLogin
 from utils.config_loader import load_configurations
 
 # Load configurations
@@ -25,7 +25,7 @@ class EnergyPrice:
             if isinstance(json_response, list):
                 return json_response[0]['Read']
             else:
-                print("Unexpected JSON response structure")
+                logger.error("EnergyPrice: Unexpected JSON response structure")
         else:
             return None
         

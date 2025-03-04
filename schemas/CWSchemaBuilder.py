@@ -5,7 +5,7 @@ import requests
 import json
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils.data import DataSet
-from cwlogin import CWLogin
+from utils.cwlogin import CWLogin
 
 configurations = DataSet.get_schema('otherConfigurations.json')
 

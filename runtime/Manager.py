@@ -27,6 +27,7 @@ class Manager():
         self._timer_ended = Lock()
 
         self._message = ''
+        self._energy_price = 0
      
     def non_shiftable_load(self, device):
         batteryChargingEnergy = 0
@@ -49,7 +50,12 @@ class Manager():
         self._message['charging_sessions'].append(cs)
 
     def energy_price(self):
-        self._message['energy_price'] = EnergyPrice.getEnergyPrice()
+        energyPrice = EnergyPrice.getEnergyPrice()
+        if (energyPrice is not None):
+            self._message['energy_price'] = energyPrice
+            self._energy_price = energyPrice
+        else:
+            self._message['energy_price'] = self._energy_price
 
     def solar_generation(self, device):
         self._message['solar_generation'] = self._dict[device.get('id')]['data']
@@ -94,7 +100,7 @@ class Manager():
                     if device.get('id') in self._substitute_dict.keys():
                         self._dict[device.get('id')] = self._substitute_dict[device.get('id')]
                     else:
-                        logger.warning("Device not found in substitute_dict: ",device.get('id'))
+                        logger.warning(f"Device not found in substitute_dict: {device.get('id')}")
                         self._dict[device.get('id')] = {'timestamp': 0, 'data': 0, 'generated': 1}
                 else:
                     aux = copy.deepcopy(self._charger_session_format)
@@ -131,5 +137,5 @@ class Manager():
 
     def _start_sched(self):
         self._scheduler = BackgroundScheduler()
-        self._scheduler.add_job(self._send, 'interval', seconds=self._time_interval)  
+        self._scheduler.add_job(self._send, 'interval', seconds=self._time_interval, misfire_grace_time=10, coalesce=True)
         self._scheduler.start()

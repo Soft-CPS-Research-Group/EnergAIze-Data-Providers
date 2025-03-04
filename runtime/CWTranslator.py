@@ -17,7 +17,7 @@ class CWTranslator:
             try:
                 connection = pika.BlockingConnection(pika.ConnectionParameters(
                     host=connection_params.get('host'),
-                    port=connection_params.get('port')
+                    port=connection_params.get('port'), virtual_host=connection_params.get('vhost'), credentials=pika.PlainCredentials(connection_params.get('credentials').get('username'), connection_params.get('credentials').get('password'))
                 ))
                 channel = connection.channel()
                 channel.queue_declare(queue=house_name, durable=True)
@@ -47,12 +47,12 @@ class CWTranslator:
             except pika.exceptions.AMQPConnectionError as e:
                 max_reconnect_attempts -= 1  # Decrement the retry counter
                 if max_reconnect_attempts == 0:
-                    print(f"{house_name} translator reached maximum reconnection attempts. The message was not sent.")
+                    logger.error(f"CWTranslator: {house_name} translator reached maximum reconnection attempts. The message was not sent.")
                 else:
-                    print(f"{house_name} translator lost connection, attempting to reconnect...")
+                    logger.warning(f"CWTranslator: {house_name} translator lost connection, attempting to reconnect...")
                     time.sleep(5) 
             except Exception as e:
-                print(f"An unexpected error occurred: {e} {house_name}")
+                logger.error(f"CWTranslator: An unexpected error occurred: {e} {house_name}")
                 break
    
-    
+        logger.info(f"CWTranslator: Translating {house_name} successfully!")

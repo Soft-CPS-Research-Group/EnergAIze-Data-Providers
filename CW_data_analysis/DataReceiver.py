@@ -10,7 +10,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from dateutil import parser
 from datetime import datetime, timedelta
-from cwlogin import CWLogin
+from utils.cwlogin import CWLogin
 from utils.data import DataSet
 
 # Load configurations

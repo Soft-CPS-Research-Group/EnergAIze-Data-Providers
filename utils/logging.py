@@ -13,7 +13,9 @@ class Logging():
         # Extracts the directory from the given path
         log_dir = os.path.dirname(filepath)
         # Creates the directory if it doesn't exist
-        os.makedirs(log_dir, exist_ok=True)
+        if not os.path.exists(log_dir):
+            print("Creating log directory")
+            os.makedirs(log_dir, mode=0o777, exist_ok=True)
         # Removes default handlers
         logger.remove()
         logger.add(
@@ -25,7 +27,8 @@ class Logging():
             # Compresses old logs to save space
             compression="zip",
             level="WARNING",
-            format="{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}"
+            format="{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}",
+            enqueue=True
         )
         logger.add(sys.stderr, format="{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}")
 

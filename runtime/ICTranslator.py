@@ -23,7 +23,7 @@ class ICTranslator:
             try:
                 connection = pika.BlockingConnection(pika.ConnectionParameters(
                     host=connection_params.get('host'),
-                    port=connection_params.get('port')
+                    port=connection_params.get('port'), virtual_host=connection_params.get('vhost'), credentials=pika.PlainCredentials(connection_params.get('credentials').get('username'), connection_params.get('credentials').get('password'))
                 ))
                 channel = connection.channel()
                 channel.queue_declare(queue=house_name, durable=True)
@@ -73,12 +73,12 @@ class ICTranslator:
             except pika.exceptions.AMQPConnectionError as e:
                 max_reconnect_attempts -= 1  # Decrement the retry counter
                 if max_reconnect_attempts == 0:
-                    print(f"{house_name} translator reached maximum reconnection attempts. The message was not sent.")
+                    logger.error(f"ICTranslator: {house_name} translator reached maximum reconnection attempts. The message was not sent.")
                 else:
-                    print(f"{house_name} translator lost connection, attempting to reconnect...")
+                    logger.warning(f"ICTranslator: {house_name} translator lost connection, attempting to reconnect...")
                     time.sleep(5) 
             except Exception as e:
-                print(f"An unexpected error occurred: {e}")
+                logger.error(f"ICTranslator: An unexpected error occurred: {e}")
                 break
 
 # Em caso de erro corro o risco da mensagem ser enviada duas vezes, mas não é um problema

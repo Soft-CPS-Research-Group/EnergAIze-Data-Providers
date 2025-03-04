@@ -12,7 +12,7 @@ class Predictor():
         self._devices = devices
 
         mongo_config = configurations.get('mongoDB')
-        mongo_client = pymongo.MongoClient(mongo_config['host'], mongo_config['port'])
+        mongo_client = pymongo.MongoClient(host=mongo_config['host'], port=mongo_config['port'], username=mongo_config['credentials']['username'],password=mongo_config['credentials']['password'],authSource=mongo_config.get('authSource', 'admin') )
         db = mongo_client[mongo_config['database']]
         self._collection = db[house]
 

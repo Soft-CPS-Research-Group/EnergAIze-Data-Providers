@@ -1,12 +1,21 @@
 {
     "internalAMQPServer": {
-        "host": "localhost",
-        "port": 5672
+        "host": "rabbitmq",
+        "port": 5672,
+        "credentials": {
+            "username": "dataprovider",
+            "password": "dataprovidermq"
+        },
+        "vhost": "private_docker_vhost"
     },
     "mongoDB":{
         "database":"EnergAIzeData",
-        "host":"localhost",
-        "port":27017
+        "host":"vsgate-s1.dei.isep.ipp.pt",
+        "port":10246,
+        "credentials": {
+            "username": "teste",
+            "password": "teste1"
+        }
     },
     "CWserver": "https://ks.innov.cleanwatts.energy/api/2.0/consumptions/instant?tags=",
     "ICserver": {

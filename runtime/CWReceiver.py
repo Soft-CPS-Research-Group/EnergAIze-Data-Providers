@@ -1,16 +1,15 @@
 from threading import Thread, Event
-from apscheduler.schedulers.background import BackgroundScheduler
+from apscheduler.schedulers.background import BlockingScheduler
 import requests
 import time
 import datetime
 from runtime.CWTranslator import CWTranslator
 from utils.data import DataSet
 from utils.config_loader import load_configurations
-from cwlogin import CWLogin
+from utils.cwlogin import CWLogin
 
 # Load configurations
 configurations, logger = load_configurations('./configs/runtimeConfigurations.json',"cleanwatts")
-
 class CWReceiver(Thread):
     def __init__(self, house_name, tags_list, connection_params):
         Thread.__init__(self)
@@ -28,6 +27,7 @@ class CWReceiver(Thread):
         self._scheduler.shutdown()
 
     def _job(self):
+        print(f"Job Execution Time: {datetime.datetime.now()} House: {self._house}")
         #from_time = (datetime.datetime.now() - datetime.timedelta(seconds=self._time_interval)).isoformat()
         if datetime.datetime.now().timestamp() - self._session_time > 3000:
             self._login()
@@ -37,16 +37,17 @@ class CWReceiver(Thread):
                 #url = f"{self._connection_params}{tag.get('id')}&from={from_time}"
                 url = f"https://ks.innov.cleanwatts.energy/api/2.0/data/lastvalue/Instant?from=2003-06-11&tags={tag.get('id')}"
                 response = requests.get(url, headers=self._header)
-                if response.status_code == 200:               
+                if response.status_code == 200:
+                    logger.info(f"CWReceiver: Tag {tag.get('id')} successfully retrieved!")
                     CWTranslator.translate(self._house, response.json())
                 else:
-                    logger.warning(f"Error getting data from tag {tag.get('id')}: {response.status_code}")
+                    logger.warning(f"CWReceiver: Error getting data from tag {tag.get('id')}: {response.status_code}")
             except requests.exceptions.Timeout:
-                logger.error("Connection timeout.")
-            except requests.exceptions.ConnectionError:
-                logger.error("No internet connection.")
+                logger.error("CWReceiver: Connection timeout.")
+            except requests.exceptions.ConnectionError as e:
+                logger.error(f"CWReceiver: {e}")
             except requests.exceptions.RequestException as e:
-                logger.error(f"Unexpected error - {e}")
+                logger.error(f"CWReceiver: Unexpected error - {e}")
 
             
     def _login(self):
@@ -56,18 +57,19 @@ class CWReceiver(Thread):
             print(e)
             exit()
         self._header = {'Authorization': f"CW {token}"}
-        self._session_time = datetime.datetime.now().timestamp()
+        if token is not None:
+            self._session_time = datetime.datetime.now().timestamp()
 
     def run(self):
-        self._scheduler = BackgroundScheduler()
-        self._scheduler.add_job(self._job, 'interval', seconds=self._time_interval)  
-        self._scheduler.start()
+        self._scheduler = BlockingScheduler()
+        self._scheduler.add_job(self._job, 'interval', seconds=self._time_interval, misfire_grace_time=10, coalesce=True)
 
         self._job()
-        self._stop_event.wait()
+        self._scheduler.start()
+
 
 def main():
-    print("Starting CWReceiver...")
+    logger.info("Starting CWReceiver...")
     # Get connection parameters
     connection_params = configurations.get('CWserver')
     # Get CW Houses file and turn it into a dictionary

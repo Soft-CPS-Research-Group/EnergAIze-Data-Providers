@@ -16,9 +16,9 @@ class CWLogin():
 
         loginURL = credentials.get('loginURL')
         attempts = 0
-        wait_time = 1
+        max_attempts = 3
 
-        while True:
+        while attempts <= max_attempts:
             try: 
                 response = requests.post(loginURL, json=login_data, timeout=60)
 
@@ -39,8 +39,4 @@ class CWLogin():
 
             attempts += 1
 
-            print(f"Waiting {wait_time} seconds before retrying...")
-            time.sleep(wait_time)
-            wait_time *= 2  
-
-       
+        return None

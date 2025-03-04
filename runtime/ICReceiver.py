@@ -66,7 +66,7 @@ class ICReceiver(threading.Thread):
 
         
 def main():
-    print("Starting ICReceiver...")
+    logger.info("Starting ICReceiver...")
     # Get connection parameters
     connection_params = configurations.get('ICserver')
     # Get CW Houses file and turn it into a dictionary
