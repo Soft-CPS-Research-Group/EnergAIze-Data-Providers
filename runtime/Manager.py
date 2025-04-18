@@ -112,11 +112,9 @@ class Manager():
 
 
     def _format_data_for_model(self):
-        timestamp = datetime.datetime.now()
+        timestamp = datetime.datetime.now().strftime('%Y-%m-%dT%H:%M:%S')
         self._message = copy.deepcopy(self._algorithm_format)
-        self._message['month'] = timestamp.month
-        self._message['hour'] = timestamp.hour
-        self._message['day_type'] = timestamp.weekday()  # Obtém o tipo de dia (por exemplo, 'Weekday' ou 'Weekend')
+        self._message['timestamp'] = timestamp
 
         for device in self._devices:
             if 'label' in device and device.get('label') in self._algorithm_format.keys():

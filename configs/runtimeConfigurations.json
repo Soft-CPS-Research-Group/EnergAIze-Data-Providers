@@ -51,21 +51,15 @@
         "path": "./house_files/CPData.json"
     },
     "AlgorithmAtributes": {
-        "month": "",
-        "day_type": "",
-        "hour": "",
-        "non_shiftable_load": "",
-        "solar_generation": "",
-        "energy_price": "",
+        "timestamp": "",
+        "non_shiftable_load": 0,
+        "solar_generation": 0,
+        "energy_price": 0,
         "charging_sessions": [],
         "generated": 0
     },
     "ChargingSessionsFormat": {
         "Charger Id": "",
-        "EOT": 0,
-        "EsocD": 0,
-        "EAT": 0,
-        "EsocA": 0,
         "soc": 0,
         "power": 0,
         "flexibility": {

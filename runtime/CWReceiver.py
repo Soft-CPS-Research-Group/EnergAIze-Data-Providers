@@ -35,7 +35,7 @@ class CWReceiver(Thread):
             try:
                 # I wanted to do only one request with all the tags, but if I do that and one of the tags is not available, all the tags are compromised
                 #url = f"{self._connection_params}{tag.get('id')}&from={from_time}"
-                url = f"https://ks.innov.cleanwatts.energy/api/2.0/data/lastvalue/Instant?from=2003-06-11&tags={tag.get('id')}"
+                url = f"https://ks.innov.cleanwatts.energy/api/2.0/data/lastvalue/Instant?from=2024-06-11&tags={tag.get('id')}"
                 response = requests.get(url, headers=self._header, timeout=(3,10)) #ver melhor
                 if response.status_code == 200:
                     logger.info(f"CWReceiver: Tag {tag.get('id')} successfully retrieved!")
