@@ -1,6 +1,6 @@
 services:
   data_provider:
-    build: .
+    image: clar1ssesousa/data-provider:latest
     restart: always
     depends_on:
       rabbitmq:
