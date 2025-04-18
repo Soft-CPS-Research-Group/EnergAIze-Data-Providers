@@ -395,3 +395,209 @@
 2025-04-15 08:57:51 | WARNING | Device AC000014_1 was not found.
 2025-04-15 08:57:51 | WARNING | Device ACEXT001_1 was not found.
 2025-04-15 08:57:51 | WARNING | Device ACEXT003_1 was not found.
+2025-04-18 12:11:08 | WARNING | Could not connect to MongoDB: Authentication failed., full error: {'ok': 0.0, 'errmsg': 'Authentication failed.', 'code': 18, 'codeName': 'AuthenticationFailed'}
+2025-04-18 12:11:08 | WARNING | Skipping MongoDB insert: no active connection.
+2025-04-18 12:11:10 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 6802415c06be3169ee1e2ed6, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:11:10 | WARNING | Skipping MongoDB insert: no active connection.
+2025-04-18 12:11:12 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 6802415e06be3169ee1e2ed7, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:11:12 | WARNING | Skipping MongoDB insert: no active connection.
+2025-04-18 12:11:18 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 6802416406be3169ee1e2ed8, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:11:18 | WARNING | Skipping MongoDB insert: no active connection.
+2025-04-18 12:11:20 | WARNING | Could not connect to MongoDB: Authentication failed., full error: {'ok': 0.0, 'errmsg': 'Authentication failed.', 'code': 18, 'codeName': 'AuthenticationFailed'}
+2025-04-18 12:11:20 | WARNING | Skipping MongoDB insert: no active connection.
+2025-04-18 12:11:27 | WARNING | Device 29725 was not found.
+2025-04-18 12:11:33 | WARNING | Device 29658 was not found.
+2025-04-18 12:11:37 | WARNING | Device 31093 was not found.
+2025-04-18 12:11:37 | WARNING | Device not found in substitute_dict: 31093
+2025-04-18 12:11:38 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 6802417806be3169ee1e2ed9, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:11:38 | WARNING | Skipping MongoDB insert: no active connection.
+2025-04-18 12:11:43 | WARNING | Device 29498 was not found.
+2025-04-18 12:11:43 | WARNING | Device not found in substitute_dict: 29498
+2025-04-18 12:11:43 | WARNING | Device 30080 was not found.
+2025-04-18 12:11:43 | WARNING | Device not found in substitute_dict: 30080
+2025-04-18 12:11:45 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 6802417f06be3169ee1e2eda, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:11:45 | WARNING | Skipping MongoDB insert: no active connection.
+2025-04-18 12:11:46 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 6802418006be3169ee1e2edb, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:11:46 | WARNING | Skipping MongoDB insert: no active connection.
+2025-04-18 12:11:49 | WARNING | Device 30688 was not found.
+2025-04-18 12:11:49 | WARNING | Device not found in substitute_dict: 30688
+2025-04-18 12:11:50 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 6802418406be3169ee1e2edd, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:11:50 | WARNING | Skipping MongoDB insert: no active connection.
+2025-04-18 12:11:52 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 6802418606be3169ee1e2ede, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:11:52 | WARNING | Skipping MongoDB insert: no active connection.
+2025-04-18 12:11:52 | WARNING | Could not connect to MongoDB: Authentication failed., full error: {'ok': 0.0, 'errmsg': 'Authentication failed.', 'code': 18, 'codeName': 'AuthenticationFailed'}
+2025-04-18 12:11:52 | WARNING | Skipping MongoDB insert: no active connection.
+2025-04-18 12:11:54 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 6802418806be3169ee1e2edf, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:11:54 | WARNING | Skipping MongoDB insert: no active connection.
+2025-04-18 12:11:54 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 6802418806be3169ee1e2ee0, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:11:54 | WARNING | Skipping MongoDB insert: no active connection.
+2025-04-18 12:11:55 | WARNING | Device AC000001_1 was not found.
+2025-04-18 12:11:55 | WARNING | Device AC000004_1 was not found.
+2025-04-18 12:11:55 | WARNING | Device AC000007_1 was not found.
+2025-04-18 12:11:55 | WARNING | Device AC000010_1 was not found.
+2025-04-18 12:11:55 | WARNING | Device AC000013_1 was not found.
+2025-04-18 12:11:55 | WARNING | Device AC000002_1 was not found.
+2025-04-18 12:11:55 | WARNING | Device AC000003_1 was not found.
+2025-04-18 12:11:55 | WARNING | Device AC000005_1 was not found.
+2025-04-18 12:11:55 | WARNING | Device AC000006_1 was not found.
+2025-04-18 12:11:55 | WARNING | Device AC000008_1 was not found.
+2025-04-18 12:11:55 | WARNING | Device AC000009_1 was not found.
+2025-04-18 12:11:55 | WARNING | Device AC000011_1 was not found.
+2025-04-18 12:11:55 | WARNING | Device AC000012_1 was not found.
+2025-04-18 12:11:55 | WARNING | Device AC000014_1 was not found.
+2025-04-18 12:11:55 | WARNING | Device ACEXT001_1 was not found.
+2025-04-18 12:11:55 | WARNING | Device ACEXT002_1 was not found.
+2025-04-18 12:11:55 | WARNING | Device ACEXT003_1 was not found.
+2025-04-18 12:11:55 | WARNING | Device ACEXT004_1 was not found.
+2025-04-18 12:11:57 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 6802418b06be3169ee1e2ee1, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:11:57 | WARNING | Skipping MongoDB insert: no active connection.
+2025-04-18 12:12:01 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 6802418f06be3169ee1e2ee2, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:12:01 | WARNING | Skipping MongoDB insert: no active connection.
+2025-04-18 12:12:05 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 6802419306be3169ee1e2ee4, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:12:05 | WARNING | Skipping MongoDB insert: no active connection.
+2025-04-18 12:12:05 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 6802419306be3169ee1e2ee5, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:12:05 | WARNING | Skipping MongoDB insert: no active connection.
+2025-04-18 12:12:05 | WARNING | Could not connect to MongoDB: Authentication failed., full error: {'ok': 0.0, 'errmsg': 'Authentication failed.', 'code': 18, 'codeName': 'AuthenticationFailed'}
+2025-04-18 12:12:05 | WARNING | Skipping MongoDB insert: no active connection.
+2025-04-18 12:17:48 | WARNING | Could not connect to MongoDB: vsgate-s1.dei.isep.ipp.pt:10246: [Errno -3] Temporary failure in name resolution (configured timeouts: connectTimeoutMS: 20000.0ms)
+2025-04-18 12:17:48 | WARNING | Skipping MongoDB insert: no active connection.
+2025-04-18 12:17:52 | WARNING | Could not connect to MongoDB: Authentication failed., full error: {'ok': 0.0, 'errmsg': 'Authentication failed.', 'code': 18, 'codeName': 'AuthenticationFailed'}
+2025-04-18 12:17:52 | WARNING | Skipping MongoDB insert: no active connection.
+2025-04-18 12:17:53 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 5.0s, Topology Description: <TopologyDescription id: 680242ecfe9932869a09283d, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:17:53 | WARNING | Skipping MongoDB insert: no active connection.
+2025-04-18 12:17:55 | WARNING | Device 36766 was not found.
+2025-04-18 12:17:56 | WARNING | Could not connect to MongoDB: Authentication failed., full error: {'ok': 0.0, 'errmsg': 'Authentication failed.', 'code': 18, 'codeName': 'AuthenticationFailed'}
+2025-04-18 12:17:56 | WARNING | Skipping MongoDB insert: no active connection.
+2025-04-18 12:18:00 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 5.0s, Topology Description: <TopologyDescription id: 680242f3fe9932869a09283e, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:18:00 | WARNING | Skipping MongoDB insert: no active connection.
+2025-04-18 12:18:09 | WARNING | Device 30688 was not found.
+2025-04-18 12:18:09 | WARNING | Device not found in substitute_dict: 30688
+2025-04-18 12:18:11 | WARNING | Could not connect to MongoDB: Authentication failed., full error: {'ok': 0.0, 'errmsg': 'Authentication failed.', 'code': 18, 'codeName': 'AuthenticationFailed'}
+2025-04-18 12:18:11 | WARNING | Skipping MongoDB insert: no active connection.
+2025-04-18 12:52:41 | ERROR | Failed to insert data: vsgate-s1.dei.isep.ipp.pt:10246: [Errno -3] Temporary failure in name resolution (configured timeouts: connectTimeoutMS: 20000.0ms)
+2025-04-18 12:53:11 | WARNING | Device 30642 was not found.
+2025-04-18 12:53:11 | WARNING | Device 31049 was not found.
+2025-04-18 12:53:11 | WARNING | Device not found in substitute_dict: 31049
+2025-04-18 12:53:11 | WARNING | Device 31093 was not found.
+2025-04-18 12:53:11 | WARNING | Device 29498 was not found.
+2025-04-18 12:53:11 | WARNING | Device not found in substitute_dict: 29498
+2025-04-18 12:53:11 | WARNING | Device 30080 was not found.
+2025-04-18 12:53:11 | WARNING | Device not found in substitute_dict: 30080
+2025-04-18 12:53:12 | WARNING | Device AC000001_1 was not found.
+2025-04-18 12:53:12 | WARNING | Device AC000004_1 was not found.
+2025-04-18 12:53:12 | WARNING | Device AC000007_1 was not found.
+2025-04-18 12:53:12 | WARNING | Device AC000010_1 was not found.
+2025-04-18 12:53:12 | WARNING | Device AC000013_1 was not found.
+2025-04-18 12:53:12 | WARNING | Device AC000002_1 was not found.
+2025-04-18 12:53:12 | WARNING | Device AC000003_1 was not found.
+2025-04-18 12:53:12 | WARNING | Device AC000005_1 was not found.
+2025-04-18 12:53:12 | WARNING | Device AC000006_1 was not found.
+2025-04-18 12:53:12 | WARNING | Device AC000008_1 was not found.
+2025-04-18 12:53:12 | WARNING | Device AC000009_1 was not found.
+2025-04-18 12:53:12 | WARNING | Device AC000011_1 was not found.
+2025-04-18 12:53:12 | WARNING | Device AC000012_1 was not found.
+2025-04-18 12:53:12 | WARNING | Device AC000014_1 was not found.
+2025-04-18 12:53:12 | WARNING | Device ACEXT001_1 was not found.
+2025-04-18 12:53:12 | WARNING | Device ACEXT002_1 was not found.
+2025-04-18 12:53:12 | WARNING | Device ACEXT003_1 was not found.
+2025-04-18 12:53:12 | WARNING | Device ACEXT004_1 was not found.
+2025-04-18 12:53:36 | ERROR | Failed to insert data: No servers found yet, Timeout: 5.0s, Topology Description: <TopologyDescription id: 68024b4b7b71deef97d07caa, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:54:12 | WARNING | Device 29498 was not found.
+2025-04-18 12:54:12 | WARNING | Device 28375 was not found.
+2025-04-18 12:54:12 | WARNING | Device 33423 was not found.
+2025-04-18 12:54:12 | WARNING | Device not found in substitute_dict: 29498
+2025-04-18 12:54:12 | WARNING | Device 31049 was not found.
+2025-04-18 12:54:12 | WARNING | Device 30080 was not found.
+2025-04-18 12:54:12 | WARNING | Device not found in substitute_dict: 31049
+2025-04-18 12:54:12 | WARNING | Device not found in substitute_dict: 30080
+2025-04-18 12:55:11 | WARNING | Device 29725 was not found.
+2025-04-18 12:55:11 | WARNING | Device 31049 was not found.
+2025-04-18 12:55:11 | WARNING | Device not found in substitute_dict: 31049
+2025-04-18 12:55:11 | WARNING | Device 29498 was not found.
+2025-04-18 12:55:11 | WARNING | Device not found in substitute_dict: 29498
+2025-04-18 12:55:11 | WARNING | Device 30080 was not found.
+2025-04-18 12:55:11 | WARNING | Device not found in substitute_dict: 30080
+2025-04-18 12:56:11 | WARNING | Device 29720 was not found.
+2025-04-18 12:56:11 | WARNING | Device 28387 was not found.
+2025-04-18 12:56:11 | WARNING | Device 31093 was not found.
+2025-04-18 12:56:11 | WARNING | Device 29498 was not found.
+2025-04-18 12:56:11 | WARNING | Device not found in substitute_dict: 29498
+2025-04-18 12:56:11 | WARNING | Device 30080 was not found.
+2025-04-18 12:56:11 | WARNING | Device not found in substitute_dict: 30080
+2025-04-18 12:57:11 | WARNING | Device 29498 was not found.
+2025-04-18 12:57:11 | WARNING | Device not found in substitute_dict: 29498
+2025-04-18 12:57:11 | WARNING | Device 30080 was not found.
+2025-04-18 12:57:11 | WARNING | Device not found in substitute_dict: 30080
+2025-04-18 12:58:11 | WARNING | Device 28387 was not found.
+2025-04-18 12:58:11 | WARNING | Device 29498 was not found.
+2025-04-18 12:58:11 | WARNING | Device not found in substitute_dict: 29498
+2025-04-18 12:58:11 | WARNING | Device 30080 was not found.
+2025-04-18 12:58:11 | WARNING | Device not found in substitute_dict: 30080
+2025-04-18 12:58:11 | WARNING | Device 29660 was not found.
+2025-04-18 12:58:12 | WARNING | Device 33682 was not found.
+2025-04-18 12:59:11 | WARNING | Device 29720 was not found.
+2025-04-18 12:59:11 | WARNING | Device 29725 was not found.
+2025-04-18 12:59:11 | WARNING | Device 29498 was not found.
+2025-04-18 12:59:11 | WARNING | Device not found in substitute_dict: 29498
+2025-04-18 12:59:11 | WARNING | Device 30080 was not found.
+2025-04-18 12:59:11 | WARNING | Device not found in substitute_dict: 30080
+2025-04-18 12:59:11 | WARNING | Device 29660 was not found.
+2025-04-18 13:00:11 | WARNING | Device 29725 was not found.
+2025-04-18 13:00:11 | WARNING | Device 29498 was not found.
+2025-04-18 13:00:11 | WARNING | Device not found in substitute_dict: 29498
+2025-04-18 13:00:11 | WARNING | Device 30080 was not found.
+2025-04-18 13:00:11 | WARNING | Device not found in substitute_dict: 30080
+2025-04-18 13:01:11 | WARNING | Device 29720 was not found.
+2025-04-18 13:01:11 | WARNING | Device 29498 was not found.
+2025-04-18 13:01:11 | WARNING | Device not found in substitute_dict: 29498
+2025-04-18 13:01:11 | WARNING | Device 30080 was not found.
+2025-04-18 13:01:11 | WARNING | Device not found in substitute_dict: 30080
+2025-04-18 13:02:11 | WARNING | Device 29498 was not found.
+2025-04-18 13:02:11 | WARNING | Device not found in substitute_dict: 29498
+2025-04-18 13:02:11 | WARNING | Device 30080 was not found.
+2025-04-18 13:02:11 | WARNING | Device not found in substitute_dict: 30080
+2025-04-18 13:02:12 | WARNING | Device 33682 was not found.
+2025-04-18 13:02:12 | WARNING | Device 35927 was not found.
+2025-04-18 13:03:11 | WARNING | Device 29498 was not found.
+2025-04-18 13:03:11 | WARNING | Device not found in substitute_dict: 29498
+2025-04-18 13:03:11 | WARNING | Device 30080 was not found.
+2025-04-18 13:03:11 | WARNING | Device not found in substitute_dict: 30080
+2025-04-18 13:50:37 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f68204133d0>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))
+2025-04-18 13:50:38 | ERROR | Failed to insert data: vsgate-s1.dei.isep.ipp.pt:10246: [Errno -3] Temporary failure in name resolution (configured timeouts: connectTimeoutMS: 20000.0ms)
+2025-04-18 13:50:39 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 13:50:41 | ERROR | Failed to insert data: vsgate-s1.dei.isep.ipp.pt:10246: [Errno -3] Temporary failure in name resolution (configured timeouts: connectTimeoutMS: 20000.0ms)
+2025-04-18 13:50:43 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 13:50:48 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 13:50:58 | ERROR | Failed to insert data: vsgate-s1.dei.isep.ipp.pt:10246: [Errno -3] Temporary failure in name resolution (configured timeouts: connectTimeoutMS: 20000.0ms)
+2025-04-18 13:51:12 | WARNING | Device 30642 was not found.
+2025-04-18 13:51:12 | WARNING | Device 29658 was not found.
+2025-04-18 13:51:12 | WARNING | Device not found in substitute_dict: 29658
+2025-04-18 13:51:12 | WARNING | Device 28386 was not found.
+2025-04-18 13:51:12 | WARNING | Device 29373 was not found.
+2025-04-18 13:51:12 | WARNING | Device 29498 was not found.
+2025-04-18 13:51:12 | WARNING | Device not found in substitute_dict: 29498
+2025-04-18 13:51:12 | WARNING | Device 30080 was not found.
+2025-04-18 13:51:12 | WARNING | Device not found in substitute_dict: 30080
+2025-04-18 13:51:12 | WARNING | Device 30688 was not found.
+2025-04-18 13:51:12 | WARNING | Device not found in substitute_dict: 30688
+2025-04-18 13:51:12 | WARNING | Device 37214 was not found.
+2025-04-18 13:51:12 | WARNING | Device AC000001_1 was not found.
+2025-04-18 13:51:12 | WARNING | Device AC000004_1 was not found.
+2025-04-18 13:51:12 | WARNING | Device AC000007_1 was not found.
+2025-04-18 13:51:12 | WARNING | Device AC000010_1 was not found.
+2025-04-18 13:51:12 | WARNING | Device AC000013_1 was not found.
+2025-04-18 13:51:12 | WARNING | Device AC000002_1 was not found.
+2025-04-18 13:51:12 | WARNING | Device AC000003_1 was not found.
+2025-04-18 13:51:12 | WARNING | Device AC000005_1 was not found.
+2025-04-18 13:51:12 | WARNING | Device AC000006_1 was not found.
+2025-04-18 13:51:12 | WARNING | Device AC000008_1 was not found.
+2025-04-18 13:51:12 | WARNING | Device AC000009_1 was not found.
+2025-04-18 13:51:12 | WARNING | Device AC000011_1 was not found.
+2025-04-18 13:51:12 | WARNING | Device AC000012_1 was not found.
+2025-04-18 13:51:12 | WARNING | Device AC000014_1 was not found.
+2025-04-18 13:51:12 | WARNING | Device ACEXT001_1 was not found.
+2025-04-18 13:51:12 | WARNING | Device ACEXT002_1 was not found.
+2025-04-18 13:51:12 | WARNING | Device ACEXT003_1 was not found.
+2025-04-18 13:51:12 | WARNING | Device ACEXT004_1 was not found.
+2025-04-18 13:51:16 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 13:51:17 | WARNING | EnergyPrice: Error getting data from Energy Price: 400

@@ -20,6 +20,7 @@ class MessageAggregator(IManager):
         self._devices = devices
 
         self._substitute_dict = {}
+        self._last_energy_price = 0 # ver depois como lidar melhor com isto
         self._dict = {}
 
         self._timeInterval = DataSet.calculate_interval(configurations.get('frequency'))
@@ -90,6 +91,13 @@ class MessageAggregator(IManager):
             
         self._timerEnded = False
     
+    def _get_price(self):
+        aux = EnergyPrice.getEnergyPrice()
+        if aux is None:
+            return self._last_energy_price
+        else:
+            self._last_energy_price = aux
+            return aux
 
     def algorithm_format(self):
         timestamp = datetime.datetime.now()
@@ -117,9 +125,8 @@ class MessageAggregator(IManager):
                 
                 if self._dict[device.get('id')]['generated'] == 1:
                     self._message['Generated'] = 1
-        self._message['Energy Price'] = EnergyPrice.getEnergyPrice()
+        self._message['Energy Price'] = self._get_price()
         print(f'House: {self._house}, body: {self._message}\n')
-
 
     def send_to_queue(self):
         attempts = 0
@@ -142,7 +149,6 @@ class MessageAggregator(IManager):
                     time.sleep(2)  
                 else:
                     print("Max attempts reached. Could not send message to queue.")
-
 
     def save_data(self):
         file_path = self._house + '.json'

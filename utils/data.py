@@ -59,8 +59,9 @@ class DataSet:
     @staticmethod
     def house_identifier(dic, schema, provider) :
         for key, value in schema.items():
-                for item in value:
+                for item in value['devices']:
                     item['provider'] = provider
+                value['site'] = value['site'].replace(' ', '_')
                 if key in dic:
                     dic[key].extend(value)
                 else:

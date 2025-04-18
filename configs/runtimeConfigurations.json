@@ -9,12 +9,11 @@
         "vhost": "private_docker_vhost"
     },
     "mongoDB":{
-        "database":"EnergAIzeData",
         "host":"vsgate-s1.dei.isep.ipp.pt",
         "port":10246,
         "credentials": {
-            "username": "teste",
-            "password": "teste1"
+            "username": "softCPS",
+            "password": "softCPSBD"
         }
     },
     "CWserver": "https://ks.innov.cleanwatts.energy/api/2.0/consumptions/instant?tags=",

@@ -1,5 +1,6 @@
 import random
 import pymongo
+from pymongo.errors import PyMongoError
 from pydoc import locate
 from utils.config_loader import load_configurations
 
@@ -11,11 +12,32 @@ class Predictor():
         self._providers = configurations.get('Providers')
         self._devices = house_specs["devices"]
         self._site = house_specs["site"]
+        self._mongo_config = configurations.get('mongoDB')
+        self._house = house
 
-        mongo_config = configurations.get('mongoDB')
-        mongo_client = pymongo.MongoClient(host=mongo_config['host'], port=mongo_config['port'], username=mongo_config['credentials']['username'],password=mongo_config['credentials']['password'],authSource=mongo_config.get('authSource', 'admin') )
-        db = mongo_client[self._site]
-        self._collection = db[house]
+        self._client = None
+        self._collection = None
+        self._connect_to_db()
+
+    def _connect_to_db(self):
+        try:
+            self._client = pymongo.MongoClient(
+                host=self._mongo_config['host'],
+                port=self._mongo_config['port'],
+                username=self._mongo_config['credentials']['username'],
+                password=self._mongo_config['credentials']['password'],
+                authSource=self._mongo_config.get('authSource', 'admin'),
+                serverSelectionTimeoutMS=5000
+            )
+
+            db = self._client[self._site]
+            self._collection = db[self._house]
+            logger.info(f"Connected to MongoDB for house {self._house}")
+
+        except PyMongoError as e:
+            self._client = None
+            self._collection = None
+            logger.warning(f"Could not connect to MongoDB: {e}")
 
     def predict(self, message):
         result = self._energaize_simulator(message)
@@ -40,5 +62,15 @@ class Predictor():
             locate(decisionForwarder).toForward(item)  
 
     def _save_data(self,message,result):
-        id = self._collection.insert_one(message).inserted_id
-        print('Message saved with id:', id)
+        if self._collection is None:
+            self._connect_to_db()
+
+        if self._collection is not None:
+            try:
+                inserted_id = self._collection.insert_one(message).inserted_id
+                logger.info(f'Message saved with id: {inserted_id}')
+            except PyMongoError as e:
+                logger.error(f'Failed to insert data: {e}')
+                self._collection = None
+        else:
+            logger.warning("Skipping MongoDB insert: no active connection.")

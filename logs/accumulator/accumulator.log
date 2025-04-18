@@ -1347,3 +1347,241 @@
 2025-04-15 08:55:51 | WARNING | Device AC000014_1 was not found.
 2025-04-15 08:55:51 | WARNING | Device ACEXT001_1 was not found.
 2025-04-15 08:55:51 | WARNING | Device ACEXT003_1 was not found.
+2025-04-18 10:28:06 | WARNING | Device 30634 was not found.
+2025-04-18 10:28:06 | WARNING | Device not found in substitute_dict: 30634
+2025-04-18 10:28:06 | WARNING | Device 31093 was not found.
+2025-04-18 10:28:06 | WARNING | Device not found in substitute_dict: 31093
+2025-04-18 10:28:06 | WARNING | Device 28386 was not found.
+2025-04-18 10:28:06 | WARNING | Device not found in substitute_dict: 28386
+2025-04-18 10:28:06 | WARNING | Device 29498 was not found.
+2025-04-18 10:28:06 | WARNING | Device not found in substitute_dict: 29498
+2025-04-18 10:28:06 | WARNING | Device 30080 was not found.
+2025-04-18 10:28:06 | WARNING | Device not found in substitute_dict: 30080
+2025-04-18 10:28:06 | WARNING | Device 36769 was not found.
+2025-04-18 10:28:06 | WARNING | Device not found in substitute_dict: 36769
+2025-04-18 10:28:06 | WARNING | Device 30688 was not found.
+2025-04-18 10:28:06 | WARNING | Device not found in substitute_dict: 30688
+2025-04-18 10:28:06 | WARNING | Device AC000001_1 was not found.
+2025-04-18 10:28:06 | WARNING | Device AC000004_1 was not found.
+2025-04-18 10:28:06 | WARNING | Device AC000007_1 was not found.
+2025-04-18 10:28:06 | WARNING | Device AC000010_1 was not found.
+2025-04-18 10:28:06 | WARNING | Device AC000013_1 was not found.
+2025-04-18 10:28:06 | WARNING | Device AC000002_1 was not found.
+2025-04-18 10:28:06 | WARNING | Device AC000003_1 was not found.
+2025-04-18 10:28:06 | WARNING | Device AC000005_1 was not found.
+2025-04-18 10:28:06 | WARNING | Device AC000006_1 was not found.
+2025-04-18 10:28:06 | WARNING | Device AC000008_1 was not found.
+2025-04-18 10:28:06 | WARNING | Device AC000009_1 was not found.
+2025-04-18 10:28:06 | WARNING | Device AC000011_1 was not found.
+2025-04-18 10:28:06 | WARNING | Device AC000012_1 was not found.
+2025-04-18 10:28:06 | WARNING | Device AC000014_1 was not found.
+2025-04-18 10:28:06 | WARNING | Device ACEXT001_1 was not found.
+2025-04-18 10:28:06 | WARNING | Device ACEXT002_1 was not found.
+2025-04-18 10:28:06 | WARNING | Device ACEXT003_1 was not found.
+2025-04-18 10:28:06 | WARNING | Device ACEXT004_1 was not found.
+2025-04-18 11:57:49 | WARNING | Could not connect to MongoDB: host.docker.internal:27017: [Errno -2] Name or service not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023e3b950a8faccec67c1c, topology_type: Unknown, servers: [<ServerDescription ('host.docker.internal', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('host.docker.internal:27017: [Errno -2] Name or service not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2025-04-18 11:57:51 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023e3d950a8faccec67c1d, topology_type: Unknown, servers: [<ServerDescription ('host.docker.internal', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 11:57:53 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023e3f950a8faccec67c1e, topology_type: Unknown, servers: [<ServerDescription ('host.docker.internal', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 11:57:55 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023e41950a8faccec67c1f, topology_type: Unknown, servers: [<ServerDescription ('host.docker.internal', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 11:57:57 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023e43950a8faccec67c20, topology_type: Unknown, servers: [<ServerDescription ('host.docker.internal', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 11:57:59 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023e45950a8faccec67c21, topology_type: Unknown, servers: [<ServerDescription ('host.docker.internal', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 11:58:01 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023e47950a8faccec67c22, topology_type: Unknown, servers: [<ServerDescription ('host.docker.internal', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 11:58:03 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023e49950a8faccec67c23, topology_type: Unknown, servers: [<ServerDescription ('host.docker.internal', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 11:58:05 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023e4b950a8faccec67c24, topology_type: Unknown, servers: [<ServerDescription ('host.docker.internal', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 11:58:07 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023e4d950a8faccec67c25, topology_type: Unknown, servers: [<ServerDescription ('host.docker.internal', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 11:58:09 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023e4f950a8faccec67c26, topology_type: Unknown, servers: [<ServerDescription ('host.docker.internal', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 11:58:11 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023e51950a8faccec67c27, topology_type: Unknown, servers: [<ServerDescription ('host.docker.internal', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 11:58:13 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023e53950a8faccec67c28, topology_type: Unknown, servers: [<ServerDescription ('host.docker.internal', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 11:58:15 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023e55950a8faccec67c29, topology_type: Unknown, servers: [<ServerDescription ('host.docker.internal', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 11:58:17 | WARNING | Could not connect to MongoDB: host.docker.internal:27017: [Errno -2] Name or service not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023e57950a8faccec67c2a, topology_type: Unknown, servers: [<ServerDescription ('host.docker.internal', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('host.docker.internal:27017: [Errno -2] Name or service not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2025-04-18 11:59:45 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023eaff70c937e920dd817, topology_type: Unknown, servers: [<ServerDescription ('host.docker.internal', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 11:59:47 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023eb1f70c937e920dd818, topology_type: Unknown, servers: [<ServerDescription ('host.docker.internal', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 11:59:49 | WARNING | Could not connect to MongoDB: host.docker.internal:27017: [Errno -2] Name or service not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023eb3f70c937e920dd819, topology_type: Unknown, servers: [<ServerDescription ('host.docker.internal', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('host.docker.internal:27017: [Errno -2] Name or service not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2025-04-18 11:59:51 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023eb5f70c937e920dd81a, topology_type: Unknown, servers: [<ServerDescription ('host.docker.internal', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 11:59:53 | WARNING | Could not connect to MongoDB: host.docker.internal:27017: [Errno -2] Name or service not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023eb7f70c937e920dd81b, topology_type: Unknown, servers: [<ServerDescription ('host.docker.internal', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('host.docker.internal:27017: [Errno -2] Name or service not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2025-04-18 11:59:55 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023eb9f70c937e920dd81c, topology_type: Unknown, servers: [<ServerDescription ('host.docker.internal', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 11:59:57 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023ebbf70c937e920dd81d, topology_type: Unknown, servers: [<ServerDescription ('host.docker.internal', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 11:59:59 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023ebdf70c937e920dd81e, topology_type: Unknown, servers: [<ServerDescription ('host.docker.internal', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 12:00:01 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023ebff70c937e920dd81f, topology_type: Unknown, servers: [<ServerDescription ('host.docker.internal', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 12:00:03 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023ec1f70c937e920dd820, topology_type: Unknown, servers: [<ServerDescription ('host.docker.internal', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 12:00:05 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023ec3f70c937e920dd821, topology_type: Unknown, servers: [<ServerDescription ('host.docker.internal', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 12:00:07 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023ec5f70c937e920dd822, topology_type: Unknown, servers: [<ServerDescription ('host.docker.internal', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 12:00:09 | WARNING | Could not connect to MongoDB: host.docker.internal:27017: [Errno -2] Name or service not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023ec7f70c937e920dd823, topology_type: Unknown, servers: [<ServerDescription ('host.docker.internal', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('host.docker.internal:27017: [Errno -2] Name or service not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2025-04-18 12:00:11 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023ec9f70c937e920dd824, topology_type: Unknown, servers: [<ServerDescription ('host.docker.internal', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 12:00:13 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023ecbf70c937e920dd825, topology_type: Unknown, servers: [<ServerDescription ('host.docker.internal', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 12:01:26 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023f145aae703a8ba53462, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.75', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 12:01:28 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023f165aae703a8ba53463, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.75', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 12:01:30 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023f185aae703a8ba53464, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.75', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 12:01:32 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023f1a5aae703a8ba53465, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.75', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 12:01:34 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023f1c5aae703a8ba53466, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.75', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 12:01:36 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023f1e5aae703a8ba53467, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.75', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 12:01:38 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023f205aae703a8ba53468, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.75', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 12:01:40 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023f225aae703a8ba53469, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.75', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 12:01:42 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023f245aae703a8ba5346a, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.75', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 12:01:44 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023f265aae703a8ba5346b, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.75', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 12:01:46 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023f285aae703a8ba5346c, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.75', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 12:01:48 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023f2a5aae703a8ba5346d, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.75', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 12:01:50 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023f2c5aae703a8ba5346e, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.75', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 12:01:52 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023f2e5aae703a8ba5346f, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.75', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 12:01:54 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 68023f305aae703a8ba53470, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.75', 27017) server_type: Unknown, rtt: None>]>
+2025-04-18 12:05:33 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 6802400b8197618f82acb10b, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:05:35 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 6802400d8197618f82acb10c, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:05:37 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 6802400f8197618f82acb10d, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:05:39 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 680240118197618f82acb10e, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:05:41 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 680240138197618f82acb10f, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:05:43 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 680240158197618f82acb110, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:05:45 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 680240178197618f82acb111, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:05:47 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 680240198197618f82acb112, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:05:49 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 6802401b8197618f82acb113, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:05:51 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 6802401d8197618f82acb114, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:05:53 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 6802401f8197618f82acb115, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:05:55 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 680240218197618f82acb116, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:05:57 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 680240238197618f82acb117, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:05:59 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 680240258197618f82acb118, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:06:01 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 680240278197618f82acb119, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:06:31 | WARNING | Device 29725 was not found.
+2025-04-18 12:06:31 | WARNING | Device not found in substitute_dict: 29725
+2025-04-18 12:06:39 | WARNING | Device 31049 was not found.
+2025-04-18 12:06:39 | WARNING | Device not found in substitute_dict: 31049
+2025-04-18 12:09:29 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 680240f706be3169ee1e2ebb, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:09:31 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 680240f906be3169ee1e2ebc, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:09:33 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 680240fb06be3169ee1e2ebd, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:09:35 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 680240fd06be3169ee1e2ebe, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:09:37 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 680240ff06be3169ee1e2ebf, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:09:39 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 6802410106be3169ee1e2ec0, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:09:41 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 6802410306be3169ee1e2ec1, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:09:43 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 6802410506be3169ee1e2ec2, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:09:45 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 6802410706be3169ee1e2ec3, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:09:47 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 6802410906be3169ee1e2ec4, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:09:49 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 6802410b06be3169ee1e2ec5, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:09:51 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 6802410d06be3169ee1e2ec6, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:09:53 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 6802410f06be3169ee1e2ec7, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:09:55 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 6802411106be3169ee1e2ec8, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:09:57 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 2.0s, Topology Description: <TopologyDescription id: 6802411306be3169ee1e2ec9, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:10:37 | WARNING | Device 31093 was not found.
+2025-04-18 12:10:37 | WARNING | Device not found in substitute_dict: 31093
+2025-04-18 12:14:37 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 5.0s, Topology Description: <TopologyDescription id: 68024228fe9932869a09281d, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:14:45 | WARNING | Could not connect to MongoDB: Authentication failed., full error: {'ok': 0.0, 'errmsg': 'Authentication failed.', 'code': 18, 'codeName': 'AuthenticationFailed'}
+2025-04-18 12:14:50 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 5.0s, Topology Description: <TopologyDescription id: 68024235fe9932869a09281f, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:15:02 | WARNING | Could not connect to MongoDB: Authentication failed., full error: {'ok': 0.0, 'errmsg': 'Authentication failed.', 'code': 18, 'codeName': 'AuthenticationFailed'}
+2025-04-18 12:15:10 | WARNING | Could not connect to MongoDB: Authentication failed., full error: {'ok': 0.0, 'errmsg': 'Authentication failed.', 'code': 18, 'codeName': 'AuthenticationFailed'}
+2025-04-18 12:15:27 | WARNING | Could not connect to MongoDB: Authentication failed., full error: {'ok': 0.0, 'errmsg': 'Authentication failed.', 'code': 18, 'codeName': 'AuthenticationFailed'}
+2025-04-18 12:15:32 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 5.0s, Topology Description: <TopologyDescription id: 6802425ffe9932869a092823, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:15:37 | WARNING | Could not connect to MongoDB: No servers found yet, Timeout: 5.0s, Topology Description: <TopologyDescription id: 68024264fe9932869a092824, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 12:25:31 | WARNING | Device 29720 was not found.
+2025-04-18 12:25:31 | WARNING | Device not found in substitute_dict: 29720
+2025-04-18 12:25:31 | WARNING | Device 29725 was not found.
+2025-04-18 12:25:31 | WARNING | Device not found in substitute_dict: 29725
+2025-04-18 12:25:31 | WARNING | Device 28387 was not found.
+2025-04-18 12:25:31 | WARNING | Device not found in substitute_dict: 28387
+2025-04-18 12:25:31 | WARNING | Device 28375 was not found.
+2025-04-18 12:25:31 | WARNING | Device not found in substitute_dict: 28375
+2025-04-18 12:25:31 | WARNING | Device 29851 was not found.
+2025-04-18 12:25:31 | WARNING | Device not found in substitute_dict: 29851
+2025-04-18 12:25:31 | WARNING | Device 29498 was not found.
+2025-04-18 12:25:31 | WARNING | Device not found in substitute_dict: 29498
+2025-04-18 12:25:31 | WARNING | Device 30080 was not found.
+2025-04-18 12:25:31 | WARNING | Device not found in substitute_dict: 30080
+2025-04-18 12:25:31 | WARNING | Device 30688 was not found.
+2025-04-18 12:25:31 | WARNING | Device not found in substitute_dict: 30688
+2025-04-18 12:25:31 | WARNING | Device AC000001_1 was not found.
+2025-04-18 12:25:31 | WARNING | Device AC000004_1 was not found.
+2025-04-18 12:25:31 | WARNING | Device AC000007_1 was not found.
+2025-04-18 12:25:31 | WARNING | Device AC000010_1 was not found.
+2025-04-18 12:25:31 | WARNING | Device AC000013_1 was not found.
+2025-04-18 12:25:31 | WARNING | Device AC000002_1 was not found.
+2025-04-18 12:25:31 | WARNING | Device AC000003_1 was not found.
+2025-04-18 12:25:31 | WARNING | Device AC000005_1 was not found.
+2025-04-18 12:25:31 | WARNING | Device AC000006_1 was not found.
+2025-04-18 12:25:31 | WARNING | Device AC000008_1 was not found.
+2025-04-18 12:25:31 | WARNING | Device AC000009_1 was not found.
+2025-04-18 12:25:31 | WARNING | Device AC000011_1 was not found.
+2025-04-18 12:25:31 | WARNING | Device AC000012_1 was not found.
+2025-04-18 12:25:31 | WARNING | Device AC000014_1 was not found.
+2025-04-18 12:25:31 | WARNING | Device ACEXT001_1 was not found.
+2025-04-18 12:25:31 | WARNING | Device ACEXT002_1 was not found.
+2025-04-18 12:25:31 | WARNING | Device ACEXT003_1 was not found.
+2025-04-18 12:25:31 | WARNING | Device ACEXT004_1 was not found.
+2025-04-18 12:52:11 | WARNING | Device 29725 was not found.
+2025-04-18 12:52:11 | WARNING | Device not found in substitute_dict: 29725
+2025-04-18 12:52:11 | WARNING | Device 28375 was not found.
+2025-04-18 12:52:11 | WARNING | Device not found in substitute_dict: 28375
+2025-04-18 12:52:11 | WARNING | Device 31049 was not found.
+2025-04-18 12:52:11 | WARNING | Device not found in substitute_dict: 31049
+2025-04-18 12:52:11 | WARNING | Device 29851 was not found.
+2025-04-18 12:52:11 | WARNING | Device not found in substitute_dict: 29851
+2025-04-18 12:52:11 | WARNING | Device 29498 was not found.
+2025-04-18 12:52:11 | WARNING | Device not found in substitute_dict: 29498
+2025-04-18 12:52:11 | WARNING | Device 30080 was not found.
+2025-04-18 12:52:11 | WARNING | Device not found in substitute_dict: 30080
+2025-04-18 12:52:12 | WARNING | Device 36766 was not found.
+2025-04-18 12:52:12 | WARNING | Device not found in substitute_dict: 36766
+2025-04-18 12:52:12 | WARNING | Device 30688 was not found.
+2025-04-18 12:52:12 | WARNING | Device not found in substitute_dict: 30688
+2025-04-18 12:52:12 | WARNING | Device 35927 was not found.
+2025-04-18 12:52:12 | WARNING | Device not found in substitute_dict: 35927
+2025-04-18 12:52:12 | WARNING | Device 37208 was not found.
+2025-04-18 12:52:12 | WARNING | Device not found in substitute_dict: 37208
+2025-04-18 12:52:12 | WARNING | Device AC000001_1 was not found.
+2025-04-18 12:52:12 | WARNING | Device AC000004_1 was not found.
+2025-04-18 12:52:12 | WARNING | Device AC000007_1 was not found.
+2025-04-18 12:52:12 | WARNING | Device AC000010_1 was not found.
+2025-04-18 12:52:12 | WARNING | Device AC000013_1 was not found.
+2025-04-18 12:52:12 | WARNING | Device AC000002_1 was not found.
+2025-04-18 12:52:12 | WARNING | Device AC000003_1 was not found.
+2025-04-18 12:52:12 | WARNING | Device AC000005_1 was not found.
+2025-04-18 12:52:12 | WARNING | Device AC000006_1 was not found.
+2025-04-18 12:52:12 | WARNING | Device AC000008_1 was not found.
+2025-04-18 12:52:12 | WARNING | Device AC000009_1 was not found.
+2025-04-18 12:52:12 | WARNING | Device AC000011_1 was not found.
+2025-04-18 12:52:12 | WARNING | Device AC000012_1 was not found.
+2025-04-18 12:52:12 | WARNING | Device AC000014_1 was not found.
+2025-04-18 12:52:12 | WARNING | Device ACEXT001_1 was not found.
+2025-04-18 12:52:12 | WARNING | Device ACEXT002_1 was not found.
+2025-04-18 12:52:12 | WARNING | Device ACEXT003_1 was not found.
+2025-04-18 12:52:12 | WARNING | Device ACEXT004_1 was not found.
+2025-04-18 13:50:12 | WARNING | Device 29720 was not found.
+2025-04-18 13:50:12 | WARNING | Device not found in substitute_dict: 29720
+2025-04-18 13:50:12 | WARNING | Device 30634 was not found.
+2025-04-18 13:50:12 | WARNING | Device not found in substitute_dict: 30634
+2025-04-18 13:50:12 | WARNING | Device 29658 was not found.
+2025-04-18 13:50:12 | WARNING | Device not found in substitute_dict: 29658
+2025-04-18 13:50:12 | WARNING | Device 33423 was not found.
+2025-04-18 13:50:12 | WARNING | Device not found in substitute_dict: 33423
+2025-04-18 13:50:12 | WARNING | Device 29851 was not found.
+2025-04-18 13:50:12 | WARNING | Device not found in substitute_dict: 29851
+2025-04-18 13:50:12 | WARNING | Device 29498 was not found.
+2025-04-18 13:50:12 | WARNING | Device not found in substitute_dict: 29498
+2025-04-18 13:50:12 | WARNING | Device 30080 was not found.
+2025-04-18 13:50:12 | WARNING | Device not found in substitute_dict: 30080
+2025-04-18 13:50:12 | WARNING | Device 36766 was not found.
+2025-04-18 13:50:12 | WARNING | Device not found in substitute_dict: 36766
+2025-04-18 13:50:12 | WARNING | Device 36769 was not found.
+2025-04-18 13:50:12 | WARNING | Device not found in substitute_dict: 36769
+2025-04-18 13:50:12 | WARNING | Device 30688 was not found.
+2025-04-18 13:50:12 | WARNING | Device not found in substitute_dict: 30688
+2025-04-18 13:50:12 | WARNING | Device 33682 was not found.
+2025-04-18 13:50:12 | WARNING | Device not found in substitute_dict: 33682
+2025-04-18 13:50:12 | WARNING | Device 35927 was not found.
+2025-04-18 13:50:12 | WARNING | Device not found in substitute_dict: 35927
+2025-04-18 13:50:12 | WARNING | Device 33711 was not found.
+2025-04-18 13:50:12 | WARNING | Device not found in substitute_dict: 33711
+2025-04-18 13:50:12 | WARNING | Device AC000001_1 was not found.
+2025-04-18 13:50:12 | WARNING | Device AC000004_1 was not found.
+2025-04-18 13:50:12 | WARNING | Device AC000007_1 was not found.
+2025-04-18 13:50:12 | WARNING | Device AC000010_1 was not found.
+2025-04-18 13:50:12 | WARNING | Device AC000013_1 was not found.
+2025-04-18 13:50:12 | WARNING | Device AC000002_1 was not found.
+2025-04-18 13:50:12 | WARNING | Device AC000003_1 was not found.
+2025-04-18 13:50:12 | WARNING | Device AC000005_1 was not found.
+2025-04-18 13:50:12 | WARNING | Device AC000006_1 was not found.
+2025-04-18 13:50:12 | WARNING | Device AC000008_1 was not found.
+2025-04-18 13:50:12 | WARNING | Device AC000009_1 was not found.
+2025-04-18 13:50:12 | WARNING | Device AC000011_1 was not found.
+2025-04-18 13:50:12 | WARNING | Device AC000012_1 was not found.
+2025-04-18 13:50:12 | WARNING | Device AC000014_1 was not found.
+2025-04-18 13:50:12 | WARNING | Device ACEXT001_1 was not found.
+2025-04-18 13:50:12 | WARNING | Device ACEXT002_1 was not found.
+2025-04-18 13:50:12 | WARNING | Device ACEXT003_1 was not found.
+2025-04-18 13:50:12 | WARNING | Device ACEXT004_1 was not found.
+2025-04-18 13:50:20 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
