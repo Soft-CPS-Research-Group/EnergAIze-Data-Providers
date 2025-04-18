@@ -36,14 +36,14 @@ class CWReceiver(Thread):
                 # I wanted to do only one request with all the tags, but if I do that and one of the tags is not available, all the tags are compromised
                 #url = f"{self._connection_params}{tag.get('id')}&from={from_time}"
                 url = f"https://ks.innov.cleanwatts.energy/api/2.0/data/lastvalue/Instant?from=2003-06-11&tags={tag.get('id')}"
-                response = requests.get(url, headers=self._header)
+                response = requests.get(url, headers=self._header, timeout=(3,10)) #ver melhor
                 if response.status_code == 200:
                     logger.info(f"CWReceiver: Tag {tag.get('id')} successfully retrieved!")
                     CWTranslator.translate(self._house, response.json())
                 else:
                     logger.warning(f"CWReceiver: Error getting data from tag {tag.get('id')}: {response.status_code}")
             except requests.exceptions.Timeout:
-                logger.error("CWReceiver: Connection timeout.")
+                logger.error("CWReceiver: Connection timeout.") #Descobrir tempo de timeout
             except requests.exceptions.ConnectionError as e:
                 logger.error(f"CWReceiver: {e}")
             except requests.exceptions.RequestException as e:
@@ -81,7 +81,7 @@ def main():
 
     try:
         for house in CWHouses.keys():
-            tags_list = CWHouses[house]
+            tags_list = CWHouses[house]["devices"]
             receiver_thread = CWReceiver(house, tags_list, connection_params)
             receiver_thread.start()
             threads.append(receiver_thread)

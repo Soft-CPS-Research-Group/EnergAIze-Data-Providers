@@ -2,12 +2,11 @@ from collections import OrderedDict
 import os
 import sys
 import pandas as pd
-from Translator import Translator
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from training.Translator import Translator
 from utils.data import DataSet
 
 # Load configurations
-configurations = DataSet.get_schema(os.path.join('..', 'historicConfigurations.json'))
+configurations = DataSet.get_schema('./configs/historicConfigurations.json')
 
 
 class ICHistoricDataTranslator(Translator):

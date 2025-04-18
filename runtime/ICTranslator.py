@@ -18,7 +18,7 @@ class ICTranslator:
         # Define the queue name
 
         message = json.loads(message.decode('utf-8')).get('observation')
-        print(f"House: {house_name} {json.dumps(message, indent=2)}")
+        #print(f"House: {house_name} {json.dumps(message, indent=2)}")
         while max_reconnect_attempts > 0:
             try:
                 connection = pika.BlockingConnection(pika.ConnectionParameters(
@@ -68,7 +68,7 @@ class ICTranslator:
                     message_bytes = json.dumps(newmessage).encode('utf-8')   
                     #time.sleep(2)
                     channel.basic_publish(exchange='', routing_key=house_name, body=message_bytes)
-                    #print(f"House: {house_name} {json.dumps(newmessage, indent=2)}")
+                    print(f"House: {house_name} {json.dumps(newmessage, indent=2)}")
                 break
             except pika.exceptions.AMQPConnectionError as e:
                 max_reconnect_attempts -= 1  # Decrement the retry counter

@@ -7,13 +7,14 @@ from utils.config_loader import load_configurations
 configurations, logger = load_configurations('./configs/runtimeConfigurations.json',"accumulator")
 
 class Predictor():
-    def __init__(self, devices, house):
+    def __init__(self, house_specs, house):
         self._providers = configurations.get('Providers')
-        self._devices = devices
+        self._devices = house_specs["devices"]
+        self._site = house_specs["site"]
 
         mongo_config = configurations.get('mongoDB')
         mongo_client = pymongo.MongoClient(host=mongo_config['host'], port=mongo_config['port'], username=mongo_config['credentials']['username'],password=mongo_config['credentials']['password'],authSource=mongo_config.get('authSource', 'admin') )
-        db = mongo_client[mongo_config['database']]
+        db = mongo_client[self._site]
         self._collection = db[house]
 
     def predict(self, message):

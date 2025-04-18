@@ -1,13 +1,10 @@
-import os
-import sys
 import time
 import pika
 import json
 import uuid
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils.data import DataSet
 
-configurations = DataSet.get_schema(os.path.join('..', 'historicConfigurations.json'))
+configurations = DataSet.get_schema('./configs/historicConfigurations.json')
 
 class ICSchemaBuilder():
     def __init__(self, connection_params):
@@ -79,14 +76,14 @@ class ICSchemaBuilder():
                     list.append(dic)
             
             houses_dict[installation] = list
-
+        print("OlaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
         self._to_file(houses_dict)
 
     def _to_file(self, data):
         try:
             with open('ICData.json', 'w') as file:
                 json.dump(data, file, indent = 4)
-
+            print("File saved")
         except Exception as e:
             print("Unexpected error while saving the CSV file:", e)
 

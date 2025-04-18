@@ -1,120 +1,397 @@
-2025-02-21 16:30:23 | WARNING | Device AC000001_1 was not found.
-2025-02-21 16:30:23 | WARNING | Device AC000004_1 was not found.
-2025-02-21 16:30:23 | WARNING | Device AC000007_1 was not found.
-2025-02-21 16:30:23 | WARNING | Device AC000010_1 was not found.
-2025-02-21 16:30:23 | WARNING | Device AC000013_1 was not found.
-2025-02-21 16:30:23 | WARNING | Device AC000002_1 was not found.
-2025-02-21 16:30:23 | WARNING | Device AC000003_1 was not found.
-2025-02-21 16:30:23 | WARNING | Device AC000005_1 was not found.
-2025-02-21 16:30:23 | WARNING | Device AC000006_1 was not found.
-2025-02-21 16:30:23 | WARNING | Device AC000008_1 was not found.
-2025-02-21 16:30:23 | WARNING | Device AC000009_1 was not found.
-2025-02-21 16:30:23 | WARNING | Device AC000011_1 was not found.
-2025-02-21 16:30:23 | WARNING | Device AC000012_1 was not found.
-2025-02-21 16:30:23 | WARNING | Device AC000014_1 was not found.
-2025-02-21 16:30:23 | WARNING | Device ACEXT001_1 was not found.
-2025-02-21 16:30:23 | WARNING | Device ACEXT002_1 was not found.
-2025-02-21 16:30:23 | WARNING | Device ACEXT003_1 was not found.
-2025-02-21 16:30:23 | WARNING | Device ACEXT004_1 was not found.
-2025-02-21 16:30:23 | WARNING | Device 30688 was not found.
-2025-02-21 16:30:23 | WARNING | Device not found in substitute_dict: 30688
-2025-02-21 16:31:23 | WARNING | Device AC000001_1 was not found.
-2025-02-21 16:31:23 | WARNING | Device AC000004_1 was not found.
-2025-02-21 16:31:23 | WARNING | Device AC000007_1 was not found.
-2025-02-21 16:31:23 | WARNING | Device AC000010_1 was not found.
-2025-02-21 16:31:23 | WARNING | Device AC000013_1 was not found.
-2025-02-21 16:31:23 | WARNING | Device AC000002_1 was not found.
-2025-02-21 16:31:23 | WARNING | Device AC000003_1 was not found.
-2025-02-21 16:31:23 | WARNING | Device AC000005_1 was not found.
-2025-02-21 16:31:23 | WARNING | Device AC000006_1 was not found.
-2025-02-21 16:31:23 | WARNING | Device AC000008_1 was not found.
-2025-02-21 16:31:23 | WARNING | Device AC000009_1 was not found.
-2025-02-21 16:31:23 | WARNING | Device AC000011_1 was not found.
-2025-02-21 16:31:23 | WARNING | Device AC000012_1 was not found.
-2025-02-21 16:31:23 | WARNING | Device AC000014_1 was not found.
-2025-02-21 16:31:23 | WARNING | Device ACEXT001_1 was not found.
-2025-02-21 16:31:23 | WARNING | Device ACEXT002_1 was not found.
-2025-02-21 16:31:23 | WARNING | Device ACEXT003_1 was not found.
-2025-02-21 16:31:23 | WARNING | Device ACEXT004_1 was not found.
-2025-02-21 16:31:23 | WARNING | Device 30688 was not found.
-2025-02-21 16:31:23 | WARNING | Device not found in substitute_dict: 30688
-2025-02-21 16:32:23 | WARNING | Device AC000001_1 was not found.
-2025-02-21 16:32:23 | WARNING | Device AC000004_1 was not found.
-2025-02-21 16:32:23 | WARNING | Device AC000007_1 was not found.
-2025-02-21 16:32:23 | WARNING | Device AC000010_1 was not found.
-2025-02-21 16:32:23 | WARNING | Device AC000013_1 was not found.
-2025-02-21 16:32:23 | WARNING | Device AC000002_1 was not found.
-2025-02-21 16:32:23 | WARNING | Device AC000003_1 was not found.
-2025-02-21 16:32:23 | WARNING | Device AC000005_1 was not found.
-2025-02-21 16:32:23 | WARNING | Device AC000006_1 was not found.
-2025-02-21 16:32:23 | WARNING | Device AC000008_1 was not found.
-2025-02-21 16:32:23 | WARNING | Device AC000009_1 was not found.
-2025-02-21 16:32:23 | WARNING | Device AC000011_1 was not found.
-2025-02-21 16:32:23 | WARNING | Device AC000012_1 was not found.
-2025-02-21 16:32:23 | WARNING | Device AC000014_1 was not found.
-2025-02-21 16:32:23 | WARNING | Device ACEXT001_1 was not found.
-2025-02-21 16:32:23 | WARNING | Device ACEXT002_1 was not found.
-2025-02-21 16:32:23 | WARNING | Device ACEXT003_1 was not found.
-2025-02-21 16:32:23 | WARNING | Device ACEXT004_1 was not found.
-2025-02-21 16:32:23 | WARNING | Device 30688 was not found.
-2025-02-21 16:32:23 | WARNING | Device not found in substitute_dict: 30688
-2025-02-21 16:33:23 | WARNING | Device AC000001_1 was not found.
-2025-02-21 16:33:23 | WARNING | Device AC000004_1 was not found.
-2025-02-21 16:33:23 | WARNING | Device AC000007_1 was not found.
-2025-02-21 16:33:23 | WARNING | Device AC000010_1 was not found.
-2025-02-21 16:33:23 | WARNING | Device AC000013_1 was not found.
-2025-02-21 16:33:23 | WARNING | Device AC000002_1 was not found.
-2025-02-21 16:33:23 | WARNING | Device AC000003_1 was not found.
-2025-02-21 16:33:23 | WARNING | Device AC000005_1 was not found.
-2025-02-21 16:33:23 | WARNING | Device AC000006_1 was not found.
-2025-02-21 16:33:23 | WARNING | Device AC000008_1 was not found.
-2025-02-21 16:33:23 | WARNING | Device AC000009_1 was not found.
-2025-02-21 16:33:23 | WARNING | Device AC000011_1 was not found.
-2025-02-21 16:33:23 | WARNING | Device AC000012_1 was not found.
-2025-02-21 16:33:23 | WARNING | Device AC000014_1 was not found.
-2025-02-21 16:33:23 | WARNING | Device ACEXT001_1 was not found.
-2025-02-21 16:33:23 | WARNING | Device ACEXT002_1 was not found.
-2025-02-21 16:33:23 | WARNING | Device ACEXT003_1 was not found.
-2025-02-21 16:33:23 | WARNING | Device ACEXT004_1 was not found.
-2025-02-21 16:33:23 | WARNING | Device 30688 was not found.
-2025-02-21 16:33:23 | WARNING | Device not found in substitute_dict: 30688
-2025-02-21 16:34:23 | WARNING | Device AC000001_1 was not found.
-2025-02-21 16:34:23 | WARNING | Device AC000004_1 was not found.
-2025-02-21 16:34:23 | WARNING | Device AC000007_1 was not found.
-2025-02-21 16:34:23 | WARNING | Device AC000010_1 was not found.
-2025-02-21 16:34:23 | WARNING | Device AC000013_1 was not found.
-2025-02-21 16:34:23 | WARNING | Device AC000002_1 was not found.
-2025-02-21 16:34:23 | WARNING | Device AC000003_1 was not found.
-2025-02-21 16:34:23 | WARNING | Device AC000005_1 was not found.
-2025-02-21 16:34:23 | WARNING | Device AC000006_1 was not found.
-2025-02-21 16:34:23 | WARNING | Device AC000008_1 was not found.
-2025-02-21 16:34:23 | WARNING | Device AC000009_1 was not found.
-2025-02-21 16:34:23 | WARNING | Device AC000011_1 was not found.
-2025-02-21 16:34:23 | WARNING | Device AC000012_1 was not found.
-2025-02-21 16:34:23 | WARNING | Device AC000014_1 was not found.
-2025-02-21 16:34:23 | WARNING | Device ACEXT001_1 was not found.
-2025-02-21 16:34:23 | WARNING | Device ACEXT002_1 was not found.
-2025-02-21 16:34:23 | WARNING | Device ACEXT003_1 was not found.
-2025-02-21 16:34:23 | WARNING | Device ACEXT004_1 was not found.
-2025-02-21 16:34:23 | WARNING | Device 30688 was not found.
-2025-02-21 16:34:23 | WARNING | Device not found in substitute_dict: 30688
-2025-02-21 16:35:23 | WARNING | Device AC000001_1 was not found.
-2025-02-21 16:35:23 | WARNING | Device AC000004_1 was not found.
-2025-02-21 16:35:23 | WARNING | Device AC000007_1 was not found.
-2025-02-21 16:35:23 | WARNING | Device AC000010_1 was not found.
-2025-02-21 16:35:23 | WARNING | Device AC000013_1 was not found.
-2025-02-21 16:35:23 | WARNING | Device AC000002_1 was not found.
-2025-02-21 16:35:23 | WARNING | Device AC000003_1 was not found.
-2025-02-21 16:35:23 | WARNING | Device AC000005_1 was not found.
-2025-02-21 16:35:23 | WARNING | Device AC000006_1 was not found.
-2025-02-21 16:35:23 | WARNING | Device AC000008_1 was not found.
-2025-02-21 16:35:23 | WARNING | Device AC000009_1 was not found.
-2025-02-21 16:35:23 | WARNING | Device AC000011_1 was not found.
-2025-02-21 16:35:23 | WARNING | Device AC000012_1 was not found.
-2025-02-21 16:35:23 | WARNING | Device AC000014_1 was not found.
-2025-02-21 16:35:23 | WARNING | Device ACEXT001_1 was not found.
-2025-02-21 16:35:23 | WARNING | Device ACEXT002_1 was not found.
-2025-02-21 16:35:23 | WARNING | Device ACEXT003_1 was not found.
-2025-02-21 16:35:23 | WARNING | Device ACEXT004_1 was not found.
-2025-02-21 16:35:23 | WARNING | Device 30688 was not found.
-2025-02-21 16:35:23 | WARNING | Device not found in substitute_dict: 30688
+2025-03-05 10:46:36 | WARNING | Device 29498 was not found.
+2025-03-05 10:46:36 | WARNING | Device not found in substitute_dict: 29498
+2025-03-05 10:46:36 | WARNING | Device 30080 was not found.
+2025-03-05 10:46:36 | WARNING | Device not found in substitute_dict: 30080
+2025-03-05 10:46:36 | WARNING | Device 30688 was not found.
+2025-03-05 10:46:36 | WARNING | Device not found in substitute_dict: 30688
+2025-03-05 10:46:36 | WARNING | Device AC000001_1 was not found.
+2025-03-05 10:46:36 | WARNING | Device AC000010_1 was not found.
+2025-03-05 10:46:36 | WARNING | Device AC000011_1 was not found.
+2025-03-05 10:46:36 | WARNING | Device AC000014_1 was not found.
+2025-03-05 10:46:36 | WARNING | Device ACEXT001_1 was not found.
+2025-03-05 10:46:36 | WARNING | Device ACEXT002_1 was not found.
+2025-03-05 10:49:00 | WARNING | Device 29498 was not found.
+2025-03-05 10:49:00 | WARNING | Device not found in substitute_dict: 29498
+2025-03-05 10:49:00 | WARNING | Device 30080 was not found.
+2025-03-05 10:49:00 | WARNING | Device not found in substitute_dict: 30080
+2025-03-05 10:49:00 | WARNING | Device AC000001_1 was not found.
+2025-03-05 10:49:00 | WARNING | Device 30688 was not found.
+2025-03-05 10:49:00 | WARNING | Device AC000010_1 was not found.
+2025-03-05 10:49:00 | WARNING | Device not found in substitute_dict: 30688
+2025-03-05 10:49:00 | WARNING | Device AC000011_1 was not found.
+2025-03-05 10:49:00 | WARNING | Device AC000014_1 was not found.
+2025-03-05 10:49:00 | WARNING | Device ACEXT001_1 was not found.
+2025-03-05 10:49:00 | WARNING | Device ACEXT002_1 was not found.
+2025-03-05 10:50:00 | WARNING | Device 29498 was not found.
+2025-03-05 10:50:00 | WARNING | Device not found in substitute_dict: 29498
+2025-03-05 10:50:00 | WARNING | Device 30080 was not found.
+2025-03-05 10:50:00 | WARNING | Device not found in substitute_dict: 30080
+2025-03-05 10:50:00 | WARNING | Device 30688 was not found.
+2025-03-05 10:50:00 | WARNING | Device not found in substitute_dict: 30688
+2025-03-05 10:50:00 | WARNING | Device AC000001_1 was not found.
+2025-03-05 10:50:00 | WARNING | Device AC000010_1 was not found.
+2025-03-05 10:50:00 | WARNING | Device AC000011_1 was not found.
+2025-03-05 10:50:00 | WARNING | Device AC000014_1 was not found.
+2025-03-05 10:50:00 | WARNING | Device ACEXT001_1 was not found.
+2025-03-05 10:50:00 | WARNING | Device ACEXT002_1 was not found.
+2025-03-05 10:51:00 | WARNING | Device 29498 was not found.
+2025-03-05 10:51:00 | WARNING | Device not found in substitute_dict: 29498
+2025-03-05 10:51:00 | WARNING | Device 30080 was not found.
+2025-03-05 10:51:00 | WARNING | Device not found in substitute_dict: 30080
+2025-03-05 10:51:00 | WARNING | Device 30688 was not found.
+2025-03-05 10:51:00 | WARNING | Device not found in substitute_dict: 30688
+2025-03-05 10:51:00 | WARNING | Device AC000001_1 was not found.
+2025-03-05 10:51:00 | WARNING | Device AC000010_1 was not found.
+2025-03-05 10:51:00 | WARNING | Device AC000011_1 was not found.
+2025-03-05 10:51:00 | WARNING | Device AC000014_1 was not found.
+2025-03-05 10:51:00 | WARNING | Device ACEXT001_1 was not found.
+2025-03-05 10:51:00 | WARNING | Device ACEXT002_1 was not found.
+2025-03-05 10:52:00 | WARNING | Device 29498 was not found.
+2025-03-05 10:52:00 | WARNING | Device not found in substitute_dict: 29498
+2025-03-05 10:52:00 | WARNING | Device 30080 was not found.
+2025-03-05 10:52:00 | WARNING | Device not found in substitute_dict: 30080
+2025-03-05 10:52:00 | WARNING | Device 30688 was not found.
+2025-03-05 10:52:00 | WARNING | Device not found in substitute_dict: 30688
+2025-03-05 10:52:00 | WARNING | Device AC000001_1 was not found.
+2025-03-05 10:52:00 | WARNING | Device AC000010_1 was not found.
+2025-03-05 10:52:00 | WARNING | Device AC000011_1 was not found.
+2025-03-05 10:52:00 | WARNING | Device AC000014_1 was not found.
+2025-03-05 10:52:00 | WARNING | Device ACEXT001_1 was not found.
+2025-03-05 10:52:00 | WARNING | Device ACEXT002_1 was not found.
+2025-03-27 09:42:37 | WARNING | ICTranslator: i-charging headquarters translator lost connection, attempting to reconnect...
+2025-03-27 09:42:42 | WARNING | ICTranslator: i-charging headquarters translator lost connection, attempting to reconnect...
+2025-03-27 09:42:48 | ERROR | ICTranslator: i-charging headquarters translator reached maximum reconnection attempts. The message was not sent.
+2025-03-27 09:43:06 | WARNING | Accumulator: Thread i-charging headquarters lost connection. Error: . Waiting 64 seconds before attempting to reconnect...
+2025-03-27 09:43:06 | WARNING | Accumulator: Thread R-H-08 lost connection. Error: . Waiting 64 seconds before attempting to reconnect...
+2025-03-27 09:43:07 | WARNING | Accumulator: Thread R-H-09 lost connection. Error: . Waiting 64 seconds before attempting to reconnect...
+2025-03-27 09:43:07 | WARNING | Accumulator: Thread R-H-15 lost connection. Error: . Waiting 64 seconds before attempting to reconnect...
+2025-03-27 09:43:07 | WARNING | Accumulator: Thread R-H-13 lost connection. Error: . Waiting 64 seconds before attempting to reconnect...
+2025-03-27 09:43:07 | WARNING | Accumulator: Thread R-H-07 lost connection. Error: . Waiting 64 seconds before attempting to reconnect...
+2025-03-27 09:43:07 | WARNING | Accumulator: Thread R-H-10 lost connection. Error: . Waiting 64 seconds before attempting to reconnect...
+2025-03-27 09:43:07 | WARNING | Accumulator: Thread R-H-02 lost connection. Error: . Waiting 64 seconds before attempting to reconnect...
+2025-03-27 09:43:07 | WARNING | Accumulator: Thread R-H-03 lost connection. Error: . Waiting 64 seconds before attempting to reconnect...
+2025-03-27 09:43:07 | WARNING | Accumulator: Thread R-H-04 lost connection. Error: . Waiting 64 seconds before attempting to reconnect...
+2025-03-27 09:43:07 | WARNING | Accumulator: Thread R-H-05 lost connection. Error: . Waiting 64 seconds before attempting to reconnect...
+2025-03-27 09:43:07 | WARNING | Accumulator: Thread R-H-14 lost connection. Error: . Waiting 64 seconds before attempting to reconnect...
+2025-03-27 09:43:07 | WARNING | Accumulator: Thread R-H-12 lost connection. Error: . Waiting 64 seconds before attempting to reconnect...
+2025-03-27 09:43:07 | WARNING | Accumulator: Thread R-H-11 lost connection. Error: . Waiting 64 seconds before attempting to reconnect...
+2025-03-27 09:43:07 | WARNING | Accumulator: Thread R-H-01 lost connection. Error: . Waiting 64 seconds before attempting to reconnect...
+2025-03-27 09:43:37 | WARNING | ICTranslator: i-charging headquarters translator lost connection, attempting to reconnect...
+2025-03-27 09:43:42 | WARNING | ICTranslator: i-charging headquarters translator lost connection, attempting to reconnect...
+2025-03-27 10:11:09 | WARNING | Device AC000001_1 was not found.
+2025-03-27 10:11:09 | WARNING | Device AC000010_1 was not found.
+2025-03-27 10:11:09 | WARNING | Device AC000002_1 was not found.
+2025-03-27 10:11:09 | WARNING | Device AC000003_1 was not found.
+2025-03-27 10:11:09 | WARNING | Device AC000011_1 was not found.
+2025-03-27 10:11:09 | WARNING | Device AC000012_1 was not found.
+2025-03-27 10:11:09 | WARNING | Device AC000014_1 was not found.
+2025-03-27 10:11:09 | WARNING | Device ACEXT001_1 was not found.
+2025-03-27 10:11:09 | WARNING | Device ACEXT002_1 was not found.
+2025-03-27 10:11:09 | WARNING | Device ACEXT003_1 was not found.
+2025-03-27 10:11:09 | WARNING | Device ACEXT004_1 was not found.
+2025-03-27 10:11:09 | WARNING | Device 29498 was not found.
+2025-03-27 10:11:09 | WARNING | Device not found in substitute_dict: 29498
+2025-03-27 10:11:09 | WARNING | Device 30080 was not found.
+2025-03-27 10:11:09 | WARNING | Device not found in substitute_dict: 30080
+2025-03-27 10:11:09 | WARNING | Device 30688 was not found.
+2025-03-27 10:11:09 | WARNING | Device not found in substitute_dict: 30688
+2025-03-27 10:12:09 | WARNING | Device AC000001_1 was not found.
+2025-03-27 10:12:09 | WARNING | Device AC000010_1 was not found.
+2025-03-27 10:12:09 | WARNING | Device AC000002_1 was not found.
+2025-03-27 10:12:09 | WARNING | Device AC000003_1 was not found.
+2025-03-27 10:12:09 | WARNING | Device AC000011_1 was not found.
+2025-03-27 10:12:09 | WARNING | Device AC000012_1 was not found.
+2025-03-27 10:12:09 | WARNING | Device AC000014_1 was not found.
+2025-03-27 10:12:09 | WARNING | Device ACEXT001_1 was not found.
+2025-03-27 10:12:09 | WARNING | Device ACEXT002_1 was not found.
+2025-03-27 10:12:09 | WARNING | Device ACEXT003_1 was not found.
+2025-03-27 10:12:09 | WARNING | Device ACEXT004_1 was not found.
+2025-03-27 10:12:09 | WARNING | Device 29498 was not found.
+2025-03-27 10:12:09 | WARNING | Device not found in substitute_dict: 29498
+2025-03-27 10:12:09 | WARNING | Device 30080 was not found.
+2025-03-27 10:12:09 | WARNING | Device not found in substitute_dict: 30080
+2025-03-27 10:12:09 | WARNING | Device 30688 was not found.
+2025-03-27 10:12:09 | WARNING | Device not found in substitute_dict: 30688
+2025-03-27 10:13:09 | WARNING | Device AC000001_1 was not found.
+2025-03-27 10:13:09 | WARNING | Device AC000010_1 was not found.
+2025-03-27 10:13:09 | WARNING | Device AC000002_1 was not found.
+2025-03-27 10:13:09 | WARNING | Device AC000003_1 was not found.
+2025-03-27 10:13:09 | WARNING | Device AC000011_1 was not found.
+2025-03-27 10:13:09 | WARNING | Device AC000012_1 was not found.
+2025-03-27 10:13:09 | WARNING | Device AC000014_1 was not found.
+2025-03-27 10:13:09 | WARNING | Device ACEXT001_1 was not found.
+2025-03-27 10:13:09 | WARNING | Device ACEXT002_1 was not found.
+2025-03-27 10:13:09 | WARNING | Device ACEXT003_1 was not found.
+2025-03-27 10:13:09 | WARNING | Device ACEXT004_1 was not found.
+2025-03-27 10:13:09 | WARNING | Device 29498 was not found.
+2025-03-27 10:13:09 | WARNING | Device not found in substitute_dict: 29498
+2025-03-27 10:13:09 | WARNING | Device 30080 was not found.
+2025-03-27 10:13:09 | WARNING | Device not found in substitute_dict: 30080
+2025-03-27 10:13:09 | WARNING | Device 30688 was not found.
+2025-03-27 10:13:09 | WARNING | Device not found in substitute_dict: 30688
+2025-03-27 10:14:09 | WARNING | Device AC000001_1 was not found.
+2025-03-27 10:14:09 | WARNING | Device AC000010_1 was not found.
+2025-03-27 10:14:09 | WARNING | Device AC000002_1 was not found.
+2025-03-27 10:14:09 | WARNING | Device AC000003_1 was not found.
+2025-03-27 10:14:09 | WARNING | Device AC000011_1 was not found.
+2025-03-27 10:14:09 | WARNING | Device AC000012_1 was not found.
+2025-03-27 10:14:09 | WARNING | Device AC000014_1 was not found.
+2025-03-27 10:14:09 | WARNING | Device ACEXT001_1 was not found.
+2025-03-27 10:14:09 | WARNING | Device ACEXT002_1 was not found.
+2025-03-27 10:14:09 | WARNING | Device ACEXT003_1 was not found.
+2025-03-27 10:14:09 | WARNING | Device ACEXT004_1 was not found.
+2025-03-27 10:14:09 | WARNING | Device 29498 was not found.
+2025-03-27 10:14:09 | WARNING | Device not found in substitute_dict: 29498
+2025-03-27 10:14:09 | WARNING | Device 30080 was not found.
+2025-03-27 10:14:09 | WARNING | Device not found in substitute_dict: 30080
+2025-03-27 10:14:09 | WARNING | Device 30688 was not found.
+2025-03-27 10:14:09 | WARNING | Device not found in substitute_dict: 30688
+2025-03-27 10:15:09 | WARNING | Device AC000001_1 was not found.
+2025-03-27 10:15:09 | WARNING | Device AC000010_1 was not found.
+2025-03-27 10:15:09 | WARNING | Device AC000002_1 was not found.
+2025-03-27 10:15:09 | WARNING | Device AC000003_1 was not found.
+2025-03-27 10:15:09 | WARNING | Device AC000011_1 was not found.
+2025-03-27 10:15:09 | WARNING | Device AC000012_1 was not found.
+2025-03-27 10:15:09 | WARNING | Device AC000014_1 was not found.
+2025-03-27 10:15:09 | WARNING | Device ACEXT001_1 was not found.
+2025-03-27 10:15:09 | WARNING | Device ACEXT002_1 was not found.
+2025-03-27 10:15:09 | WARNING | Device ACEXT003_1 was not found.
+2025-03-27 10:15:09 | WARNING | Device ACEXT004_1 was not found.
+2025-03-27 10:15:09 | WARNING | Device 29498 was not found.
+2025-03-27 10:15:09 | WARNING | Device not found in substitute_dict: 29498
+2025-03-27 10:15:09 | WARNING | Device 30080 was not found.
+2025-03-27 10:15:09 | WARNING | Device not found in substitute_dict: 30080
+2025-03-27 10:15:09 | WARNING | Device 30688 was not found.
+2025-03-27 10:15:09 | WARNING | Device not found in substitute_dict: 30688
+2025-03-27 10:16:09 | WARNING | Device AC000001_1 was not found.
+2025-03-27 10:16:09 | WARNING | Device AC000010_1 was not found.
+2025-03-27 10:16:09 | WARNING | Device AC000002_1 was not found.
+2025-03-27 10:16:09 | WARNING | Device AC000003_1 was not found.
+2025-03-27 10:16:09 | WARNING | Device AC000011_1 was not found.
+2025-03-27 10:16:09 | WARNING | Device AC000012_1 was not found.
+2025-03-27 10:16:09 | WARNING | Device AC000014_1 was not found.
+2025-03-27 10:16:09 | WARNING | Device ACEXT001_1 was not found.
+2025-03-27 10:16:09 | WARNING | Device ACEXT002_1 was not found.
+2025-03-27 10:16:09 | WARNING | Device ACEXT003_1 was not found.
+2025-03-27 10:16:09 | WARNING | Device ACEXT004_1 was not found.
+2025-03-27 10:16:09 | WARNING | Device 29498 was not found.
+2025-03-27 10:16:09 | WARNING | Device not found in substitute_dict: 29498
+2025-03-27 10:16:09 | WARNING | Device 30080 was not found.
+2025-03-27 10:16:09 | WARNING | Device not found in substitute_dict: 30080
+2025-03-27 10:16:09 | WARNING | Device 30688 was not found.
+2025-03-27 10:16:09 | WARNING | Device not found in substitute_dict: 30688
+2025-03-27 10:17:09 | WARNING | Device AC000001_1 was not found.
+2025-03-27 10:17:09 | WARNING | Device AC000010_1 was not found.
+2025-03-27 10:17:09 | WARNING | Device AC000002_1 was not found.
+2025-03-27 10:17:09 | WARNING | Device AC000003_1 was not found.
+2025-03-27 10:17:09 | WARNING | Device AC000011_1 was not found.
+2025-03-27 10:17:09 | WARNING | Device AC000012_1 was not found.
+2025-03-27 10:17:09 | WARNING | Device AC000014_1 was not found.
+2025-03-27 10:17:09 | WARNING | Device ACEXT001_1 was not found.
+2025-03-27 10:17:09 | WARNING | Device ACEXT002_1 was not found.
+2025-03-27 10:17:09 | WARNING | Device ACEXT003_1 was not found.
+2025-03-27 10:17:09 | WARNING | Device ACEXT004_1 was not found.
+2025-03-27 10:17:09 | WARNING | Device 29498 was not found.
+2025-03-27 10:17:09 | WARNING | Device not found in substitute_dict: 29498
+2025-03-27 10:17:09 | WARNING | Device 30080 was not found.
+2025-03-27 10:17:09 | WARNING | Device not found in substitute_dict: 30080
+2025-03-27 10:17:09 | WARNING | Device 30688 was not found.
+2025-03-27 10:17:09 | WARNING | Device not found in substitute_dict: 30688
+2025-03-27 10:18:09 | WARNING | Device AC000001_1 was not found.
+2025-03-27 10:18:09 | WARNING | Device AC000010_1 was not found.
+2025-03-27 10:18:09 | WARNING | Device AC000002_1 was not found.
+2025-03-27 10:18:09 | WARNING | Device AC000003_1 was not found.
+2025-03-27 10:18:09 | WARNING | Device AC000011_1 was not found.
+2025-03-27 10:18:09 | WARNING | Device AC000012_1 was not found.
+2025-03-27 10:18:09 | WARNING | Device AC000014_1 was not found.
+2025-03-27 10:18:09 | WARNING | Device ACEXT001_1 was not found.
+2025-03-27 10:18:09 | WARNING | Device ACEXT002_1 was not found.
+2025-03-27 10:18:09 | WARNING | Device ACEXT003_1 was not found.
+2025-03-27 10:18:09 | WARNING | Device ACEXT004_1 was not found.
+2025-03-27 10:18:09 | WARNING | Device 29498 was not found.
+2025-03-27 10:18:09 | WARNING | Device not found in substitute_dict: 29498
+2025-03-27 10:18:09 | WARNING | Device 30080 was not found.
+2025-03-27 10:18:09 | WARNING | Device not found in substitute_dict: 30080
+2025-03-27 10:18:09 | WARNING | Device 30688 was not found.
+2025-03-27 10:18:09 | WARNING | Device not found in substitute_dict: 30688
+2025-03-27 10:19:09 | WARNING | Device AC000001_1 was not found.
+2025-03-27 10:19:09 | WARNING | Device AC000010_1 was not found.
+2025-03-27 10:19:09 | WARNING | Device AC000002_1 was not found.
+2025-03-27 10:19:09 | WARNING | Device AC000003_1 was not found.
+2025-03-27 10:19:09 | WARNING | Device AC000011_1 was not found.
+2025-03-27 10:19:09 | WARNING | Device AC000012_1 was not found.
+2025-03-27 10:19:09 | WARNING | Device AC000014_1 was not found.
+2025-03-27 10:19:09 | WARNING | Device ACEXT001_1 was not found.
+2025-03-27 10:19:09 | WARNING | Device ACEXT002_1 was not found.
+2025-03-27 10:19:09 | WARNING | Device ACEXT003_1 was not found.
+2025-03-27 10:19:09 | WARNING | Device ACEXT004_1 was not found.
+2025-03-27 10:19:09 | WARNING | Device 29498 was not found.
+2025-03-27 10:19:09 | WARNING | Device not found in substitute_dict: 29498
+2025-03-27 10:19:09 | WARNING | Device 30080 was not found.
+2025-03-27 10:19:09 | WARNING | Device not found in substitute_dict: 30080
+2025-03-27 10:19:09 | WARNING | Device 30688 was not found.
+2025-03-27 10:19:09 | WARNING | Device not found in substitute_dict: 30688
+2025-03-27 10:20:09 | WARNING | Device AC000001_1 was not found.
+2025-03-27 10:20:09 | WARNING | Device AC000010_1 was not found.
+2025-03-27 10:20:09 | WARNING | Device AC000002_1 was not found.
+2025-03-27 10:20:09 | WARNING | Device AC000003_1 was not found.
+2025-03-27 10:20:09 | WARNING | Device AC000011_1 was not found.
+2025-03-27 10:20:09 | WARNING | Device AC000012_1 was not found.
+2025-03-27 10:20:09 | WARNING | Device AC000014_1 was not found.
+2025-03-27 10:20:09 | WARNING | Device ACEXT001_1 was not found.
+2025-03-27 10:20:09 | WARNING | Device ACEXT002_1 was not found.
+2025-03-27 10:20:09 | WARNING | Device ACEXT003_1 was not found.
+2025-03-27 10:20:09 | WARNING | Device ACEXT004_1 was not found.
+2025-03-27 10:20:09 | WARNING | Device 29498 was not found.
+2025-03-27 10:20:09 | WARNING | Device not found in substitute_dict: 29498
+2025-03-27 10:20:09 | WARNING | Device 30080 was not found.
+2025-03-27 10:20:09 | WARNING | Device not found in substitute_dict: 30080
+2025-03-27 10:20:09 | WARNING | Device 30688 was not found.
+2025-03-27 10:20:09 | WARNING | Device not found in substitute_dict: 30688
+2025-03-27 10:21:09 | WARNING | Device AC000001_1 was not found.
+2025-03-27 10:21:09 | WARNING | Device AC000010_1 was not found.
+2025-03-27 10:21:09 | WARNING | Device AC000002_1 was not found.
+2025-03-27 10:21:09 | WARNING | Device AC000003_1 was not found.
+2025-03-27 10:21:09 | WARNING | Device AC000011_1 was not found.
+2025-03-27 10:21:09 | WARNING | Device AC000012_1 was not found.
+2025-03-27 10:21:09 | WARNING | Device AC000014_1 was not found.
+2025-03-27 10:21:09 | WARNING | Device ACEXT001_1 was not found.
+2025-03-27 10:21:09 | WARNING | Device ACEXT002_1 was not found.
+2025-03-27 10:21:09 | WARNING | Device ACEXT003_1 was not found.
+2025-03-27 10:21:09 | WARNING | Device ACEXT004_1 was not found.
+2025-03-27 10:21:09 | WARNING | Device 29498 was not found.
+2025-03-27 10:21:09 | WARNING | Device not found in substitute_dict: 29498
+2025-03-27 10:21:09 | WARNING | Device 30080 was not found.
+2025-03-27 10:21:09 | WARNING | Device not found in substitute_dict: 30080
+2025-03-27 10:21:09 | WARNING | Device 30688 was not found.
+2025-03-27 10:21:09 | WARNING | Device not found in substitute_dict: 30688
+2025-03-27 10:22:09 | WARNING | Device AC000001_1 was not found.
+2025-03-27 10:22:09 | WARNING | Device AC000010_1 was not found.
+2025-03-27 10:22:09 | WARNING | Device AC000002_1 was not found.
+2025-03-27 10:22:09 | WARNING | Device AC000003_1 was not found.
+2025-03-27 10:22:09 | WARNING | Device AC000011_1 was not found.
+2025-03-27 10:22:09 | WARNING | Device AC000012_1 was not found.
+2025-03-27 10:22:09 | WARNING | Device AC000014_1 was not found.
+2025-03-27 10:22:09 | WARNING | Device ACEXT001_1 was not found.
+2025-03-27 10:22:09 | WARNING | Device ACEXT002_1 was not found.
+2025-03-27 10:22:09 | WARNING | Device ACEXT003_1 was not found.
+2025-03-27 10:22:09 | WARNING | Device ACEXT004_1 was not found.
+2025-03-27 10:22:09 | WARNING | Device 29498 was not found.
+2025-03-27 10:22:09 | WARNING | Device not found in substitute_dict: 29498
+2025-03-27 10:22:09 | WARNING | Device 30080 was not found.
+2025-03-27 10:22:09 | WARNING | Device not found in substitute_dict: 30080
+2025-03-27 10:22:09 | WARNING | Device 30688 was not found.
+2025-03-27 10:22:09 | WARNING | Device not found in substitute_dict: 30688
+2025-03-27 10:23:09 | WARNING | Device AC000001_1 was not found.
+2025-03-27 10:23:09 | WARNING | Device AC000010_1 was not found.
+2025-03-27 10:23:09 | WARNING | Device AC000002_1 was not found.
+2025-03-27 10:23:09 | WARNING | Device AC000003_1 was not found.
+2025-03-27 10:23:09 | WARNING | Device AC000011_1 was not found.
+2025-03-27 10:23:09 | WARNING | Device AC000012_1 was not found.
+2025-03-27 10:23:09 | WARNING | Device AC000014_1 was not found.
+2025-03-27 10:23:09 | WARNING | Device ACEXT001_1 was not found.
+2025-03-27 10:23:09 | WARNING | Device ACEXT002_1 was not found.
+2025-03-27 10:23:09 | WARNING | Device ACEXT003_1 was not found.
+2025-03-27 10:23:09 | WARNING | Device ACEXT004_1 was not found.
+2025-03-27 10:23:09 | WARNING | Device 29498 was not found.
+2025-03-27 10:23:09 | WARNING | Device not found in substitute_dict: 29498
+2025-03-27 10:23:09 | WARNING | Device 30080 was not found.
+2025-03-27 10:23:09 | WARNING | Device not found in substitute_dict: 30080
+2025-03-27 10:23:09 | WARNING | Device 30688 was not found.
+2025-03-27 10:23:09 | WARNING | Device not found in substitute_dict: 30688
+2025-03-27 10:40:48 | WARNING | Device AC000001_1 was not found.
+2025-03-27 10:40:48 | WARNING | Device AC000010_1 was not found.
+2025-03-27 10:40:48 | WARNING | Device AC000002_1 was not found.
+2025-03-27 10:40:48 | WARNING | Device AC000003_1 was not found.
+2025-03-27 10:40:48 | WARNING | Device AC000011_1 was not found.
+2025-03-27 10:40:48 | WARNING | Device AC000012_1 was not found.
+2025-03-27 10:40:48 | WARNING | Device AC000014_1 was not found.
+2025-03-27 10:40:48 | WARNING | Device ACEXT001_1 was not found.
+2025-03-27 10:40:48 | WARNING | Device ACEXT002_1 was not found.
+2025-03-27 10:40:48 | WARNING | Device ACEXT003_1 was not found.
+2025-03-27 10:40:48 | WARNING | Device ACEXT004_1 was not found.
+2025-03-27 10:40:48 | WARNING | Device 29498 was not found.
+2025-03-27 10:40:48 | WARNING | Device not found in substitute_dict: 29498
+2025-03-27 10:40:48 | WARNING | Device 30080 was not found.
+2025-03-27 10:40:48 | WARNING | Device not found in substitute_dict: 30080
+2025-03-27 10:40:48 | WARNING | Device 30688 was not found.
+2025-03-27 10:40:48 | WARNING | Device not found in substitute_dict: 30688
+2025-03-27 10:41:48 | WARNING | Device AC000001_1 was not found.
+2025-03-27 10:41:48 | WARNING | Device AC000010_1 was not found.
+2025-03-27 10:41:48 | WARNING | Device AC000002_1 was not found.
+2025-03-27 10:41:48 | WARNING | Device AC000003_1 was not found.
+2025-03-27 10:41:48 | WARNING | Device AC000011_1 was not found.
+2025-03-27 10:41:48 | WARNING | Device AC000012_1 was not found.
+2025-03-27 10:41:48 | WARNING | Device AC000014_1 was not found.
+2025-03-27 10:41:48 | WARNING | Device ACEXT001_1 was not found.
+2025-03-27 10:41:48 | WARNING | Device ACEXT002_1 was not found.
+2025-03-27 10:41:48 | WARNING | Device ACEXT003_1 was not found.
+2025-03-27 10:41:48 | WARNING | Device ACEXT004_1 was not found.
+2025-03-27 10:41:48 | WARNING | Device 29498 was not found.
+2025-03-27 10:41:48 | WARNING | Device not found in substitute_dict: 29498
+2025-03-27 10:41:48 | WARNING | Device 30080 was not found.
+2025-03-27 10:41:48 | WARNING | Device not found in substitute_dict: 30080
+2025-03-27 10:41:48 | WARNING | Device 30688 was not found.
+2025-03-27 10:41:48 | WARNING | Device not found in substitute_dict: 30688
+2025-03-27 10:42:48 | WARNING | Device AC000001_1 was not found.
+2025-03-27 10:42:48 | WARNING | Device AC000010_1 was not found.
+2025-03-27 10:42:48 | WARNING | Device AC000002_1 was not found.
+2025-03-27 10:42:48 | WARNING | Device AC000003_1 was not found.
+2025-03-27 10:42:48 | WARNING | Device AC000011_1 was not found.
+2025-03-27 10:42:48 | WARNING | Device AC000012_1 was not found.
+2025-03-27 10:42:48 | WARNING | Device AC000014_1 was not found.
+2025-03-27 10:42:48 | WARNING | Device ACEXT001_1 was not found.
+2025-03-27 10:42:48 | WARNING | Device ACEXT002_1 was not found.
+2025-03-27 10:42:48 | WARNING | Device ACEXT003_1 was not found.
+2025-03-27 10:42:48 | WARNING | Device ACEXT004_1 was not found.
+2025-03-27 10:42:48 | WARNING | Device 29498 was not found.
+2025-03-27 10:42:48 | WARNING | Device not found in substitute_dict: 29498
+2025-03-27 10:42:48 | WARNING | Device 30080 was not found.
+2025-03-27 10:42:48 | WARNING | Device not found in substitute_dict: 30080
+2025-03-27 10:42:48 | WARNING | Device 30688 was not found.
+2025-03-27 10:42:48 | WARNING | Device not found in substitute_dict: 30688
+2025-03-27 10:50:19 | WARNING | Device 29498 was not found.
+2025-03-27 10:50:19 | WARNING | Device not found in substitute_dict: 29498
+2025-03-27 10:50:19 | WARNING | Device 30080 was not found.
+2025-03-27 10:50:19 | WARNING | Device not found in substitute_dict: 30080
+2025-03-27 10:50:19 | WARNING | Device 30688 was not found.
+2025-03-27 10:50:19 | WARNING | Device not found in substitute_dict: 30688
+2025-03-27 10:50:19 | WARNING | Device AC000001_1 was not found.
+2025-03-27 10:50:19 | WARNING | Device AC000010_1 was not found.
+2025-03-27 10:50:19 | WARNING | Device AC000002_1 was not found.
+2025-03-27 10:50:19 | WARNING | Device AC000003_1 was not found.
+2025-03-27 10:50:19 | WARNING | Device AC000011_1 was not found.
+2025-03-27 10:50:19 | WARNING | Device AC000012_1 was not found.
+2025-03-27 10:50:19 | WARNING | Device AC000014_1 was not found.
+2025-03-27 10:50:19 | WARNING | Device ACEXT001_1 was not found.
+2025-03-27 10:50:19 | WARNING | Device ACEXT002_1 was not found.
+2025-03-27 10:50:19 | WARNING | Device ACEXT003_1 was not found.
+2025-03-27 10:50:19 | WARNING | Device ACEXT004_1 was not found.
+2025-04-15 08:56:51 | WARNING | Device 29498 was not found.
+2025-04-15 08:56:51 | WARNING | Device not found in substitute_dict: 29498
+2025-04-15 08:56:51 | WARNING | Device 30080 was not found.
+2025-04-15 08:56:51 | WARNING | Device not found in substitute_dict: 30080
+2025-04-15 08:56:51 | WARNING | Device 30688 was not found.
+2025-04-15 08:56:51 | WARNING | Device not found in substitute_dict: 30688
+2025-04-15 08:56:51 | WARNING | Device AC000001_1 was not found.
+2025-04-15 08:56:51 | WARNING | Device AC000010_1 was not found.
+2025-04-15 08:56:51 | WARNING | Device AC000002_1 was not found.
+2025-04-15 08:56:51 | WARNING | Device AC000011_1 was not found.
+2025-04-15 08:56:51 | WARNING | Device AC000012_1 was not found.
+2025-04-15 08:56:51 | WARNING | Device AC000014_1 was not found.
+2025-04-15 08:56:51 | WARNING | Device ACEXT001_1 was not found.
+2025-04-15 08:56:51 | WARNING | Device ACEXT003_1 was not found.
+2025-04-15 08:57:51 | WARNING | Device 29498 was not found.
+2025-04-15 08:57:51 | WARNING | Device not found in substitute_dict: 29498
+2025-04-15 08:57:51 | WARNING | Device 30080 was not found.
+2025-04-15 08:57:51 | WARNING | Device not found in substitute_dict: 30080
+2025-04-15 08:57:51 | WARNING | Device 30688 was not found.
+2025-04-15 08:57:51 | WARNING | Device not found in substitute_dict: 30688
+2025-04-15 08:57:51 | WARNING | Device AC000001_1 was not found.
+2025-04-15 08:57:51 | WARNING | Device AC000010_1 was not found.
+2025-04-15 08:57:51 | WARNING | Device AC000002_1 was not found.
+2025-04-15 08:57:51 | WARNING | Device AC000011_1 was not found.
+2025-04-15 08:57:51 | WARNING | Device AC000012_1 was not found.
+2025-04-15 08:57:51 | WARNING | Device AC000014_1 was not found.
+2025-04-15 08:57:51 | WARNING | Device ACEXT001_1 was not found.
+2025-04-15 08:57:51 | WARNING | Device ACEXT003_1 was not found.

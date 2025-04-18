@@ -12,12 +12,12 @@ from utils.config_loader import load_configurations
 configurations, logger = load_configurations('./configs/runtimeConfigurations.json',"accumulator")
 
 class Manager():
-    def __init__(self, devices, house):
+    def __init__(self, house_specs, house):
         self._time_interval = DataSet.calculate_interval(configurations.get('frequency'))
         self._start_sched()
         self._house = house
-        self._devices = devices
-        self._predictor = Predictor(devices,house)
+        self._devices = house_specs["devices"]
+        self._predictor = Predictor(house_specs,house)
         self._substitute_dict = {}
         self._dict = {}
 

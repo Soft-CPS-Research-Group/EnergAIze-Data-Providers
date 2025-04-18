@@ -1,64 +1,394 @@
-2025-02-21 16:19:26 | ERROR | CWReceiver: No internet connection.
-2025-02-21 16:19:26 | ERROR | CWReceiver: No internet connection.
-2025-02-21 16:19:26 | ERROR | CWReceiver: No internet connection.
-2025-02-21 16:19:26 | ERROR | CWReceiver: No internet connection.
-2025-02-21 16:19:26 | ERROR | CWReceiver: No internet connection.
-2025-02-21 16:19:26 | ERROR | CWReceiver: No internet connection.
-2025-02-21 16:19:26 | ERROR | CWReceiver: No internet connection.
-2025-02-21 16:19:26 | ERROR | CWReceiver: No internet connection.
-2025-02-21 16:19:26 | ERROR | CWReceiver: No internet connection.
-2025-02-21 16:19:26 | ERROR | CWReceiver: No internet connection.
-2025-02-21 16:19:26 | ERROR | CWReceiver: No internet connection.
-2025-02-21 16:19:30 | ERROR | CWReceiver: No internet connection.
-2025-02-21 16:19:30 | ERROR | CWReceiver: No internet connection.
-2025-02-21 16:19:30 | ERROR | CWReceiver: No internet connection.
-2025-02-21 16:19:48 | ERROR | CWReceiver: No internet connection.
-2025-02-21 16:19:48 | ERROR | CWReceiver: No internet connection.
-2025-02-21 16:19:48 | ERROR | CWReceiver: No internet connection.
-2025-02-21 16:19:48 | ERROR | CWReceiver: No internet connection.
-2025-02-21 16:19:48 | ERROR | CWReceiver: No internet connection.
-2025-02-21 16:19:48 | ERROR | CWReceiver: No internet connection.
-2025-02-21 16:19:48 | ERROR | CWReceiver: No internet connection.
-2025-02-21 16:19:48 | ERROR | CWReceiver: No internet connection.
-2025-02-21 16:19:51 | ERROR | CWReceiver: No internet connection.
-2025-02-21 16:20:08 | ERROR | CWReceiver: No internet connection.
-2025-02-21 16:23:55 | ERROR | CWReceiver: No internet connection. HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/data/lastvalue/Instant?from=2003-06-11&tags=29851 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f573491b890>: Failed to establish a new connection: [Errno 111] Connection refused'))
-2025-02-21 16:23:55 | ERROR | CWReceiver: No internet connection. HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/data/lastvalue/Instant?from=2003-06-11&tags=33682 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f573491ae90>: Failed to establish a new connection: [Errno 111] Connection refused'))
-2025-02-21 16:23:55 | ERROR | CWReceiver: No internet connection. HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/data/lastvalue/Instant?from=2003-06-11&tags=29498 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f5734918910>: Failed to establish a new connection: [Errno 111] Connection refused'))
-2025-02-21 16:23:55 | ERROR | CWReceiver: No internet connection. HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/data/lastvalue/Instant?from=2003-06-11&tags=36766 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f5734918550>: Failed to establish a new connection: [Errno 111] Connection refused'))
-2025-02-21 16:23:55 | ERROR | CWReceiver: No internet connection. HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/data/lastvalue/Instant?from=2003-06-11&tags=31093 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f573491afd0>: Failed to establish a new connection: [Errno 111] Connection refused'))
-2025-02-21 16:23:55 | ERROR | CWReceiver: No internet connection. HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/data/lastvalue/Instant?from=2003-06-11&tags=30688 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f5734919590>: Failed to establish a new connection: [Errno 111] Connection refused'))
-2025-02-21 16:23:55 | ERROR | CWReceiver: No internet connection. HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/data/lastvalue/Instant?from=2003-06-11&tags=29720 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f57349187d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
-2025-02-21 16:23:55 | ERROR | CWReceiver: No internet connection. HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/data/lastvalue/Instant?from=2003-06-11&tags=28387 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f5734919310>: Failed to establish a new connection: [Errno 111] Connection refused'))
-2025-02-21 16:23:55 | ERROR | CWReceiver: No internet connection. HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/data/lastvalue/Instant?from=2003-06-11&tags=28386 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f5734918050>: Failed to establish a new connection: [Errno 111] Connection refused'))
-2025-02-21 16:23:55 | ERROR | CWReceiver: No internet connection. HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/data/lastvalue/Instant?from=2003-06-11&tags=30634 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f5734918690>: Failed to establish a new connection: [Errno 111] Connection refused'))
-2025-02-21 16:23:59 | ERROR | CWReceiver: No internet connection. HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/data/lastvalue/Instant?from=2003-06-11&tags=28375 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f57349a8f50>: Failed to establish a new connection: [Errno 111] Connection refused'))
-2025-02-21 16:23:59 | ERROR | CWReceiver: No internet connection. HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/data/lastvalue/Instant?from=2003-06-11&tags=33423 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f57349a8cd0>: Failed to establish a new connection: [Errno 111] Connection refused'))
-2025-02-21 16:23:59 | ERROR | CWReceiver: No internet connection. HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/data/lastvalue/Instant?from=2003-06-11&tags=37208 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f57349a8910>: Failed to establish a new connection: [Errno 111] Connection refused'))
-2025-02-21 16:24:03 | ERROR | CWReceiver: No internet connection. HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/data/lastvalue/Instant?from=2003-06-11&tags=29660 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f57349a8410>: Failed to establish a new connection: [Errno 111] Connection refused'))
-2025-02-21 16:24:16 | ERROR | CWReceiver: No internet connection. HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/data/lastvalue/Instant?from=2003-06-11&tags=35927 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f573491ae90>: Failed to establish a new connection: [Errno 111] Connection refused'))
-2025-02-21 16:24:16 | ERROR | CWReceiver: No internet connection. HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/data/lastvalue/Instant?from=2003-06-11&tags=29725 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f573491bed0>: Failed to establish a new connection: [Errno 111] Connection refused'))
-2025-02-21 16:24:16 | ERROR | CWReceiver: No internet connection. HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/data/lastvalue/Instant?from=2003-06-11&tags=30080 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f5734919810>: Failed to establish a new connection: [Errno 111] Connection refused'))
-2025-02-21 16:24:16 | ERROR | CWReceiver: No internet connection. HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/data/lastvalue/Instant?from=2003-06-11&tags=36769 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f573491b9d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
-2025-02-21 16:24:16 | ERROR | CWReceiver: No internet connection. HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/data/lastvalue/Instant?from=2003-06-11&tags=30642 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f573491b390>: Failed to establish a new connection: [Errno 111] Connection refused'))
-2025-02-21 16:24:16 | ERROR | CWReceiver: No internet connection. HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/data/lastvalue/Instant?from=2003-06-11&tags=29373 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f5734919450>: Failed to establish a new connection: [Errno 111] Connection refused'))
-2025-02-21 16:24:20 | ERROR | CWReceiver: No internet connection. HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/data/lastvalue/Instant?from=2003-06-11&tags=29658 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f57349a87d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
-2025-02-21 16:24:20 | ERROR | CWReceiver: No internet connection. HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/data/lastvalue/Instant?from=2003-06-11&tags=31049 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f57349a8550>: Failed to establish a new connection: [Errno 111] Connection refused'))
-2025-02-21 16:24:20 | ERROR | CWReceiver: No internet connection. HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/data/lastvalue/Instant?from=2003-06-11&tags=37214 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f57349a9090>: Failed to establish a new connection: [Errno 111] Connection refused'))
-2025-02-21 16:24:37 | ERROR | CWReceiver: No internet connection. HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/data/lastvalue/Instant?from=2003-06-11&tags=33711 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f57349196d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
-2025-02-21 16:25:55 | ERROR | CWReceiver: No internet connection. HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/data/lastvalue/Instant?from=2003-06-11&tags=29851 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f573491a5d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
-2025-02-21 16:25:55 | ERROR | CWReceiver: No internet connection. HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/data/lastvalue/Instant?from=2003-06-11&tags=31093 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f57349aa350>: Failed to establish a new connection: [Errno 111] Connection refused'))
-2025-02-21 16:25:59 | ERROR | CWReceiver: No internet connection. HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/data/lastvalue/Instant?from=2003-06-11&tags=30688 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f57349a9bd0>: Failed to establish a new connection: [Errno 111] Connection refused'))
-2025-02-21 16:25:59 | ERROR | CWReceiver: No internet connection. HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/data/lastvalue/Instant?from=2003-06-11&tags=28387 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f57349a9f90>: Failed to establish a new connection: [Errno 111] Connection refused'))
-2025-02-21 16:25:59 | ERROR | CWReceiver: No internet connection. HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/data/lastvalue/Instant?from=2003-06-11&tags=29660 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f57349aa210>: Failed to establish a new connection: [Errno 111] Connection refused'))
-2025-02-21 16:26:27 | WARNING | CWReceiver: Error getting data from tag 30688: 404
-2025-02-21 16:27:10 | WARNING | CWReceiver: Error getting data from tag 30688: 404
-2025-02-21 16:28:54 | WARNING | CWReceiver: Error getting data from tag 30688: 404
-2025-02-21 16:29:54 | WARNING | CWReceiver: Error getting data from tag 30688: 404
-2025-02-21 16:30:53 | WARNING | CWReceiver: Error getting data from tag 30688: 404
-2025-02-21 16:31:54 | WARNING | CWReceiver: Error getting data from tag 30688: 404
-2025-02-21 16:32:57 | WARNING | CWReceiver: Error getting data from tag 30688: 404
-2025-02-21 16:33:57 | WARNING | CWReceiver: Error getting data from tag 30688: 404
-2025-02-21 16:34:53 | WARNING | CWReceiver: Error getting data from tag 30688: 404
-2025-02-21 16:35:53 | WARNING | CWReceiver: Error getting data from tag 30688: 404
-2025-02-25 16:04:13 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-05 10:35:02 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-05 10:35:03 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-05 10:35:04 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-05 10:36:52 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-05 10:36:53 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-05 10:36:53 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-05 10:37:39 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-05 10:37:39 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-05 10:37:40 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-05 10:39:08 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-05 10:39:09 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-05 10:39:10 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-05 10:39:32 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-05 10:39:32 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-05 10:39:33 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-05 10:40:32 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-05 10:40:33 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-05 10:40:33 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-05 10:43:44 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-05 10:43:44 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-05 10:43:45 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-05 10:45:00 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-05 10:45:00 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-05 10:45:01 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-05 10:45:56 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-05 10:45:57 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-05 10:45:57 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-05 10:46:54 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-05 10:46:54 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-05 10:46:56 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-05 10:47:19 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-05 10:47:19 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-05 10:47:20 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-05 10:48:18 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-05 10:48:19 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-05 10:48:19 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-05 10:49:18 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-05 10:49:19 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-05 10:49:19 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-05 10:50:18 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-05 10:50:18 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-05 10:50:19 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-05 10:51:18 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-05 10:51:19 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-05 10:51:19 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-05 10:52:18 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-05 10:52:19 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-05 10:52:19 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 09:42:34 | WARNING | CWTranslator: R-H-10 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:34 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 09:42:35 | WARNING | CWTranslator: R-H-04 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:36 | WARNING | CWTranslator: R-H-09 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:36 | WARNING | CWTranslator: R-H-13 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:36 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 09:42:36 | WARNING | CWTranslator: R-H-15 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:36 | WARNING | CWTranslator: R-H-07 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:36 | WARNING | CWTranslator: R-H-05 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:36 | WARNING | CWTranslator: R-H-01 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:36 | WARNING | CWTranslator: R-H-14 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:37 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 09:42:37 | WARNING | CWTranslator: R-H-08 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:37 | WARNING | CWTranslator: R-H-03 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:37 | WARNING | CWTranslator: R-H-12 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:39 | WARNING | CWTranslator: R-H-10 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:40 | WARNING | CWTranslator: R-H-04 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:41 | WARNING | CWTranslator: R-H-09 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:41 | WARNING | CWTranslator: R-H-13 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:41 | WARNING | CWTranslator: R-H-15 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:41 | WARNING | CWTranslator: R-H-07 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:41 | WARNING | CWTranslator: R-H-05 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:41 | WARNING | CWTranslator: R-H-01 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:41 | WARNING | CWTranslator: R-H-14 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:42 | WARNING | CWTranslator: R-H-08 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:42 | WARNING | CWTranslator: R-H-03 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:42 | WARNING | CWTranslator: R-H-12 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:44 | ERROR | CWTranslator: R-H-10 translator reached maximum reconnection attempts. The message was not sent.
+2025-03-27 09:42:45 | ERROR | CWTranslator: R-H-04 translator reached maximum reconnection attempts. The message was not sent.
+2025-03-27 09:42:47 | ERROR | CWTranslator: R-H-09 translator reached maximum reconnection attempts. The message was not sent.
+2025-03-27 09:42:47 | ERROR | CWTranslator: R-H-13 translator reached maximum reconnection attempts. The message was not sent.
+2025-03-27 09:42:47 | WARNING | CWTranslator: R-H-04 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:47 | ERROR | CWTranslator: R-H-15 translator reached maximum reconnection attempts. The message was not sent.
+2025-03-27 09:42:47 | ERROR | CWTranslator: R-H-07 translator reached maximum reconnection attempts. The message was not sent.
+2025-03-27 09:42:47 | ERROR | CWTranslator: R-H-05 translator reached maximum reconnection attempts. The message was not sent.
+2025-03-27 09:42:47 | ERROR | CWTranslator: R-H-01 translator reached maximum reconnection attempts. The message was not sent.
+2025-03-27 09:42:47 | ERROR | CWTranslator: R-H-14 translator reached maximum reconnection attempts. The message was not sent.
+2025-03-27 09:42:48 | ERROR | CWTranslator: R-H-08 translator reached maximum reconnection attempts. The message was not sent.
+2025-03-27 09:42:48 | ERROR | CWTranslator: R-H-03 translator reached maximum reconnection attempts. The message was not sent.
+2025-03-27 09:42:48 | ERROR | CWTranslator: R-H-12 translator reached maximum reconnection attempts. The message was not sent.
+2025-03-27 09:42:49 | WARNING | CWTranslator: R-H-09 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:50 | WARNING | CWTranslator: R-H-13 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:50 | WARNING | CWTranslator: R-H-01 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:50 | WARNING | CWTranslator: R-H-15 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:50 | WARNING | CWTranslator: R-H-05 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:50 | WARNING | CWTranslator: R-H-03 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:50 | WARNING | CWTranslator: R-H-14 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:52 | WARNING | CWTranslator: R-H-04 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:54 | WARNING | CWTranslator: R-H-09 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:55 | WARNING | CWTranslator: R-H-13 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:55 | WARNING | CWTranslator: R-H-01 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:55 | WARNING | CWTranslator: R-H-15 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:55 | WARNING | CWTranslator: R-H-05 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:55 | WARNING | CWTranslator: R-H-03 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:55 | WARNING | CWTranslator: R-H-14 translator lost connection, attempting to reconnect...
+2025-03-27 09:42:57 | ERROR | CWTranslator: R-H-04 translator reached maximum reconnection attempts. The message was not sent.
+2025-03-27 09:42:59 | ERROR | CWTranslator: R-H-09 translator reached maximum reconnection attempts. The message was not sent.
+2025-03-27 09:43:00 | ERROR | CWTranslator: R-H-13 translator reached maximum reconnection attempts. The message was not sent.
+2025-03-27 09:43:00 | ERROR | CWTranslator: R-H-01 translator reached maximum reconnection attempts. The message was not sent.
+2025-03-27 09:43:00 | ERROR | CWTranslator: R-H-15 translator reached maximum reconnection attempts. The message was not sent.
+2025-03-27 09:43:00 | ERROR | CWTranslator: R-H-05 translator reached maximum reconnection attempts. The message was not sent.
+2025-03-27 09:43:00 | ERROR | CWTranslator: R-H-03 translator reached maximum reconnection attempts. The message was not sent.
+2025-03-27 09:43:00 | ERROR | CWTranslator: R-H-14 translator reached maximum reconnection attempts. The message was not sent.
+2025-03-27 09:43:00 | WARNING | CWTranslator: R-H-01 translator lost connection, attempting to reconnect...
+2025-03-27 09:43:05 | WARNING | CWTranslator: R-H-01 translator lost connection, attempting to reconnect...
+2025-03-27 09:43:10 | ERROR | CWTranslator: R-H-01 translator reached maximum reconnection attempts. The message was not sent.
+2025-03-27 09:43:34 | WARNING | CWTranslator: R-H-04 translator lost connection, attempting to reconnect...
+2025-03-27 09:43:34 | WARNING | CWTranslator: R-H-07 translator lost connection, attempting to reconnect...
+2025-03-27 09:43:34 | WARNING | CWTranslator: R-H-13 translator lost connection, attempting to reconnect...
+2025-03-27 09:43:34 | WARNING | CWTranslator: R-H-12 translator lost connection, attempting to reconnect...
+2025-03-27 09:43:34 | WARNING | CWTranslator: R-H-15 translator lost connection, attempting to reconnect...
+2025-03-27 09:43:34 | WARNING | CWTranslator: R-H-09 translator lost connection, attempting to reconnect...
+2025-03-27 09:43:34 | WARNING | CWTranslator: R-H-03 translator lost connection, attempting to reconnect...
+2025-03-27 09:43:34 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 09:43:34 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 09:43:35 | WARNING | CWTranslator: R-H-01 translator lost connection, attempting to reconnect...
+2025-03-27 09:43:35 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 09:43:35 | WARNING | CWTranslator: R-H-08 translator lost connection, attempting to reconnect...
+2025-03-27 09:43:35 | WARNING | CWTranslator: R-H-05 translator lost connection, attempting to reconnect...
+2025-03-27 09:43:35 | WARNING | CWTranslator: R-H-14 translator lost connection, attempting to reconnect...
+2025-03-27 09:43:35 | WARNING | CWTranslator: R-H-10 translator lost connection, attempting to reconnect...
+2025-03-27 09:43:39 | WARNING | CWTranslator: R-H-04 translator lost connection, attempting to reconnect...
+2025-03-27 09:43:39 | WARNING | CWTranslator: R-H-07 translator lost connection, attempting to reconnect...
+2025-03-27 09:43:39 | WARNING | CWTranslator: R-H-13 translator lost connection, attempting to reconnect...
+2025-03-27 09:43:39 | WARNING | CWTranslator: R-H-12 translator lost connection, attempting to reconnect...
+2025-03-27 09:43:39 | WARNING | CWTranslator: R-H-15 translator lost connection, attempting to reconnect...
+2025-03-27 09:43:39 | WARNING | CWTranslator: R-H-09 translator lost connection, attempting to reconnect...
+2025-03-27 09:43:39 | WARNING | CWTranslator: R-H-03 translator lost connection, attempting to reconnect...
+2025-03-27 09:43:40 | WARNING | CWTranslator: R-H-01 translator lost connection, attempting to reconnect...
+2025-03-27 09:43:40 | WARNING | CWTranslator: R-H-08 translator lost connection, attempting to reconnect...
+2025-03-27 09:43:40 | WARNING | CWTranslator: R-H-05 translator lost connection, attempting to reconnect...
+2025-03-27 09:43:40 | WARNING | CWTranslator: R-H-14 translator lost connection, attempting to reconnect...
+2025-03-27 09:43:40 | WARNING | CWTranslator: R-H-10 translator lost connection, attempting to reconnect...
+2025-03-27 09:43:44 | ERROR | CWTranslator: R-H-04 translator reached maximum reconnection attempts. The message was not sent.
+2025-03-27 09:43:44 | ERROR | CWTranslator: R-H-07 translator reached maximum reconnection attempts. The message was not sent.
+2025-03-27 09:43:44 | ERROR | CWTranslator: R-H-13 translator reached maximum reconnection attempts. The message was not sent.
+2025-03-27 09:43:44 | ERROR | CWTranslator: R-H-12 translator reached maximum reconnection attempts. The message was not sent.
+2025-03-27 09:43:44 | ERROR | CWTranslator: R-H-15 translator reached maximum reconnection attempts. The message was not sent.
+2025-03-27 09:49:13 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 09:49:13 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 09:49:15 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 09:50:13 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 09:50:14 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 09:50:16 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 09:51:14 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 09:51:14 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 09:51:16 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 09:52:14 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 09:52:14 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 09:52:15 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 09:53:13 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 09:53:13 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 09:53:15 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 09:56:03 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 09:56:04 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 09:56:04 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 09:57:04 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 09:57:06 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 09:57:06 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 09:58:04 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 09:58:05 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 09:58:06 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 09:59:04 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 09:59:06 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 09:59:10 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:00:04 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:00:05 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:00:05 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:02:53 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:02:54 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:02:54 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:03:54 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:03:54 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:03:55 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:04:24 | WARNING | Device AC000001_1 was not found.
+2025-03-27 10:04:24 | WARNING | Device AC000004_1 was not found.
+2025-03-27 10:04:24 | WARNING | Device AC000007_1 was not found.
+2025-03-27 10:04:24 | WARNING | Device AC000010_1 was not found.
+2025-03-27 10:04:24 | WARNING | Device AC000013_1 was not found.
+2025-03-27 10:04:24 | WARNING | Device AC000002_1 was not found.
+2025-03-27 10:04:24 | WARNING | Device AC000003_1 was not found.
+2025-03-27 10:04:24 | WARNING | Device AC000005_1 was not found.
+2025-03-27 10:04:24 | WARNING | Device AC000006_1 was not found.
+2025-03-27 10:04:24 | WARNING | Device AC000008_1 was not found.
+2025-03-27 10:04:24 | WARNING | Device AC000009_1 was not found.
+2025-03-27 10:04:24 | WARNING | Device AC000011_1 was not found.
+2025-03-27 10:04:24 | WARNING | Device AC000012_1 was not found.
+2025-03-27 10:04:24 | WARNING | Device AC000014_1 was not found.
+2025-03-27 10:04:24 | WARNING | Device ACEXT001_1 was not found.
+2025-03-27 10:04:24 | WARNING | Device ACEXT002_1 was not found.
+2025-03-27 10:04:24 | WARNING | Device ACEXT003_1 was not found.
+2025-03-27 10:04:24 | WARNING | Device ACEXT004_1 was not found.
+2025-03-27 10:04:24 | WARNING | Device 29498 was not found.
+2025-03-27 10:04:24 | WARNING | Device not found in substitute_dict: 29498
+2025-03-27 10:04:24 | WARNING | Device 30080 was not found.
+2025-03-27 10:04:24 | WARNING | Device not found in substitute_dict: 30080
+2025-03-27 10:04:24 | WARNING | Device 30688 was not found.
+2025-03-27 10:04:24 | WARNING | Device not found in substitute_dict: 30688
+2025-03-27 10:04:55 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:04:55 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:04:59 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:05:23 | WARNING | Device AC000001_1 was not found.
+2025-03-27 10:05:23 | WARNING | Device AC000004_1 was not found.
+2025-03-27 10:05:23 | WARNING | Device AC000007_1 was not found.
+2025-03-27 10:05:24 | WARNING | Device AC000010_1 was not found.
+2025-03-27 10:05:24 | WARNING | Device AC000013_1 was not found.
+2025-03-27 10:05:24 | WARNING | Device AC000002_1 was not found.
+2025-03-27 10:05:24 | WARNING | Device AC000003_1 was not found.
+2025-03-27 10:05:24 | WARNING | Device AC000005_1 was not found.
+2025-03-27 10:05:24 | WARNING | Device AC000006_1 was not found.
+2025-03-27 10:05:24 | WARNING | Device AC000008_1 was not found.
+2025-03-27 10:05:24 | WARNING | Device AC000009_1 was not found.
+2025-03-27 10:05:24 | WARNING | Device AC000011_1 was not found.
+2025-03-27 10:05:24 | WARNING | Device AC000012_1 was not found.
+2025-03-27 10:05:24 | WARNING | Device AC000014_1 was not found.
+2025-03-27 10:05:24 | WARNING | Device ACEXT001_1 was not found.
+2025-03-27 10:05:24 | WARNING | Device ACEXT002_1 was not found.
+2025-03-27 10:05:24 | WARNING | Device ACEXT003_1 was not found.
+2025-03-27 10:05:24 | WARNING | Device ACEXT004_1 was not found.
+2025-03-27 10:05:24 | WARNING | Device 29498 was not found.
+2025-03-27 10:05:24 | WARNING | Device not found in substitute_dict: 29498
+2025-03-27 10:05:24 | WARNING | Device 30080 was not found.
+2025-03-27 10:05:24 | WARNING | Device not found in substitute_dict: 30080
+2025-03-27 10:05:24 | WARNING | Device 30688 was not found.
+2025-03-27 10:05:24 | WARNING | Device not found in substitute_dict: 30688
+2025-03-27 10:05:55 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:05:55 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:05:55 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:06:24 | WARNING | Device AC000001_1 was not found.
+2025-03-27 10:06:24 | WARNING | Device AC000004_1 was not found.
+2025-03-27 10:06:24 | WARNING | Device AC000007_1 was not found.
+2025-03-27 10:06:24 | WARNING | Device AC000010_1 was not found.
+2025-03-27 10:06:24 | WARNING | Device AC000013_1 was not found.
+2025-03-27 10:06:24 | WARNING | Device AC000002_1 was not found.
+2025-03-27 10:06:24 | WARNING | Device AC000003_1 was not found.
+2025-03-27 10:06:24 | WARNING | Device AC000005_1 was not found.
+2025-03-27 10:06:24 | WARNING | Device AC000006_1 was not found.
+2025-03-27 10:06:24 | WARNING | Device AC000008_1 was not found.
+2025-03-27 10:06:24 | WARNING | Device AC000009_1 was not found.
+2025-03-27 10:06:24 | WARNING | Device AC000011_1 was not found.
+2025-03-27 10:06:24 | WARNING | Device AC000012_1 was not found.
+2025-03-27 10:06:24 | WARNING | Device AC000014_1 was not found.
+2025-03-27 10:06:24 | WARNING | Device ACEXT001_1 was not found.
+2025-03-27 10:06:24 | WARNING | Device ACEXT002_1 was not found.
+2025-03-27 10:06:24 | WARNING | Device ACEXT003_1 was not found.
+2025-03-27 10:06:24 | WARNING | Device ACEXT004_1 was not found.
+2025-03-27 10:06:24 | WARNING | Device 29498 was not found.
+2025-03-27 10:06:24 | WARNING | Device not found in substitute_dict: 29498
+2025-03-27 10:06:24 | WARNING | Device 30080 was not found.
+2025-03-27 10:06:24 | WARNING | Device not found in substitute_dict: 30080
+2025-03-27 10:06:24 | WARNING | Device 30688 was not found.
+2025-03-27 10:06:24 | WARNING | Device not found in substitute_dict: 30688
+2025-03-27 10:06:54 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:06:58 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:07:02 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:07:24 | WARNING | Device AC000001_1 was not found.
+2025-03-27 10:07:24 | WARNING | Device AC000004_1 was not found.
+2025-03-27 10:07:24 | WARNING | Device AC000007_1 was not found.
+2025-03-27 10:07:24 | WARNING | Device AC000010_1 was not found.
+2025-03-27 10:07:24 | WARNING | Device AC000013_1 was not found.
+2025-03-27 10:07:24 | WARNING | Device AC000002_1 was not found.
+2025-03-27 10:07:24 | WARNING | Device AC000003_1 was not found.
+2025-03-27 10:07:24 | WARNING | Device AC000005_1 was not found.
+2025-03-27 10:07:24 | WARNING | Device AC000006_1 was not found.
+2025-03-27 10:07:24 | WARNING | Device AC000008_1 was not found.
+2025-03-27 10:07:24 | WARNING | Device AC000009_1 was not found.
+2025-03-27 10:07:24 | WARNING | Device AC000011_1 was not found.
+2025-03-27 10:07:24 | WARNING | Device AC000012_1 was not found.
+2025-03-27 10:07:24 | WARNING | Device AC000014_1 was not found.
+2025-03-27 10:07:24 | WARNING | Device ACEXT001_1 was not found.
+2025-03-27 10:07:24 | WARNING | Device ACEXT002_1 was not found.
+2025-03-27 10:07:24 | WARNING | Device ACEXT003_1 was not found.
+2025-03-27 10:07:24 | WARNING | Device ACEXT004_1 was not found.
+2025-03-27 10:07:24 | WARNING | Device 29498 was not found.
+2025-03-27 10:07:24 | WARNING | Device not found in substitute_dict: 29498
+2025-03-27 10:07:24 | WARNING | Device 30080 was not found.
+2025-03-27 10:07:24 | WARNING | Device not found in substitute_dict: 30080
+2025-03-27 10:07:24 | WARNING | Device 30688 was not found.
+2025-03-27 10:07:24 | WARNING | Device not found in substitute_dict: 30688
+2025-03-27 10:07:58 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:07:58 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:07:58 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:09:38 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:09:39 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:09:44 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:10:44 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:10:45 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:10:45 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:11:40 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:11:41 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:11:44 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:12:40 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:12:40 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:12:41 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:13:44 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:13:44 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:13:44 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:14:40 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:14:40 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:14:41 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:15:41 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:15:41 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:15:45 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:16:40 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:16:44 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:16:44 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:17:40 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:17:40 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:17:41 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:18:40 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:18:44 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:18:45 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:19:41 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:19:41 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:19:44 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:20:40 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:20:44 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:20:44 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:21:40 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:21:41 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:21:44 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:22:40 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:22:40 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:22:44 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:23:40 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:23:40 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:23:41 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:35:38 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:35:42 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:35:45 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:36:40 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:36:40 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:36:40 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:37:08 | WARNING | Device AC000001_1 was not found.
+2025-03-27 10:37:08 | WARNING | Device AC000010_1 was not found.
+2025-03-27 10:37:08 | WARNING | Device AC000002_1 was not found.
+2025-03-27 10:37:08 | WARNING | Device AC000003_1 was not found.
+2025-03-27 10:37:08 | WARNING | Device AC000011_1 was not found.
+2025-03-27 10:37:08 | WARNING | Device AC000012_1 was not found.
+2025-03-27 10:37:08 | WARNING | Device AC000014_1 was not found.
+2025-03-27 10:37:08 | WARNING | Device ACEXT001_1 was not found.
+2025-03-27 10:37:08 | WARNING | Device ACEXT002_1 was not found.
+2025-03-27 10:37:08 | WARNING | Device ACEXT003_1 was not found.
+2025-03-27 10:37:08 | WARNING | Device ACEXT004_1 was not found.
+2025-03-27 10:37:08 | WARNING | Device 29498 was not found.
+2025-03-27 10:37:08 | WARNING | Device not found in substitute_dict: 29498
+2025-03-27 10:37:08 | WARNING | Device 30080 was not found.
+2025-03-27 10:37:08 | WARNING | Device not found in substitute_dict: 30080
+2025-03-27 10:37:08 | WARNING | Device 30688 was not found.
+2025-03-27 10:37:08 | WARNING | Device not found in substitute_dict: 30688
+2025-03-27 10:37:40 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:37:40 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:37:43 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:39:19 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:39:19 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:39:22 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:40:19 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:40:19 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:40:21 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:41:19 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:41:19 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:41:23 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:42:23 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:42:23 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:42:27 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:43:46 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:43:51 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:43:52 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:44:47 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:44:47 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:44:47 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:48:50 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:48:53 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:48:53 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-03-27 10:49:51 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-03-27 10:49:51 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-03-27 10:49:51 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-04-15 08:55:21 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-04-15 08:55:21 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-04-15 08:55:25 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-04-15 08:56:23 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-04-15 08:56:23 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-04-15 08:56:24 | WARNING | CWReceiver: Error getting data from tag 30080: 404
+2025-04-15 08:57:23 | WARNING | CWReceiver: Error getting data from tag 29498: 404
+2025-04-15 08:57:23 | WARNING | CWReceiver: Error getting data from tag 30688: 404
+2025-04-15 08:57:25 | WARNING | CWReceiver: Error getting data from tag 30080: 404

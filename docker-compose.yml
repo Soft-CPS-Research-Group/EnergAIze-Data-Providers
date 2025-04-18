@@ -7,6 +7,9 @@ services:
         condition: service_healthy
     volumes:
       - ./logs:/data_provider/logs
+      - ./configs:/data_provider/configs
+      - ./house_files:/data_provider/house_files
+
   rabbitmq:
     image: rabbitmq:3-management
     restart: always
@@ -27,4 +30,6 @@ services:
 volumes:
     rabbitmq_data:
     logs_volume:
+    configs:
+    house_files:
 

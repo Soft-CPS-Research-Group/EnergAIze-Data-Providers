@@ -1,15 +1,15 @@
 from datetime import timedelta, datetime
-import os
 import sys
 import pika
 import threading
+import uuid
+import time
 from pika.exceptions import ProbableAuthenticationError
 import json
-from ICHistoricDataTranslator import ICHistoricDataTranslator
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from training.ICHistoricDataTranslator import ICHistoricDataTranslator
 from utils.data import DataSet
 
-configurations = DataSet.get_schema(os.path.join('..', 'historicConfigurations.json'))
+configurations = DataSet.get_schema('./configs/historicConfigurations.json')
 
 class ICHistoricDataRequest():
     def __init__(self, houses_list, connection_params, start_date, end_date, period):
@@ -49,7 +49,7 @@ class ICHistoricDataRequest():
             returnQueueName = f"{house}_historic"
             threading.Thread(target=self._message_processor, args=(returnQueueName,)).start()
             date = self._start_date
-
+            time.sleep(1)
             while date <= self._end_date:
                 print(f'{date.isoformat()}\n')
                 message = {
@@ -78,20 +78,23 @@ class ICHistoricDataRequest():
 
     def _on_response(self, ch, method, properties, body):
         data = json.loads(body)
-        observations = data.get('observation')
-        house = data.get('installation')
-        if self._data.get(house) is None:
-            self._data[house] = observations
+        if data.get('error') != 5:
+            observations = data.get('observation')
+            house = data.get('installation')
+            print(data)
+            if self._data.get(house) is None:
+                self._data[house] = observations
+            else:
+                self._data[house].extend(observations)
+            date = datetime.strptime(observations[0].get('time'), "%Y-%m-%dT%H:%M:%SZ").date()
+            if date == self._end_date.date():
+                with open(f'{house}_historicreal.json', 'w') as file:
+                    json.dump(self._data[house], file, indent=4)
+                #ICHistoricDataTranslator.translate(house, self._houses.get(house), self._data.get(house), self._start_date, self._end_date, self._period)
+                ch.stop_consuming()
+                ch.close()
         else:
-            self._data[house].extend(observations)
-
-        if observations[0].get('time') == self._end_date.isoformat():
-            with open(f'{house}_historicreal.json', 'w') as file:
-                json.dump(self._data[house], file, indent=4)
-            ICHistoricDataTranslator.translate(house, self._houses.get(house), self._data.get(house), self._start_date, self._end_date, self._period)
-            ch.stop_consuming()
-            ch.close()
-            
+            print(data.get('description'))
 
     def _send_message(self, message, returnQueueName):
         self._channel.basic_publish(
@@ -99,7 +102,8 @@ class ICHistoricDataRequest():
             routing_key='RPC',
             body=message,
             properties=pika.BasicProperties(
-                reply_to=returnQueueName
+                reply_to=returnQueueName,
+                message_id=str(uuid.uuid4())
             )
         )
    
@@ -108,7 +112,7 @@ def main(start_date, end_date, period):
 
     connection_params = configurations.get('IChistoricalServer')
 
-    schema = DataSet.get_schema(os.path.join('..',configurations.get('ICfile').get('path')))
+    schema = DataSet.get_schema(configurations.get('ICfile').get('path'))
     schema.pop('provider')
     print(schema)
 

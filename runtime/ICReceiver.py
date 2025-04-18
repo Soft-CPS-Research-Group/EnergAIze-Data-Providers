@@ -62,7 +62,6 @@ class ICReceiver(threading.Thread):
                 self._max_reconnect_attempts -= 1
             except Exception as e:
                 print(f"Thread {self._house} encountered an error: {e}")
-                break
 
         
 def main():
@@ -78,7 +77,7 @@ def main():
 
     try:
         for house in ICHouses.keys():
-            devices = ICHouses[house]
+            devices = ICHouses[house]["devices"]
             receiver_thread = ICReceiver(house, devices, connection_params)
             receiver_thread.start()
             threads.append(receiver_thread)

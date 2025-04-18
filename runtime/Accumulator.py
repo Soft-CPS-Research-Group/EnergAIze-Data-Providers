@@ -9,16 +9,15 @@ from utils.config_loader import load_configurations
 configurations, logger = load_configurations('./configs/runtimeConfigurations.json',"accumulator")
 
 class Accumulator(threading.Thread):
-    def __init__(self, house, devices, connection_params):
+    def __init__(self, house, house_specs, connection_params):
         threading.Thread.__init__(self)
         logger.info(f"Accumulator: thread for house {house} started with success!")
         self._house = house
-        self._manager = Manager(devices,house)
+        self._manager = Manager(house_specs,house)
         self._connection_params = pika.ConnectionParameters(host=connection_params.get('host'), port=connection_params.get('port'), virtual_host=connection_params.get('vhost'), credentials=pika.PlainCredentials(connection_params.get('credentials').get('username'), connection_params.get('credentials').get('password')), heartbeat=660)
         self._connection = None
         self._channel = None
         self._stop_event = threading.Event()
-        self._max_reconnect_attempts = 3
 
     def stop(self):
         logger.info(f"Accumulator: Stopping thread {self._house}")
@@ -47,10 +46,9 @@ class Accumulator(threading.Thread):
 
     def run(self):
         wait_time = 1
-        reconnect_attempts = 0
-        while not self._stop_event.is_set() and reconnect_attempts < self._max_reconnect_attempts:
+        while not self._stop_event.is_set():
             try:
-                self._connect()                
+                self._connect()
             except pika.exceptions.AMQPConnectionError as e:
                 logger.warning(f"Accumulator: Thread {self._house} lost connection. Error: {e}. Waiting {wait_time} seconds before attempting to reconnect...")
                 time.sleep(wait_time)

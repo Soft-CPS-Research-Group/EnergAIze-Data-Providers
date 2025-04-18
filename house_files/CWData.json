@@ -1,5 +1,7 @@
 {
-    "R-H-09": [
+    "R-H-09": {
+    "site": "living lab",
+    "devices": [
         {
             "id": "29720",
             "type": "Active energy+",
@@ -12,16 +14,20 @@
             "measurementUnit": "Kilowatt Hour",
             "label": "solar_generation"
         }
-    ],
-    "R-H-08": [
+    ]},
+    "R-H-08": {
+    "site": "living lab",
+    "devices": [
         {
             "id": "28387",
             "type": "Active energy+",
             "measurementUnit": "Kilowatt Hour",
             "label": "non_shiftable_load"
         }
-    ],
-    "R-H-15": [
+    ]},
+    "R-H-15": {
+    "site": "living lab",
+    "devices": [
         {
             "id": "30634",
             "type": "Active energy+",
@@ -34,8 +40,10 @@
             "measurementUnit": "Kilowatt Hour",
             "label": "solar_generation"
         }
-    ],
-    "R-H-14": [
+    ]},
+    "R-H-14": {
+    "site": "living lab",
+    "devices": [
         {
             "id": "28375",
             "type": "Active energy+",
@@ -48,8 +56,10 @@
             "measurementUnit": "Kilowatt Hour",
             "label": "solar_generation"
         }
-    ],
-    "R-H-13": [
+    ]},
+    "R-H-13": {
+    "site": "living lab",
+    "devices": [
         {
             "id": "33423",
             "type": "Active energy+",
@@ -62,16 +72,20 @@
             "measurementUnit": "Kilowatt Hour",
             "label": "non_shiftable_load"
         }
-    ],
-    "R-H-07": [
+    ]},
+    "R-H-07": {
+    "site": "living lab",
+    "devices": [
         {
             "id": "31093",
             "type": "Active energy+",
             "measurementUnit": "Kilowatt Hour",
             "label": "non_shiftable_load"
         }
-    ],
-    "R-H-05": [
+    ]},
+    "R-H-05": {
+    "site": "living lab",
+    "devices": [
         {
             "id": "28386",
             "type": "Active energy+",
@@ -84,16 +98,20 @@
             "measurementUnit": "Kilowatt Hour",
             "label": "solar_generation"
         }
-    ],
-    "R-H-10": [
+    ]},
+    "R-H-10": {
+    "site": "living lab",
+    "devices": [
         {
             "id": "29851",
             "type": "Active energy+",
             "measurementUnit": "Kilowatt Hour",
             "label": "non_shiftable_load"
         }
-    ],
-    "R-H-11": [
+    ]},
+    "R-H-11": {
+    "site": "living lab",
+    "devices": [
         {
             "id": "29498",
             "type": "PV energy",
@@ -106,16 +124,20 @@
             "measurementUnit": "Kilowatt Hour",
             "label": "non_shiftable_load"
         }
-    ],
-    "R-H-12": [
+    ]},
+    "R-H-12": {
+    "site": "living lab",
+    "devices": [
         {
             "id": "29660",
             "type": "Active energy+",
             "measurementUnit": "Kilowatt Hour",
             "label": "non_shiftable_load"
         }
-    ],
-    "R-H-04": [
+    ]},
+    "R-H-04": {
+    "site": "living lab",
+    "devices": [
         {
             "id": "36766",
             "type": "Active energy+",
@@ -128,16 +150,20 @@
             "measurementUnit": "Kilowatt Hour",
             "label": "solar_generation"
         }
-    ],
-    "R-H-02": [
+    ]},
+    "R-H-02": {
+    "site": "living lab",
+    "devices": [
         {
             "id": "30688",
             "type": "Active energy+",
             "measurementUnit": "Kilowatt Hour",
             "label": "non_shiftable_load"
         }
-    ],
-    "R-H-01": [
+    ]},
+    "R-H-01": {
+    "site": "living lab",
+    "devices": [
         {
             "id": "33682",
             "type": "Active energy+",
@@ -156,8 +182,10 @@
             "measurementUnit": "Kilowatt Hour",
             "label": "solar_generation"
         }
-    ],
-    "R-H-03": [
+    ]},
+    "R-H-03": {
+    "site": "living lab",
+    "devices": [
         {
             "id": "37208",
             "type": "Active energy+",
@@ -170,6 +198,6 @@
             "measurementUnit": "Kilowatt Hour",
             "label": "solar_generation"
         }
-    ],
+    ]},
     "provider": "Cleanwatts"
 }
