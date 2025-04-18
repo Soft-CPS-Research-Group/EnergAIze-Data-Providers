@@ -55,7 +55,6 @@ class ICTranslator:
                     cs = copy.deepcopy(chargerSessionFormat)
                     chargerId = f"{chargerSession.get('serialnumber')}_{chargerSession.get('plug')}"
                     cs['Charger Id'] = chargerId
-                    cs['EsocA'] = -1
                     cs['soc'] = chargerSession.get('soc')
                     cs['power'] = chargerSession.get('power')
                     cs['flexibility'] = chargerSession.get('flexibility')

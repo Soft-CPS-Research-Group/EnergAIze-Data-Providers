@@ -601,3 +601,181 @@
 2025-04-18 13:51:12 | WARNING | Device ACEXT004_1 was not found.
 2025-04-18 13:51:16 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
 2025-04-18 13:51:17 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 15:55:49 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 15:55:52 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fbee0236280>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))
+2025-04-18 15:55:53 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fbee0282070>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))
+2025-04-18 15:55:54 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fbee024f730>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))
+2025-04-18 15:55:56 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fbee028dfd0>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))
+2025-04-18 15:55:58 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 15:56:02 | ERROR | Failed to insert data: vsgate-s1.dei.isep.ipp.pt:10246: [Errno -3] Temporary failure in name resolution (configured timeouts: connectTimeoutMS: 20000.0ms)
+2025-04-18 15:56:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 15:56:06 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fbee28ead30>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))
+2025-04-18 15:56:06 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fbee024f280>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))
+2025-04-18 15:56:06 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fbee01d9dc0>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))
+2025-04-18 15:56:07 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fbee01d95b0>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))
+2025-04-18 15:56:10 | ERROR | Failed to insert data: vsgate-s1.dei.isep.ipp.pt:10246: [Errno -3] Temporary failure in name resolution (configured timeouts: connectTimeoutMS: 20000.0ms)
+2025-04-18 15:56:10 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fbee01a00d0>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))
+2025-04-18 15:56:10 | ERROR | Failed to insert data: vsgate-s1.dei.isep.ipp.pt:10246: [Errno -3] Temporary failure in name resolution (configured timeouts: connectTimeoutMS: 20000.0ms)
+2025-04-18 15:56:14 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 15:56:17 | ERROR | Failed to insert data: vsgate-s1.dei.isep.ipp.pt:10246: [Errno -3] Temporary failure in name resolution (configured timeouts: connectTimeoutMS: 20000.0ms)
+2025-04-18 15:56:18 | ERROR | Failed to insert data: vsgate-s1.dei.isep.ipp.pt:10246: [Errno -3] Temporary failure in name resolution (configured timeouts: connectTimeoutMS: 20000.0ms)
+2025-04-18 15:56:18 | ERROR | Failed to insert data: vsgate-s1.dei.isep.ipp.pt:10246: [Errno -3] Temporary failure in name resolution (configured timeouts: connectTimeoutMS: 20000.0ms)
+2025-04-18 15:56:20 | ERROR | Failed to insert data: vsgate-s1.dei.isep.ipp.pt:10246: [Errno -3] Temporary failure in name resolution (configured timeouts: connectTimeoutMS: 20000.0ms)
+2025-04-18 15:56:26 | ERROR | Failed to insert data: vsgate-s1.dei.isep.ipp.pt:10246: [Errno -3] Temporary failure in name resolution (configured timeouts: connectTimeoutMS: 20000.0ms)
+2025-04-18 16:00:02 | ERROR | Failed to insert data: vsgate-s1.dei.isep.ipp.pt:10246: [Errno -3] Temporary failure in name resolution (configured timeouts: connectTimeoutMS: 20000.0ms)
+2025-04-18 16:00:05 | ERROR | Failed to insert data: vsgate-s1.dei.isep.ipp.pt:10246: [Errno -3] Temporary failure in name resolution (configured timeouts: connectTimeoutMS: 20000.0ms)
+2025-04-18 16:00:23 | WARNING | Device 29720 was not found.
+2025-04-18 16:00:23 | WARNING | Device 29725 was not found.
+2025-04-18 16:00:23 | WARNING | Device 28387 was not found.
+2025-04-18 16:00:23 | WARNING | Device 28386 was not found.
+2025-04-18 16:00:23 | WARNING | Device 29498 was not found.
+2025-04-18 16:00:23 | WARNING | Device not found in substitute_dict: 29498
+2025-04-18 16:00:23 | WARNING | Device 30080 was not found.
+2025-04-18 16:00:23 | WARNING | Device not found in substitute_dict: 30080
+2025-04-18 16:00:23 | WARNING | Device 30688 was not found.
+2025-04-18 16:00:23 | WARNING | Device not found in substitute_dict: 30688
+2025-04-18 16:00:23 | WARNING | Device 35927 was not found.
+2025-04-18 16:00:23 | WARNING | Device not found in substitute_dict: 35927
+2025-04-18 16:00:23 | WARNING | Device AC000001_1 was not found.
+2025-04-18 16:00:23 | WARNING | Device AC000004_1 was not found.
+2025-04-18 16:00:23 | WARNING | Device AC000007_1 was not found.
+2025-04-18 16:00:23 | WARNING | Device AC000010_1 was not found.
+2025-04-18 16:00:23 | WARNING | Device AC000013_1 was not found.
+2025-04-18 16:00:23 | WARNING | Device AC000002_1 was not found.
+2025-04-18 16:00:23 | WARNING | Device AC000003_1 was not found.
+2025-04-18 16:00:23 | WARNING | Device AC000005_1 was not found.
+2025-04-18 16:00:23 | WARNING | Device AC000006_1 was not found.
+2025-04-18 16:00:23 | WARNING | Device AC000008_1 was not found.
+2025-04-18 16:00:23 | WARNING | Device AC000009_1 was not found.
+2025-04-18 16:00:23 | WARNING | Device AC000011_1 was not found.
+2025-04-18 16:00:23 | WARNING | Device AC000012_1 was not found.
+2025-04-18 16:00:23 | WARNING | Device AC000014_1 was not found.
+2025-04-18 16:00:23 | WARNING | Device ACEXT001_1 was not found.
+2025-04-18 16:00:23 | WARNING | Device ACEXT002_1 was not found.
+2025-04-18 16:00:23 | WARNING | Device ACEXT003_1 was not found.
+2025-04-18 16:00:23 | WARNING | Device ACEXT004_1 was not found.
+2025-04-18 16:00:31 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f92c00f8220>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))
+2025-04-18 16:00:33 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:00:34 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:00:37 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f92c013d790>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))
+2025-04-18 16:00:40 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:00:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:00:44 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f92c013d160>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))
+2025-04-18 16:00:44 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f92c027c9a0>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))
+2025-04-18 16:00:46 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:00:48 | ERROR | Failed to insert data: vsgate-s1.dei.isep.ipp.pt:10246: [Errno -3] Temporary failure in name resolution (configured timeouts: connectTimeoutMS: 20000.0ms)
+2025-04-18 16:00:48 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f92c00dc2b0>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))
+2025-04-18 16:00:49 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f92c01234f0>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))
+2025-04-18 16:00:50 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:00:51 | ERROR | Failed to insert data: No servers found yet, Timeout: 5.0s, Topology Description: <TopologyDescription id: 6802772ef6a2125121b00178, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 16:00:52 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f92c0157c10>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))
+2025-04-18 16:00:53 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:00:53 | ERROR | Failed to insert data: No servers found yet, Timeout: 5.0s, Topology Description: <TopologyDescription id: 68027730f6a2125121b0017a, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 16:04:34 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:04:37 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:04:38 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fb2f02d40a0>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))
+2025-04-18 16:04:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:04:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:04:41 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fb2f02a7c40>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))
+2025-04-18 16:04:42 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:04:42 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:04:43 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:04:44 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:04:47 | ERROR | Failed to insert data: vsgate-s1.dei.isep.ipp.pt:10246: [Errno -3] Temporary failure in name resolution (configured timeouts: connectTimeoutMS: 20000.0ms)
+2025-04-18 16:04:48 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:08:26 | WARNING | Device 29720 was not found.
+2025-04-18 16:08:26 | WARNING | Device 29725 was not found.
+2025-04-18 16:08:26 | WARNING | Device 28375 was not found.
+2025-04-18 16:08:26 | WARNING | Device 29498 was not found.
+2025-04-18 16:08:26 | WARNING | Device not found in substitute_dict: 29498
+2025-04-18 16:08:26 | WARNING | Device 30080 was not found.
+2025-04-18 16:08:26 | WARNING | Device not found in substitute_dict: 30080
+2025-04-18 16:08:26 | WARNING | Device 29660 was not found.
+2025-04-18 16:08:26 | WARNING | Device 30688 was not found.
+2025-04-18 16:08:26 | WARNING | Device not found in substitute_dict: 30688
+2025-04-18 16:08:26 | WARNING | Device 33682 was not found.
+2025-04-18 16:08:26 | WARNING | Device AC000001_1 was not found.
+2025-04-18 16:08:26 | WARNING | Device AC000004_1 was not found.
+2025-04-18 16:08:26 | WARNING | Device AC000007_1 was not found.
+2025-04-18 16:08:26 | WARNING | Device AC000010_1 was not found.
+2025-04-18 16:08:26 | WARNING | Device AC000013_1 was not found.
+2025-04-18 16:08:26 | WARNING | Device AC000002_1 was not found.
+2025-04-18 16:08:26 | WARNING | Device AC000003_1 was not found.
+2025-04-18 16:08:26 | WARNING | Device AC000005_1 was not found.
+2025-04-18 16:08:26 | WARNING | Device AC000006_1 was not found.
+2025-04-18 16:08:26 | WARNING | Device AC000008_1 was not found.
+2025-04-18 16:08:26 | WARNING | Device AC000009_1 was not found.
+2025-04-18 16:08:26 | WARNING | Device AC000011_1 was not found.
+2025-04-18 16:08:26 | WARNING | Device AC000012_1 was not found.
+2025-04-18 16:08:26 | WARNING | Device AC000014_1 was not found.
+2025-04-18 16:08:26 | WARNING | Device ACEXT001_1 was not found.
+2025-04-18 16:08:26 | WARNING | Device ACEXT002_1 was not found.
+2025-04-18 16:08:26 | WARNING | Device ACEXT003_1 was not found.
+2025-04-18 16:08:26 | WARNING | Device ACEXT004_1 was not found.
+2025-04-18 16:08:35 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:08:36 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:08:36 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:08:36 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:08:37 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:08:37 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:08:39 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f1dec4c84c0>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))
+2025-04-18 16:08:39 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:08:39 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f1dec44fc70>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -5] No address associated with hostname)"))
+2025-04-18 16:08:39 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f1dec44fb20>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))
+2025-04-18 16:08:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:08:43 | ERROR | Failed to insert data: No servers found yet, Timeout: 5.0s, Topology Description: <TopologyDescription id: 6802790745c3e5a653c75a3a, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 16:08:46 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f1dec57e130>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))
+2025-04-18 16:08:46 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f1dec3cde20>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))
+2025-04-18 16:08:54 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:09:04 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f1dec3d6ca0>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))
+2025-04-18 16:09:09 | ERROR | Failed to insert data: No servers found yet, Timeout: 5.0s, Topology Description: <TopologyDescription id: 6802792045c3e5a653c75a42, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 16:09:26 | WARNING | Device 29720 was not found.
+2025-04-18 16:09:26 | WARNING | Device 29725 was not found.
+2025-04-18 16:09:26 | WARNING | Device 30642 was not found.
+2025-04-18 16:09:26 | WARNING | Device 33423 was not found.
+2025-04-18 16:09:26 | WARNING | Device 31049 was not found.
+2025-04-18 16:09:26 | WARNING | Device 31093 was not found.
+2025-04-18 16:09:26 | WARNING | Device 29851 was not found.
+2025-04-18 16:09:26 | WARNING | Device 29498 was not found.
+2025-04-18 16:09:26 | WARNING | Device not found in substitute_dict: 29498
+2025-04-18 16:09:26 | WARNING | Device 30080 was not found.
+2025-04-18 16:09:26 | WARNING | Device not found in substitute_dict: 30080
+2025-04-18 16:09:26 | WARNING | Device 29660 was not found.
+2025-04-18 16:09:26 | WARNING | Device 36766 was not found.
+2025-04-18 16:09:26 | WARNING | Device 30688 was not found.
+2025-04-18 16:09:26 | WARNING | Device not found in substitute_dict: 30688
+2025-04-18 16:09:26 | WARNING | Device 35927 was not found.
+2025-04-18 16:09:26 | WARNING | Device AC000001_1 was not found.
+2025-04-18 16:09:26 | WARNING | Device AC000004_1 was not found.
+2025-04-18 16:09:26 | WARNING | Device AC000007_1 was not found.
+2025-04-18 16:09:26 | WARNING | Device AC000010_1 was not found.
+2025-04-18 16:09:26 | WARNING | Device AC000013_1 was not found.
+2025-04-18 16:09:26 | WARNING | Device AC000002_1 was not found.
+2025-04-18 16:09:26 | WARNING | Device AC000003_1 was not found.
+2025-04-18 16:09:26 | WARNING | Device AC000005_1 was not found.
+2025-04-18 16:09:26 | WARNING | Device AC000006_1 was not found.
+2025-04-18 16:09:26 | WARNING | Device AC000008_1 was not found.
+2025-04-18 16:09:26 | WARNING | Device AC000009_1 was not found.
+2025-04-18 16:09:26 | WARNING | Device AC000011_1 was not found.
+2025-04-18 16:09:26 | WARNING | Device AC000012_1 was not found.
+2025-04-18 16:09:26 | WARNING | Device AC000014_1 was not found.
+2025-04-18 16:09:26 | WARNING | Device ACEXT001_1 was not found.
+2025-04-18 16:09:26 | WARNING | Device ACEXT002_1 was not found.
+2025-04-18 16:09:26 | WARNING | Device ACEXT003_1 was not found.
+2025-04-18 16:09:26 | WARNING | Device ACEXT004_1 was not found.
+2025-04-18 16:09:35 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:09:35 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:09:36 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:09:38 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f1dec343310>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))
+2025-04-18 16:09:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:09:43 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f1dec569250>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))
+2025-04-18 16:09:44 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:09:44 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:09:44 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:09:44 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:09:51 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f1dec37f2e0>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))
+2025-04-18 16:09:51 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f1dec3687c0>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))
+2025-04-18 16:09:52 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:09:52 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-18 16:09:57 | ERROR | Failed to insert data: No servers found yet, Timeout: 5.0s, Topology Description: <TopologyDescription id: 6802795045c3e5a653c75a51, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
+2025-04-18 16:10:03 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f1dec3d6040>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))
