@@ -10,8 +10,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from dateutil import parser
 from datetime import datetime, timedelta
-from cwlogin import CWLogin
-from data import DataSet
+from utils.cwlogin import CWLogin
+from utils.data import DataSet
 
 # Load configurations
 configurations = DataSet.get_schema(os.path.join('..', 'historicConfigurations.json'))

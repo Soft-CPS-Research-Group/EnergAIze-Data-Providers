@@ -1,0 +1,7 @@
+simplejson
+pika
+requests
+pymongo
+loguru
+apscheduler
+paho-mqtt

@@ -4,13 +4,10 @@ import threading
 import time
 import random
 import json
-import os
-import sys
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from data import DataSet
+from utils.data import DataSet
 
 # Load configurations
-configurations = DataSet.get_schema(os.path.join('..', 'runtimeConfigurations.json'))
+configurations = DataSet.get_schema('./configs/runtimeConfigurations.json')
 
 class ProducerThread(threading.Thread):
     def __init__(self, house, devices_list, users_list, connection_params):
@@ -38,7 +35,6 @@ class ProducerThread(threading.Thread):
         self._channel.exchange_declare(exchange=self._house, exchange_type='fanout')
 
     def run(self):
-        
         reconnect_attempts = 0
         # Calculate the time between each data request
         timesleep = DataSet.calculate_interval(configurations.get('frequency'))        
@@ -48,7 +44,7 @@ class ProducerThread(threading.Thread):
                 self.connect()    
                 while not self._stop_event.is_set():
                     for device in self._devices_list:
-                        if device.get('label') == "ChargersSession":
+                        if device.get('label') == "charging_sessions":
                             userID = random.choice(self._users_list)
                             devicedata = {
                                     "id": random.randint(1, 1000),
@@ -57,7 +53,17 @@ class ProducerThread(threading.Thread):
                                     "card.id": "xxxx",
                                     "plug": device.get('plug'),
                                     "soc": random.randint(1, 100),
-                                    "power": random.randint(1, 100)
+                                    "power": random.randint(1, 100),
+                                    "flexibility": {
+                                        "arrival.time": "08:00:00",
+                                        "departure.time": "17:00:00",
+                                        "vehicle.model": 2,
+                                        "energy.min": 0,
+                                        "energy.total": 0,
+                                        "prioritary": 0,
+                                        "optimization": 0,
+                                        "departure.soc": 80
+                                    }
                                 }
                             message_devices.append(devicedata)
 
@@ -73,6 +79,10 @@ class ProducerThread(threading.Thread):
                                     }
                                 ] 
                             }
+                        message = {
+                            "installation": self._house,
+                            "observation": message
+                        }
                     print(f"House: {self._house} {json.dumps(message, indent=2)}")
                     message_bytes = json.dumps(message).encode('utf-8')    
                     self._channel.basic_publish(exchange=self._house, routing_key='', body=message_bytes)
@@ -96,9 +106,9 @@ def main():
     # Get connection parameters
     connection_params = configurations.get('ICserver')
     # Get CW Houses file and turn it into a dictionary
-    ICHouses = DataSet.get_schema(os.path.join('..', configurations.get('ICfile').get('path')))
+    ICHouses = DataSet.get_schema(configurations.get('ICfile').get('path'))
     # Get Users file and turn it into a dictionary
-    users = DataSet.get_schema(os.path.join('..', configurations.get('Users').get('path')))
+    users = DataSet.get_schema(configurations.get('Users').get('path'))
     # Remove provider key because it does not contain any useful information here
     ICHouses.pop('provider')
     

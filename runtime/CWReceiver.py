@@ -1,39 +1,54 @@
-import threading
+from threading import Thread, Event
+from apscheduler.schedulers.background import BlockingScheduler
 import requests
 import time
 import datetime
-import os
-import sys
-from CWTranslator import CWTranslator
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from data import DataSet
-from cwlogin import CWLogin
-
+from runtime.CWTranslator import CWTranslator
+from utils.data import DataSet
+from utils.config_loader import load_configurations
+from utils.cwlogin import CWLogin
 
 # Load configurations
-configurations = DataSet.get_schema(os.path.join('..', 'runtimeConfigurations.json'))
-
-class CWReceiver(threading.Thread):
+configurations, logger = load_configurations('./configs/runtimeConfigurations.json',"cleanwatts")
+class CWReceiver(Thread):
     def __init__(self, house_name, tags_list, connection_params):
-        threading.Thread.__init__(self)
+        Thread.__init__(self)
         self._house = house_name
         self._tags_list = tags_list
 
-        self._stop_event = threading.Event()
+        self._time_interval = DataSet.calculate_interval(configurations.get('frequency'))
         self._connection_params = connection_params
+        self._session_time = 0
+        self._stop_event = Event()
+        self._count = 0
 
     def stop(self):
         self._stop_event.set()
+        self._scheduler.shutdown()
 
     def _job(self):
+        print(f"Job Execution Time: {datetime.datetime.now()} House: {self._house}")
+        #from_time = (datetime.datetime.now() - datetime.timedelta(seconds=self._time_interval)).isoformat()
+        if datetime.datetime.now().timestamp() - self._session_time > 3000:
+            self._login()
         for tag in self._tags_list:
             try:
-                lastvalue_url = f"{self._connection_params}{tag.get('id')}"
-                response = requests.get(lastvalue_url, headers=self._header)
-                if response.status_code == 200:               
+                # I wanted to do only one request with all the tags, but if I do that and one of the tags is not available, all the tags are compromised
+                #url = f"{self._connection_params}{tag.get('id')}&from={from_time}"
+                url = f"https://ks.innov.cleanwatts.energy/api/2.0/data/lastvalue/Instant?from=2003-06-11&tags={tag.get('id')}"
+                response = requests.get(url, headers=self._header, timeout=(3,10)) #ver melhor
+                if response.status_code == 200:
+                    logger.info(f"CWReceiver: Tag {tag.get('id')} successfully retrieved!")
                     CWTranslator.translate(self._house, response.json())
-            except Exception as e:
-                print(f"Error processing tag {tag.get('id')}: {e}")
+                else:
+                    logger.warning(f"CWReceiver: Error getting data from tag {tag.get('id')}: {response.status_code}")
+            except requests.exceptions.Timeout:
+                logger.error("CWReceiver: Connection timeout.") #Descobrir tempo de timeout
+            except requests.exceptions.ConnectionError as e:
+                logger.error(f"CWReceiver: {e}")
+            except requests.exceptions.RequestException as e:
+                logger.error(f"CWReceiver: Unexpected error - {e}")
+
             
     def _login(self):
         try: 
@@ -42,30 +57,23 @@ class CWReceiver(threading.Thread):
             print(e)
             exit()
         self._header = {'Authorization': f"CW {token}"}
-        self._session_time = datetime.datetime.now().timestamp()
-
+        if token is not None:
+            self._session_time = datetime.datetime.now().timestamp()
 
     def run(self):
-        # Calculate the time between each data request
-        timesleep = DataSet.calculate_interval(configurations.get('frequency'))
-        # Login to the server
-        self._login()
-        
-        while not self._stop_event.is_set():
-            # Check if the session has expired
-            if (datetime.datetime.now().timestamp() - self._session_time) >= 3599:
-                # If it has, login again
-                self._login()
-            self._job()
-            time.sleep(timesleep)
+        self._scheduler = BlockingScheduler()
+        self._scheduler.add_job(self._job, 'interval', seconds=self._time_interval, misfire_grace_time=10, coalesce=True)
+
+        self._job()
+        self._scheduler.start()
 
 
 def main():
-    print("Starting CWReceiver...")
+    logger.info("Starting CWReceiver...")
     # Get connection parameters
     connection_params = configurations.get('CWserver')
     # Get CW Houses file and turn it into a dictionary
-    CWHouses = DataSet.get_schema(os.path.join('..', configurations.get('CWfile').get('path')))
+    CWHouses = DataSet.get_schema(configurations.get('CWfile').get('path'))
     # Remove provider key because it does not contain any useful information here
     CWHouses.pop('provider')
     
@@ -73,7 +81,7 @@ def main():
 
     try:
         for house in CWHouses.keys():
-            tags_list = CWHouses[house]
+            tags_list = CWHouses[house]["devices"]
             receiver_thread = CWReceiver(house, tags_list, connection_params)
             receiver_thread.start()
             threads.append(receiver_thread)

@@ -4,9 +4,9 @@ import csv
 import requests
 import numpy as np
 import pandas as pd
-from time import sleep
+
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
-from cwlogin import CWLogin
+from utils.cwlogin import CWLogin
 
 def main(tag, period, unit):
     token = CWLogin().login()

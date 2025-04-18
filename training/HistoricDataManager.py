@@ -4,7 +4,7 @@ import csv
 import sys
 from datetime import datetime, timedelta, timezone
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from data import DataSet
+from utils.data import DataSet
 
 configurations = DataSet.get_schema(os.path.join('..', 'historicConfigurations.json'))
 class HistoricDataManager:
@@ -31,7 +31,7 @@ class HistoricDataManager:
         jsonbody = json.loads(body_str)
         device_id = jsonbody.get('id')
         data = jsonbody.get('data')
-        print(f"Device hejwksl: {device_id}")
+        print(f"Device: {device_id}")
         #print(f"Data: {data}")
         if data is not None:
             for inst in data:

@@ -1,7 +1,11 @@
-from IDecisionForwarder import IDecisionForwarder
+from runtime.IDecisionForwarder import IDecisionForwarder
+from utils.logging import Logging
+
+logger = Logging("icharging")
 
 class ICDecisionForwarder(IDecisionForwarder):
     @staticmethod
     def toForward(result):
-        print(result)
+        #print(result)
+        pass
     

@@ -1,12 +1,12 @@
-from datetime import timedelta, datetime
 import os
 import sys
 import time
 import pika
 import json
-from ICHistoricDataTranslator import ICHistoricDataTranslator
+import uuid
+
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from data import DataSet
+from utils.data import DataSet
 
 configurations = DataSet.get_schema(os.path.join('..', 'historicConfigurations.json'))
 
@@ -43,6 +43,7 @@ class ICInstallationsRequest():
 
     def _send_message(self, message):
         returnQueueName = f"installations_request_{int(time.time())}"
+        print(f"Return queue name: {returnQueueName}")
         self._connect()
         self._channel.queue_declare(queue='RPC', durable=True)
         self._channel.queue_declare(queue=returnQueueName, exclusive=True)
@@ -51,7 +52,8 @@ class ICInstallationsRequest():
             routing_key='RPC',
             body=message,
             properties=pika.BasicProperties(
-                reply_to=returnQueueName
+                reply_to=returnQueueName,
+                message_id=str(uuid.uuid4())
             )
         )
 

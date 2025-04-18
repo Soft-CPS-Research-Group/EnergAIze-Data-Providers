@@ -1,13 +1,11 @@
-from datetime import datetime, timedelta
+from datetime import timedelta
 from collections import OrderedDict
 import os
-import csv
 import sys
 import pandas as pd
-import numpy as np
 from Translator import Translator
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from data import DataSet
+from utils.data import DataSet
 
 # Load configurations
 configurations = DataSet.get_schema(os.path.join('..', 'runtimeConfigurations.json'))
@@ -17,13 +15,18 @@ class CWPriceDataTranslatorAndManager(Translator):
     @staticmethod
     def translate(tagId, data, house, start_date, end_date, period):
         df = CWPriceDataTranslatorAndManager._data_format(data, period, start_date, end_date, ['Date', 'Value'])
-
+        #print(df)
         tosend = CWPriceDataTranslatorAndManager._interpolateMissingValues(df)
         
         pred = CWPriceDataTranslatorAndManager._predictions(tosend)
         pred = {date: value for date, value in pred.items() if start_date <= pd.to_datetime(date) <= end_date}
         pred = OrderedDict(sorted(pred.items()))
-        CWPriceDataTranslatorAndManager._tocsv("pricing.csv", pred, ['electricity_pricing', 'electricity_pricing_predicted_6h', 'electricity_pricing_predicted_12h', 'electricity_pricing_predicted_24h'])
+
+        directory = 'datasets'
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+        filename = os.path.join(directory, "pricing.csv")
+        CWPriceDataTranslatorAndManager._tocsv(filename, pred, ['electricity_pricing', 'electricity_pricing_predicted_6h', 'electricity_pricing_predicted_12h', 'electricity_pricing_predicted_24h'])
 
     @staticmethod
     def _data_format(data, period, start_date, end_date, columns_to_keep):

@@ -1,68 +1,96 @@
 import pika
-import os
 import json
-import sys
-from ICTranslator import ICTranslator
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from data import DataSet
+import uuid
+import time
+from utils.data import DataSet
+from utils.config_loader import load_configurations
 
 # Load configurations
-configurations = DataSet.get_schema(os.path.join('..', 'runtimeConfigurations.json'))
+configurations, logger = load_configurations('./configs/runtimeConfigurations.json',"icharging")
 
-    
+class ICRuntimeRequest:
+    def __init__(self, houses, frequency, connection_params):
+        self._connection_params = pika.ConnectionParameters(host=connection_params.get('host'), port=connection_params.get('port'),credentials=pika.PlainCredentials(connection_params.get('credentials').get('username'), connection_params.get('credentials').get('password')), heartbeat=660)
+        self._max_reconnect_attempts = configurations.get('maxReconnectAttempts')
+        self._connection = None
+        self._channel = None
+        self._max_reconnect_attempts = configurations.get('maxReconnectAttempts')
+        self._completed = False
+
+        self._message = {
+            "type": "runtime",
+            "value": {
+                "installations": list(houses.keys()),
+                "frequency": frequency
+            }
+        }
+
+    def init(self):
+        self._message = json.dumps(self._message)
+
+        self._send_message()
+
+    def _connect(self):
+        # Get connection parameters
+        self._connection = pika.BlockingConnection(self._connection_params)
+        self._channel = self._connection.channel()
+        self._channel.queue_declare(queue='RPC', durable=True)
+        self._returnQueueName = self._channel.queue_declare(queue='', exclusive=True)
+
+    def _send_message(self):
+        while self._max_reconnect_attempts > 0 and self._completed == False:
+            try:
+                self._connect()
+                self._channel.basic_publish(
+                    exchange='',
+                    routing_key='RPC',
+                    body=self._message,
+                    properties=pika.BasicProperties(
+                        reply_to=self._returnQueueName.method.queue,
+                        message_id=str(uuid.uuid4())
+                    )
+                )
+
+                self._channel.basic_consume(
+                    queue=self._returnQueueName.method.queue,
+                    on_message_callback=self._on_response,
+                    auto_ack=True
+                )
+
+                # Start consuming
+                self._channel.start_consuming()
+
+                self._completed = True
+            except pika.exceptions.AMQPConnectionError:
+                if self._max_reconnect_attempts == 0:
+                    print(f"Thread ICRuntimeRequest reached maximum reconnection attempts. Stopping thread.")
+                else:
+                    print(f"Thread ICRuntimeRequest lost connection, attempting to reconnect...")
+                    time.sleep(5)
+
+                self._max_reconnect_attempts -= 1
+            except Exception as e:
+                print(f"Thread ICRuntimeRequest encountered an error: {e}")
+
+
+
+    def _on_response(self, ch, method, properties, body):
+            print("Received response:", body.decode())
+            ch.stop_consuming()
+            ch.close()
+
+
 def main():
     print("Starting ICRuntimeRequest...")
+    connection_params = configurations.get('ICserver')
     # Get CW Houses file and turn it into a dictionary
-    ICHouses = DataSet.get_schema(os.path.join('..', configurations.get('ICfile').get('path')))
+    ICHouses = DataSet.get_schema(configurations.get('ICfile').get('path'))
     # Remove provider key because it does not contain any useful information here
     ICHouses.pop('provider')
 
-    frequency = DataSet.calculate_interval(configurations.get('frequency'))        
+    frequency = DataSet.calculate_interval(configurations.get('frequency'))
 
-    print(list(ICHouses.keys()))
-    print(frequency)
-
-    message = {
-        "type": "runtime",
-        "value":{
-            "installations": list(ICHouses.keys()),
-            "frequency": frequency
-        } 
-    }
-
-    _send_message(json.dumps(message))
-
-def _send_message(message):
-        # Get connection parameters
-        connection_params = configurations.get('ICserver')
-        connection_params = pika.ConnectionParameters(host=connection_params.get('host'), port=connection_params.get('port'),credentials=pika.PlainCredentials(connection_params.get('credentials').get('username'), connection_params.get('credentials').get('password')), heartbeat=660)
-        connection = pika.BlockingConnection(connection_params)
-        channel = connection.channel()
-        channel.queue_declare(queue='RPC', durable=True)
-        returnQueueName = channel.queue_declare(queue='', exclusive=True)
-        
-        channel.basic_publish(
-            exchange='',
-            routing_key='RPC',
-            body=message,
-            properties=pika.BasicProperties(
-                reply_to=returnQueueName.method.queue
-            )
-        )
-
-        channel.basic_consume(
-            queue=returnQueueName.method.queue,
-            on_message_callback=on_response,
-            auto_ack=False
-        )
-
-        # Start consuming
-        channel.start_consuming()
-
-def on_response(ch, method, properties, body):
-        print("Received response:", body.decode())
-        ch.basic_ack(delivery_tag=method.delivery_tag)
-  
+    ICRuntimeRequest(ICHouses, frequency, connection_params).init()
 
 
 if __name__ == "__main__":

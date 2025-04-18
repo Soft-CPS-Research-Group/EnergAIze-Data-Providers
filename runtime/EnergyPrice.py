@@ -1,12 +1,9 @@
-import os
 import requests
-import sys
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from data import DataSet
-from cwlogin import CWLogin
+from utils.cwlogin import CWLogin
+from utils.config_loader import load_configurations
 
 # Load configurations
-configurations = DataSet.get_schema(os.path.join('..', 'runtimeConfigurations.json'))
+configurations, logger = load_configurations('./configs/runtimeConfigurations.json',"energyprice")
 
 class EnergyPrice:
     @staticmethod
@@ -28,7 +25,7 @@ class EnergyPrice:
             if isinstance(json_response, list):
                 return json_response[0]['Read']
             else:
-                print("Unexpected JSON response structure")
+                logger.error("EnergyPrice: Unexpected JSON response structure")
         else:
             return None
         

@@ -7,8 +7,8 @@ import time
 from CWHistoricDataTranslator import CWHistoricDataTranslator
 from CWPriceDataTranslatorAndManager import CWPriceDataTranslatorAndManager
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from data import DataSet
-from cwlogin import CWLogin
+from utils.data import DataSet
+from utils.cwlogin import CWLogin
 
 configurations = DataSet.get_schema(os.path.join('..', 'historicConfigurations.json'))
 

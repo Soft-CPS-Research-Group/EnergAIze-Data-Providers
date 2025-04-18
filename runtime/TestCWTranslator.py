@@ -4,7 +4,7 @@ from datetime import datetime
 import json
 
 # Import the class or method you want to test
-from CWTranslator import CWTranslator  # Replace 'your_module' with the actual module name
+from runtime.Cleanwatts.CWTranslator import CWTranslator  # Replace 'your_module' with the actual module name
 
 class TestCWTranslator(unittest.TestCase):
     
