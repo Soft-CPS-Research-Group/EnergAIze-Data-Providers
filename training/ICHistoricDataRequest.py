@@ -88,8 +88,9 @@ class ICHistoricDataRequest():
                 self._data[house].extend(observations)
             date = datetime.strptime(observations[0].get('time'), "%Y-%m-%dT%H:%M:%SZ").date()
             if date == self._end_date.date():
-                with open(f'{house}_historicreal.json', 'w') as file:
-                    json.dump(self._data[house], file, indent=4)
+                print(self._data[house])
+                #with open(f'{house}_historicreal.json', 'w') as file:
+                    #json.dump(self._data[house], file, indent=4)
                 #ICHistoricDataTranslator.translate(house, self._houses.get(house), self._data.get(house), self._start_date, self._end_date, self._period)
                 ch.stop_consuming()
                 ch.close()

@@ -15,7 +15,6 @@ class ICTranslator:
         # Load Internal AMQP Server configurations
         connection_params = configurations['internalAMQPServer']
         max_reconnect_attempts = configurations['maxReconnectAttempts']
-        # Define the queue name
 
         message = json.loads(message.decode('utf-8')).get('observation')
         #print(f"House: {house_name} {json.dumps(message, indent=2)}")

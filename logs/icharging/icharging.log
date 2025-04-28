@@ -779,3 +779,922 @@
 2025-04-18 16:09:52 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
 2025-04-18 16:09:57 | ERROR | Failed to insert data: No servers found yet, Timeout: 5.0s, Topology Description: <TopologyDescription id: 6802795045c3e5a653c75a51, topology_type: Unknown, servers: [<ServerDescription ('vsgate-s1.dei.isep.ipp.pt', 10246) server_type: Unknown, rtt: None>]>
 2025-04-18 16:10:03 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f1dec3d6040>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))
+2025-04-22 10:02:39 | WARNING | Device 29498 was not found.
+2025-04-22 10:02:39 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:02:39 | WARNING | Device 30080 was not found.
+2025-04-22 10:02:39 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:02:39 | WARNING | Device 30688 was not found.
+2025-04-22 10:02:39 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:02:39 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:02:39 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:02:39 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:02:39 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:02:39 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:02:39 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:02:39 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:02:39 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:02:39 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:02:39 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:02:39 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:02:39 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:02:39 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:02:39 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:02:39 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:02:39 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:02:39 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:02:39 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:02:40 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:02:40 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:02:40 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:02:40 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:02:40 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:02:40 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:02:40 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:02:40 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:02:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:02:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:02:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:02:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:02:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:02:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:02:45 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:03:39 | WARNING | Device 29498 was not found.
+2025-04-22 10:03:39 | WARNING | Device 30688 was not found.
+2025-04-22 10:03:39 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:03:39 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:03:39 | WARNING | Device 30080 was not found.
+2025-04-22 10:03:39 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:03:39 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:03:39 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:03:39 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:03:39 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:03:39 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:03:39 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:03:39 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:03:39 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:03:39 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:03:39 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:03:39 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:03:39 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:03:39 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:03:39 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:03:39 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:03:39 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:03:39 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:03:39 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:03:40 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:03:40 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:03:40 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:03:40 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:03:40 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:03:40 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:03:40 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:03:40 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:03:40 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:03:40 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:03:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:03:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:03:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:03:44 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:03:44 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:05:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:05:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:05:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:05:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:05:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:06:40 | WARNING | Device 29498 was not found.
+2025-04-22 10:06:40 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:06:40 | WARNING | Device 30080 was not found.
+2025-04-22 10:06:40 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:06:40 | WARNING | Device 30688 was not found.
+2025-04-22 10:06:40 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:06:40 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:06:40 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:06:40 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:06:40 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:06:40 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:06:40 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:06:40 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:06:40 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:06:40 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:06:40 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:06:40 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:06:40 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:06:40 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:06:40 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:06:40 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:06:40 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:06:40 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:06:40 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:06:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:06:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:06:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:06:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:06:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:06:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:06:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:06:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:06:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:06:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:06:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:06:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:06:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:06:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:06:48 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:09:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:09:07 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:11:18 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:11:21 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:11:22 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:11:22 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:12:17 | WARNING | Device 29498 was not found.
+2025-04-22 10:12:17 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:12:17 | WARNING | Device 30080 was not found.
+2025-04-22 10:12:17 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:12:17 | WARNING | Device 30688 was not found.
+2025-04-22 10:12:17 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:12:17 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:12:17 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:12:17 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:12:17 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:12:17 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:12:17 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:12:17 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:12:17 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:12:17 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:12:17 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:12:17 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:12:17 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:12:17 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:12:17 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:12:17 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:12:17 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:12:17 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:12:17 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:12:18 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:12:18 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:12:18 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:12:18 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:12:18 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:12:18 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:12:18 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:12:18 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:12:18 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:12:18 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:12:18 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:12:21 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:12:22 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:12:25 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:12:25 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:15:11 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:15:11 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:15:11 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:15:14 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:15:15 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:18:37 | WARNING | Device 29498 was not found.
+2025-04-22 10:18:37 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:18:37 | WARNING | Device 30080 was not found.
+2025-04-22 10:18:37 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:18:37 | WARNING | Device 30688 was not found.
+2025-04-22 10:18:37 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:18:37 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:18:37 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:18:37 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:18:37 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:18:37 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:18:37 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:18:37 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:18:37 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:18:37 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:18:37 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:18:37 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:18:37 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:18:37 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:18:37 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:18:37 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:18:37 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:18:37 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:18:37 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:18:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:18:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:18:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:18:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:18:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:18:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:18:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:18:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:18:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:18:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:18:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:18:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:18:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:18:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:18:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:19:37 | WARNING | Device 29498 was not found.
+2025-04-22 10:19:37 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:19:37 | WARNING | Device 30080 was not found.
+2025-04-22 10:19:37 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:19:37 | WARNING | Device 30688 was not found.
+2025-04-22 10:19:37 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:19:37 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:19:37 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:19:37 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:19:37 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:19:37 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:19:37 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:19:37 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:19:37 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:19:37 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:19:37 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:19:37 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:19:37 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:19:37 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:19:37 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:19:37 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:19:37 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:19:37 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:19:37 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:19:37 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:19:37 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:19:37 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:19:37 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:19:37 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:19:37 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:19:37 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:19:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:19:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:19:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:19:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:19:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:19:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:19:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:19:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:20:37 | WARNING | Device 29498 was not found.
+2025-04-22 10:20:37 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:20:37 | WARNING | Device 30080 was not found.
+2025-04-22 10:20:37 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:20:37 | WARNING | Device 30688 was not found.
+2025-04-22 10:20:37 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:20:37 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:20:37 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:20:37 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:20:37 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:20:37 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:20:37 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:20:37 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:20:37 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:20:37 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:20:37 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:20:37 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:20:37 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:20:37 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:20:37 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:20:37 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:20:37 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:20:37 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:20:37 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:20:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:20:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:20:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:20:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:20:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:20:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:20:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:20:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:20:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:20:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:20:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:20:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:20:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:20:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:20:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:21:37 | WARNING | Device 29498 was not found.
+2025-04-22 10:21:37 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:21:37 | WARNING | Device 30080 was not found.
+2025-04-22 10:21:37 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:21:37 | WARNING | Device 30688 was not found.
+2025-04-22 10:21:37 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:21:37 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:21:37 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:21:37 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:21:37 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:21:37 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:21:37 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:21:37 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:21:37 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:21:37 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:21:37 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:21:37 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:21:37 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:21:37 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:21:37 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:21:37 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:21:37 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:21:37 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:21:37 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:21:37 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:21:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:21:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:21:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:21:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:21:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:21:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:21:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:21:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:21:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:21:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:21:41 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:21:42 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:21:42 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:24:10 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:24:10 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:25:04 | WARNING | Device 29498 was not found.
+2025-04-22 10:25:04 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:25:04 | WARNING | Device 30080 was not found.
+2025-04-22 10:25:04 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:25:04 | WARNING | Device 30688 was not found.
+2025-04-22 10:25:04 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:25:04 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:25:04 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:25:04 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:25:04 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:25:04 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:25:04 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:25:04 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:25:04 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:25:04 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:25:04 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:25:04 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:25:04 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:25:04 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:25:04 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:25:04 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:25:04 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:25:04 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:25:04 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:25:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:25:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:25:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:25:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:25:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:25:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:25:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:25:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:25:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:25:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:25:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:25:09 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:25:09 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:25:09 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:25:13 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:26:04 | WARNING | Device 29498 was not found.
+2025-04-22 10:26:04 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:26:04 | WARNING | Device 30080 was not found.
+2025-04-22 10:26:04 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:26:04 | WARNING | Device 30688 was not found.
+2025-04-22 10:26:04 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:26:04 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:26:04 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:26:04 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:26:04 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:26:04 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:26:04 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:26:04 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:26:04 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:26:04 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:26:04 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:26:04 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:26:04 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:26:04 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:26:04 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:26:04 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:26:04 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:26:04 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:26:04 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:26:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:26:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:26:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:26:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:26:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:26:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:26:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:26:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:26:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:26:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:26:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:26:09 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:26:09 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:26:09 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:26:13 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:27:04 | WARNING | Device 29498 was not found.
+2025-04-22 10:27:04 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:27:04 | WARNING | Device 30080 was not found.
+2025-04-22 10:27:04 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:27:04 | WARNING | Device 30688 was not found.
+2025-04-22 10:27:04 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:27:04 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:27:04 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:27:04 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:27:04 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:27:04 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:27:04 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:27:04 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:27:04 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:27:04 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:27:04 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:27:04 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:27:04 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:27:04 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:27:04 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:27:04 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:27:04 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:27:04 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:27:04 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:27:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:27:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:27:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:27:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:27:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:27:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:27:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:27:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:27:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:27:09 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:27:09 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:27:09 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:27:09 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:27:13 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:27:17 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:28:04 | WARNING | Device 29498 was not found.
+2025-04-22 10:28:04 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:28:04 | WARNING | Device 30080 was not found.
+2025-04-22 10:28:04 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:28:04 | WARNING | Device 30688 was not found.
+2025-04-22 10:28:04 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:28:04 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:28:04 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:28:04 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:28:04 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:28:04 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:28:04 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:28:04 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:28:04 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:28:04 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:28:04 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:28:04 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:28:04 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:28:04 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:28:04 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:28:04 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:28:04 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:28:04 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:28:04 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:28:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:28:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:28:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:28:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:28:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:28:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:28:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:28:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:28:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:28:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:28:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:28:09 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:28:09 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:28:09 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:28:09 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:29:04 | WARNING | Device 29498 was not found.
+2025-04-22 10:29:04 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:29:04 | WARNING | Device 30080 was not found.
+2025-04-22 10:29:04 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:29:04 | WARNING | Device 30688 was not found.
+2025-04-22 10:29:04 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:29:04 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:29:04 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:29:04 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:29:04 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:29:04 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:29:04 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:29:04 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:29:04 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:29:04 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:29:04 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:29:04 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:29:04 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:29:04 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:29:04 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:29:04 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:29:04 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:29:04 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:29:04 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:29:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:29:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:29:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:29:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:29:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:29:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:29:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:29:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:29:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:29:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:29:09 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:29:09 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:29:09 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:29:13 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:29:13 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:30:04 | WARNING | Device 29498 was not found.
+2025-04-22 10:30:04 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:30:04 | WARNING | Device 30080 was not found.
+2025-04-22 10:30:04 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:30:04 | WARNING | Device 30688 was not found.
+2025-04-22 10:30:04 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:30:04 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:30:04 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:30:04 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:30:04 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:30:04 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:30:04 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:30:04 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:30:04 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:30:04 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:30:04 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:30:04 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:30:04 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:30:04 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:30:04 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:30:04 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:30:04 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:30:04 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:30:04 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:30:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:30:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:30:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:30:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:30:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:30:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:30:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:30:09 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:30:09 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:30:09 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:30:09 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:30:09 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:30:09 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:30:09 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:30:09 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:36:16 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:36:21 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:37:11 | WARNING | Device 29498 was not found.
+2025-04-22 10:37:11 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:37:11 | WARNING | Device 30080 was not found.
+2025-04-22 10:37:11 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:37:11 | WARNING | Device 30688 was not found.
+2025-04-22 10:37:11 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:37:11 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:37:11 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:37:11 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:37:11 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:37:11 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:37:11 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:37:11 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:37:11 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:37:11 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:37:11 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:37:11 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:37:11 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:37:11 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:37:11 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:37:11 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:37:11 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:37:11 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:37:11 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:37:12 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:37:12 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:37:12 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:37:12 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:37:12 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:37:12 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:37:12 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:37:12 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:37:12 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:37:16 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:37:16 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:37:16 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:37:16 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:37:16 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:37:16 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:42:26 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:42:26 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:42:26 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:42:26 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:42:26 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:42:26 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:42:26 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:42:26 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:42:30 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:42:30 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:43:22 | WARNING | Device 29498 was not found.
+2025-04-22 10:43:22 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:43:22 | WARNING | Device 30080 was not found.
+2025-04-22 10:43:22 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:43:22 | WARNING | Device 30688 was not found.
+2025-04-22 10:43:22 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:43:22 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:43:22 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:43:22 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:43:22 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:43:22 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:43:22 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:43:22 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:43:22 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:43:22 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:43:22 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:43:22 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:43:22 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:43:22 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:43:22 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:43:22 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:43:22 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:43:22 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:43:22 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:43:23 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:43:23 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:43:23 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:43:23 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:43:24 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:43:24 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:43:25 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:43:25 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:43:27 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:43:27 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:43:27 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:43:28 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:43:28 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:43:28 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:43:29 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:44:22 | WARNING | Device 29498 was not found.
+2025-04-22 10:44:22 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:44:22 | WARNING | Device 30080 was not found.
+2025-04-22 10:44:22 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:44:22 | WARNING | Device 30688 was not found.
+2025-04-22 10:44:22 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:44:22 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:44:22 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:44:22 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:44:22 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:44:22 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:44:22 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:44:22 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:44:22 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:44:22 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:44:22 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:44:22 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:44:22 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:44:22 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:44:22 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:44:22 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:44:22 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:44:22 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:44:22 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:44:23 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:44:23 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:44:23 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:44:23 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:44:23 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:44:23 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:44:23 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:44:23 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:44:26 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:44:26 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:44:26 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:44:26 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:44:27 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:44:27 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:44:27 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:47:03 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:47:03 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:47:55 | WARNING | Device 29498 was not found.
+2025-04-22 10:47:55 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:47:55 | WARNING | Device 30080 was not found.
+2025-04-22 10:47:55 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:47:55 | WARNING | Device 30688 was not found.
+2025-04-22 10:47:55 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:47:55 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:47:55 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:47:55 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:47:55 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:47:55 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:47:55 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:47:55 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:47:55 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:47:55 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:47:55 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:47:55 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:47:55 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:47:55 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:47:55 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:47:55 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:47:55 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:47:55 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:47:55 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:47:55 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:47:55 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:47:55 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:47:56 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:47:56 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:47:59 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:47:59 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:47:59 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:48:00 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:48:00 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:48:00 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:48:00 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:48:00 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:48:00 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:48:00 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:48:55 | WARNING | Device 29498 was not found.
+2025-04-22 10:48:55 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:48:55 | WARNING | Device 30080 was not found.
+2025-04-22 10:48:55 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:48:55 | WARNING | Device 30688 was not found.
+2025-04-22 10:48:55 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:48:55 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:48:55 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:48:55 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:48:55 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:48:55 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:48:55 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:48:55 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:48:55 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:48:55 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:48:55 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:48:55 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:48:55 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:48:55 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:48:55 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:48:55 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:48:55 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:48:55 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:48:55 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:48:56 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:48:56 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:48:56 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:48:56 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:48:59 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:48:59 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:48:59 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:48:59 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:48:59 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:48:59 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:48:59 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:48:59 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:48:59 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:49:00 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:49:00 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:49:55 | WARNING | Device 29498 was not found.
+2025-04-22 10:49:55 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:49:55 | WARNING | Device 30080 was not found.
+2025-04-22 10:49:55 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:49:55 | WARNING | Device 30688 was not found.
+2025-04-22 10:49:55 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:49:55 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:49:55 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:49:55 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:49:55 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:49:55 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:49:55 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:49:55 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:49:55 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:49:55 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:49:55 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:49:55 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:49:55 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:49:55 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:49:55 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:49:55 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:49:55 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:49:55 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:49:55 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:49:55 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:49:55 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:49:55 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:49:55 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:49:55 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:49:56 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:49:59 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:49:59 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:49:59 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:49:59 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:49:59 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:49:59 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:49:59 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:50:00 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:50:00 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:50:55 | WARNING | Device 29498 was not found.
+2025-04-22 10:50:55 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:50:55 | WARNING | Device 30080 was not found.
+2025-04-22 10:50:55 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:50:55 | WARNING | Device 30688 was not found.
+2025-04-22 10:50:55 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:50:55 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:50:55 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:50:55 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:50:55 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:50:55 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:50:55 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:50:55 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:50:55 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:50:55 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:50:55 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:50:55 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:50:55 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:50:55 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:50:55 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:50:55 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:50:55 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:50:55 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:50:55 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:50:55 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:50:55 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:50:55 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:50:55 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:50:55 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:50:55 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:50:55 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:50:55 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:50:59 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:50:59 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:50:59 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:50:59 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:51:03 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:51:03 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:51:03 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:51:55 | WARNING | Device 29498 was not found.
+2025-04-22 10:51:55 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:51:55 | WARNING | Device 30080 was not found.
+2025-04-22 10:51:55 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:51:55 | WARNING | Device 30688 was not found.
+2025-04-22 10:51:55 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:51:55 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:51:55 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:51:55 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:51:55 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:51:55 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:51:55 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:51:55 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:51:55 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:51:55 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:51:55 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:51:55 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:51:55 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:51:55 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:51:55 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:51:55 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:51:55 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:51:55 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:51:55 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:51:55 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:51:55 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:51:55 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:51:55 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:51:55 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:51:55 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:51:55 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:51:55 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:51:55 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:51:59 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:51:59 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:51:59 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:51:59 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:52:00 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:52:03 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:54:22 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:54:22 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:54:23 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:54:23 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:54:26 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:54:26 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:55:15 | WARNING | Device 29498 was not found.
+2025-04-22 10:55:15 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:55:15 | WARNING | Device 30080 was not found.
+2025-04-22 10:55:15 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:55:15 | WARNING | Device 30688 was not found.
+2025-04-22 10:55:15 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:55:15 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:55:15 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:55:15 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:55:15 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:55:15 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:55:15 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:55:15 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:55:15 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:55:15 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:55:15 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:55:15 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:55:15 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:55:15 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:55:15 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:55:15 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:55:15 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:55:15 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:55:15 | WARNING | Device ACEXT004_1 was not found.

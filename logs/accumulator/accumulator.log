@@ -1839,3 +1839,303 @@
 2025-04-18 16:07:26 | WARNING | Device ACEXT003_1 was not found.
 2025-04-18 16:07:26 | WARNING | Device ACEXT004_1 was not found.
 2025-04-18 16:07:35 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:01:39 | WARNING | Device 29498 was not found.
+2025-04-22 10:01:39 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:01:39 | WARNING | Device 30080 was not found.
+2025-04-22 10:01:39 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:01:39 | WARNING | Device 30688 was not found.
+2025-04-22 10:01:39 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:01:39 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:01:39 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:01:39 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:01:39 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:01:39 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:01:39 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:01:39 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:01:39 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:01:39 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:01:39 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:01:39 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:01:39 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:01:39 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:01:39 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:01:39 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:01:39 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:01:39 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:01:39 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:01:39 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:01:39 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:01:39 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:01:39 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:05:40 | WARNING | Device 29498 was not found.
+2025-04-22 10:05:40 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:05:40 | WARNING | Device 30080 was not found.
+2025-04-22 10:05:40 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:05:40 | WARNING | Device 30688 was not found.
+2025-04-22 10:05:40 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:05:40 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:05:40 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:05:40 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:05:40 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:05:40 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:05:40 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:05:40 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:05:40 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:05:40 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:05:40 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:05:40 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:05:40 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:05:40 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:05:40 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:05:40 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:05:40 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:05:40 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:05:40 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:05:40 | WARNING | Device VR1UJZKXZKW134851 was not found.
+2025-04-22 10:05:40 | WARNING | Device not found in substitute_dict: VR1UJZKXZKW134851
+2025-04-22 10:05:40 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:05:40 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:05:40 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:09:01 | WARNING | Device 29498 was not found.
+2025-04-22 10:09:01 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:09:01 | WARNING | Device 30080 was not found.
+2025-04-22 10:09:01 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:09:01 | WARNING | Device 30688 was not found.
+2025-04-22 10:09:01 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:09:01 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:09:01 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:09:01 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:09:01 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:09:01 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:09:01 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:09:01 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:09:01 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:09:01 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:09:01 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:09:01 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:09:01 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:09:01 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:09:01 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:09:01 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:09:01 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:09:01 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:09:01 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:09:01 | WARNING | Device VR1UJZKXZKW134851 was not found.
+2025-04-22 10:09:01 | WARNING | Device not found in substitute_dict: VR1UJZKXZKW134851
+2025-04-22 10:09:02 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:11:17 | WARNING | Device 29498 was not found.
+2025-04-22 10:11:17 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:11:17 | WARNING | Device 30080 was not found.
+2025-04-22 10:11:17 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:11:17 | WARNING | Device 30688 was not found.
+2025-04-22 10:11:17 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:11:17 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:11:17 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:11:17 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:11:17 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:11:17 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:11:17 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:11:17 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:11:17 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:11:17 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:11:17 | WARNING | Device VR1UJZKXZKW134851 was not found.
+2025-04-22 10:11:17 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:11:17 | WARNING | Device not found in substitute_dict: VR1UJZKXZKW134851
+2025-04-22 10:11:17 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:11:17 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:11:17 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:11:17 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:11:17 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:11:17 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:11:17 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:11:17 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:11:18 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:15:10 | WARNING | Device 29498 was not found.
+2025-04-22 10:15:10 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:15:10 | WARNING | Device 30080 was not found.
+2025-04-22 10:15:10 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:15:10 | WARNING | Device 30688 was not found.
+2025-04-22 10:15:10 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:15:10 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:15:10 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:15:10 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:15:10 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:15:10 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:15:10 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:15:10 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:15:10 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:15:10 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:15:10 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:15:10 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:15:10 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:15:10 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:15:10 | WARNING | Device VR1UJZKXZKW134851 was not found.
+2025-04-22 10:15:10 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:15:10 | WARNING | Device not found in substitute_dict: VR1UJZKXZKW134851
+2025-04-22 10:15:10 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:15:10 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:15:10 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:15:10 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:15:10 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:17:37 | WARNING | Device 29498 was not found.
+2025-04-22 10:17:37 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:17:37 | WARNING | Device 30080 was not found.
+2025-04-22 10:17:37 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:17:37 | WARNING | Device 30688 was not found.
+2025-04-22 10:17:37 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:17:37 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:17:37 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:17:37 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:17:37 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:17:37 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:17:37 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:17:37 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:17:37 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:17:37 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:17:37 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:17:37 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:17:37 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:17:37 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:17:37 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:17:37 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:17:37 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:17:37 | WARNING | Device VR1UJZKXZKW134851 was not found.
+2025-04-22 10:17:37 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:17:37 | WARNING | Device not found in substitute_dict: VR1UJZKXZKW134851
+2025-04-22 10:17:37 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:17:38 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:24:04 | WARNING | Device 29498 was not found.
+2025-04-22 10:24:04 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:24:04 | WARNING | Device 30080 was not found.
+2025-04-22 10:24:04 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:24:04 | WARNING | Device 30688 was not found.
+2025-04-22 10:24:04 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:24:04 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:24:04 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:24:04 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:24:04 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:24:04 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:24:04 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:24:04 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:24:04 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:24:04 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:24:04 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:24:04 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:24:04 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:24:04 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:24:04 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:24:04 | WARNING | Device VR1UJZKXZKW134851 was not found.
+2025-04-22 10:24:04 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:24:04 | WARNING | Device not found in substitute_dict: VR1UJZKXZKW134851
+2025-04-22 10:24:04 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:24:04 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:24:04 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:24:05 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:36:11 | WARNING | Device 29498 was not found.
+2025-04-22 10:36:11 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:36:11 | WARNING | Device 30080 was not found.
+2025-04-22 10:36:11 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:36:11 | WARNING | Device 30688 was not found.
+2025-04-22 10:36:11 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:36:11 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:36:11 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:36:11 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:36:11 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:36:11 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:36:11 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:36:11 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:36:11 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:36:11 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:36:11 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:36:11 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:36:11 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:36:11 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:36:11 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:36:11 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:36:11 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:36:11 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:36:11 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:36:11 | WARNING | Device VR1UJZKXZKW134851 was not found.
+2025-04-22 10:36:11 | WARNING | Device not found in substitute_dict: VR1UJZKXZKW134851
+2025-04-22 10:36:12 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:42:22 | WARNING | Device 29498 was not found.
+2025-04-22 10:42:22 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:42:22 | WARNING | Device 30080 was not found.
+2025-04-22 10:42:22 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:42:22 | WARNING | Device 30688 was not found.
+2025-04-22 10:42:22 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:42:22 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:42:22 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:42:22 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:42:22 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:42:22 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:42:22 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:42:22 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:42:22 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:42:22 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:42:22 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:42:22 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:42:22 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:42:22 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:42:22 | WARNING | Device VR1UJZKXZKW134851 was not found.
+2025-04-22 10:42:22 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:42:22 | WARNING | Device not found in substitute_dict: VR1UJZKXZKW134851
+2025-04-22 10:42:22 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:42:22 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:42:22 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:42:22 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:42:22 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:46:55 | WARNING | Device 29498 was not found.
+2025-04-22 10:46:55 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:46:55 | WARNING | Device 30080 was not found.
+2025-04-22 10:46:55 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:46:55 | WARNING | Device 30688 was not found.
+2025-04-22 10:46:55 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:46:55 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:46:55 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:46:55 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:46:55 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:46:55 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:46:55 | WARNING | Device VR1UJZKXZKW134851 was not found.
+2025-04-22 10:46:55 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:46:55 | WARNING | Device not found in substitute_dict: VR1UJZKXZKW134851
+2025-04-22 10:46:55 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:46:55 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:46:55 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:46:55 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:46:55 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:46:55 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:46:55 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:46:55 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:46:55 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:46:55 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:46:55 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:46:55 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:46:55 | WARNING | EnergyPrice: Error getting data from Energy Price: 400
+2025-04-22 10:54:15 | WARNING | Device 29498 was not found.
+2025-04-22 10:54:15 | WARNING | Device not found in substitute_dict: 29498
+2025-04-22 10:54:15 | WARNING | Device 30080 was not found.
+2025-04-22 10:54:15 | WARNING | Device not found in substitute_dict: 30080
+2025-04-22 10:54:15 | WARNING | Device 30688 was not found.
+2025-04-22 10:54:15 | WARNING | Device not found in substitute_dict: 30688
+2025-04-22 10:54:15 | WARNING | Device AC000001_1 was not found.
+2025-04-22 10:54:15 | WARNING | Device AC000004_1 was not found.
+2025-04-22 10:54:15 | WARNING | Device AC000007_1 was not found.
+2025-04-22 10:54:15 | WARNING | Device AC000010_1 was not found.
+2025-04-22 10:54:15 | WARNING | Device AC000013_1 was not found.
+2025-04-22 10:54:15 | WARNING | Device AC000002_1 was not found.
+2025-04-22 10:54:15 | WARNING | Device AC000003_1 was not found.
+2025-04-22 10:54:15 | WARNING | Device AC000005_1 was not found.
+2025-04-22 10:54:15 | WARNING | Device AC000006_1 was not found.
+2025-04-22 10:54:15 | WARNING | Device AC000008_1 was not found.
+2025-04-22 10:54:15 | WARNING | Device AC000009_1 was not found.
+2025-04-22 10:54:15 | WARNING | Device AC000011_1 was not found.
+2025-04-22 10:54:15 | WARNING | Device AC000012_1 was not found.
+2025-04-22 10:54:15 | WARNING | Device AC000014_1 was not found.
+2025-04-22 10:54:15 | WARNING | Device VR1UJZKXZKW134851 was not found.
+2025-04-22 10:54:15 | WARNING | Device ACEXT001_1 was not found.
+2025-04-22 10:54:15 | WARNING | Device not found in substitute_dict: VR1UJZKXZKW134851
+2025-04-22 10:54:15 | WARNING | Device ACEXT002_1 was not found.
+2025-04-22 10:54:15 | WARNING | Device ACEXT003_1 was not found.
+2025-04-22 10:54:15 | WARNING | Device ACEXT004_1 was not found.
+2025-04-22 10:54:18 | WARNING | EnergyPrice: Error getting data from Energy Price: 400

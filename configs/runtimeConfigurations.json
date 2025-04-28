@@ -25,12 +25,16 @@
             "password": "softcpsmq"
         }
     },
-    "CPserver": {
-        "host": "340bdc42132d4343bacd97af91d51b29.s1.eu.hivemq.cloud",
-        "port": 8883,
+    "PCserver": {
+        "host": "opevaisep.duckdns.org",
+        "port": 5672,
         "credentials": {
-            "username": "EnergAlze",
-            "password": "vqisKWSxKdGXqPT1"
+            "username": "softcps",
+            "password": "softcpsmq"
+        },
+        "frequency_change": {
+            "request": "freq_req",
+            "response": "freq_resp"
         }
     },
     "frequency": {
@@ -47,8 +51,8 @@
     "Users":{
         "path": "./house_files/others/Users.json"
     },
-    "CPfile":{
-        "path": "./house_files/CPData.json"
+    "PCfile":{
+        "path": "./house_files/PCData.json"
     },
     "AlgorithmAtributes": {
         "timestamp": "",
@@ -86,7 +90,7 @@
         "maxSize": "10MB",
         "fileNames": {
             "accumulator": "accumulator/accumulator.log",
-             "chargepulse": "chargepulse/chargepulse.log",
+             "pulsecharge": "pulsecharge/pulsecharge.log",
              "cleanwatts": "cleanwatts/cleanwatts.log",
              "icharging": "icharging/icharging.log",
             "energyprice": "energyprice/energyprice.log"

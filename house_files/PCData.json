@@ -1,0 +1,12 @@
+{
+    "provider": "pulsecharge",
+    "H-03-G" : {
+    "site": "pulsecharge",
+    "devices": [
+        {
+            "id": "VR1UJZKXZKW134851",
+            "label": "state_of_charge"
+        }
+    ]
+}
+}
