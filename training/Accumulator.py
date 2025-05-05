@@ -2,15 +2,14 @@ import pika
 import os
 import threading
 import time
-import sys
-from HistoricDataManager import HistoricDataManager
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from training.HistoricDataManager import HistoricDataManager
 from utils.data import DataSet
+from utils.config_loader import load_configurations
 
-configurations = DataSet.get_schema(os.path.join('..', 'historicConfigurations.json'))
+configurations, logger = load_configurations('./configs/historicConfigurations.json',"accumulator")
 
 class AcummulatorThread(threading.Thread):
-    def __init__(self, house, devices, connection_params):
+    def __init__(self, house, house_specs, connection_params):
         threading.Thread.__init__(self)
 
         self._house = house
@@ -20,7 +19,7 @@ class AcummulatorThread(threading.Thread):
         self._channel = None
 
         self._stop_event = threading.Event()
-        self._manager = HistoricDataManager(devices,house,self._stop_event)
+        self._manager = HistoricDataManager(house_specs,house,self._stop_event)
 
         self._max_reconnect_attempts = configurations.get('maxReconnectAttempts')
     
@@ -65,7 +64,7 @@ def main():
     print("Starting Accumulator...")
 
     houses = {}
-    DataSet.process_json_files_in_folder(os.path.join('..', 'house_files'), houses)
+    DataSet.process_json_files_in_folder('./house_files', houses)
     connection_params = configurations.get('internalAMQPServer')
     
     threads = []

@@ -1,16 +1,15 @@
 from datetime import datetime
 import threading
-import os
 import sys
 import requests
 import time
-from CWHistoricDataTranslator import CWHistoricDataTranslator
-from CWPriceDataTranslatorAndManager import CWPriceDataTranslatorAndManager
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from training.CWHistoricDataTranslator import CWHistoricDataTranslator
+from training.CWPriceDataTranslatorAndManager import CWPriceDataTranslatorAndManager
 from utils.data import DataSet
 from utils.cwlogin import CWLogin
+from utils.config_loader import load_configurations
 
-configurations = DataSet.get_schema(os.path.join('..', 'historicConfigurations.json'))
+configurations, logger = load_configurations('./configs/historicConfigurations.json',"cleanwatts")
 
 class CWHistoricDataRequest():
     def __init__(self, houses_list, connection_params, start_date, end_date, period, translator_class):
@@ -24,7 +23,8 @@ class CWHistoricDataRequest():
 
         # Create a dictionary with the house and the tags that have label
         for house in houses_list.keys():
-            for tag in houses_list.get(house):
+            print(house)
+            for tag in houses_list.get(house).get("devices"):
                 if 'label' in tag:
                     tagId = tag.get('id')
                     self._tag_dict[tagId] = house
@@ -53,7 +53,7 @@ class CWHistoricDataRequest():
                 try:
                     response = session.get(url, timeout=100)
                 except requests.exceptions.RequestException as e:
-                    print(f"Error: {e}")
+                    print(f"Error {tagId}: {e}")
                     sys.exit(1)
 
                 if response.status_code == 200:
@@ -66,7 +66,7 @@ class CWHistoricDataRequest():
                     thread = threading.Thread(target=self._translator_class.translate, args=(tagId, data, self._tag_dict.get(tagId), self._start_date, self._end_date, self._period))
                     thread.start()
                 else:
-                    print(f"Error: {response.status_code} - {response.text}")
+                    print(f"Error {tagId}: {response.status_code} - {response.text}")
 
                 time.sleep(1) # Sleep for 1 second to avoid the server blocking the requests
    
@@ -75,7 +75,8 @@ def main(start_date, end_date, period):
 
     connection_params = configurations.get('CWhistoricalServer')
 
-    schema = DataSet.get_schema(os.path.join('..',configurations.get('CWfile').get('path')))
+    schema = DataSet.get_schema(configurations.get('CWfile').get('path'))
+    # Remove provider key because it does not contain any useful information here
     schema.pop('provider')
 
     historicData = CWHistoricDataRequest(schema, connection_params, start_date, end_date, period, CWHistoricDataTranslator)

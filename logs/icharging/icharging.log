@@ -1698,3 +1698,5 @@
 2025-04-22 10:55:15 | WARNING | Device ACEXT002_1 was not found.
 2025-04-22 10:55:15 | WARNING | Device ACEXT003_1 was not found.
 2025-04-22 10:55:15 | WARNING | Device ACEXT004_1 was not found.
+2025-05-02 17:15:35 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?from=2025-01-05T08:48:00.0&tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7ffb446b72e0>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))
+2025-05-02 17:15:35 | ERROR | EnergyPrice: HTTPSConnectionPool(host='ks.innov.cleanwatts.energy', port=443): Max retries exceeded with url: /api/2.0/consumptions/instant?from=2025-01-05T08:48:00.0&tags=13389 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7ffb445c74f0>: Failed to resolve 'ks.innov.cleanwatts.energy' ([Errno -3] Temporary failure in name resolution)"))

@@ -29,7 +29,7 @@ class CWReceiver(Thread):
     def _job(self):
         print(f"Job Execution Time: {datetime.datetime.now()} House: {self._house}")
         #from_time = (datetime.datetime.now() - datetime.timedelta(seconds=self._time_interval)).isoformat()
-        if datetime.datetime.now().timestamp() - self._session_time > 3000:
+        if datetime.datetime.now().timestamp() - self._session_time > 2500:
             self._login()
         for tag in self._tags_list:
             try:

@@ -112,7 +112,7 @@ class Manager():
 
 
     def _format_data_for_model(self):
-        timestamp = datetime.datetime.now().strftime('%Y-%m-%dT%H:%M:%S')
+        timestamp = datetime.datetime.now().replace(microsecond=0)
         self._message = copy.deepcopy(self._algorithm_format)
         self._message['timestamp'] = timestamp
 

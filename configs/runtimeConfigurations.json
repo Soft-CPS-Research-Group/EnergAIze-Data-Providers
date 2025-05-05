@@ -16,7 +16,7 @@
             "password": "softCPSBD"
         }
     },
-    "CWserver": "https://ks.innov.cleanwatts.energy/api/2.0/consumptions/instant?tags=",
+    "CWserver": "https://ks.innov.cleanwatts.energy/api/2.0/consumptions/instant?from=2025-01-05T08:48:00.0&tags=",
     "ICserver": {
         "host": "opevaisep.duckdns.org",
         "port": 5672,
@@ -84,7 +84,8 @@
     },
     "Providers":{
         "i-charging": "runtime.ICDecisionForwarder.ICDecisionForwarder",
-        "Cleanwatts": "runtime.CWDecisionForwarder.CWDecisionForwarder"
+        "Cleanwatts": "runtime.CWDecisionForwarder.CWDecisionForwarder",
+        "pulsecharge": "runtime.PCDecisionForwarder.PCDecisionForwarder"
     },
     "LogFiles":{
         "maxSize": "10MB",

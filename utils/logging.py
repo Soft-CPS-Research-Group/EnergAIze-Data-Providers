@@ -1,14 +1,12 @@
 import sys
 import os
 from loguru import logger
-from utils.data import DataSet
-
-configurations = DataSet.get_schema('./configs/runtimeConfigurations.json')
-fileNames = configurations.get('LogFiles').get('fileNames')
-max_size = configurations.get('LogFiles').get('maxSize')
 
 class Logging():
-    def __init__(self, name):
+    def __init__(self, name, configurations):
+        fileNames = configurations.get('LogFiles').get('fileNames')
+        max_size = configurations.get('LogFiles').get('maxSize')
+
         filepath = os.path.join("logs",fileNames.get(name))
         # Extracts the directory from the given path
         log_dir = os.path.dirname(filepath)
@@ -31,6 +29,7 @@ class Logging():
             enqueue=True
         )
         logger.add(sys.stderr, format="{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}")
+        logger.info(f'olalallalalala {fileNames.get(name)}')
 
     def info(self, message):
         logger.info(message)

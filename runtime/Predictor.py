@@ -21,6 +21,7 @@ class Predictor():
 
     def _connect_to_db(self):
         try:
+            # Create a MongoDB client using the provided configuration
             self._client = pymongo.MongoClient(
                 host=self._mongo_config['host'],
                 port=self._mongo_config['port'],

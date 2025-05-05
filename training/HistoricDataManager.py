@@ -1,21 +1,20 @@
 import json
 import os
 import csv
-import sys
 from datetime import datetime, timedelta, timezone
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from utils.data import DataSet
+from utils.config_loader import load_configurations
 
-configurations = DataSet.get_schema(os.path.join('..', 'historicConfigurations.json'))
+configurations, logger = load_configurations('./configs/historicConfigurations.json',"accumulator")
+
 class HistoricDataManager:
-    def __init__(self, devices, house, stop_event):
+    def __init__(self, house_specs, house, stop_event):
         self._house = house
         self._devices = {}
         self._algorithmFormat = configurations.get('AlgorithmAtributes')
         self._stop_event = stop_event
         self.header_written = False
     
-        for device in devices:
+        for device in house_specs["devices"]:
             if 'label' in device and device['label'] != "ChargersSession":
                 self._devices[device.get('id')] = device.get('label')
         print(f"Devices: {self._devices}")
@@ -64,6 +63,7 @@ class HistoricDataManager:
             batteryChargingEnergy = 0
             self._algorithmFormat['month'] = timestamp.month
             self._algorithmFormat['hour'] = timestamp.hour
+            self._algorithmFormat['minutes'] = timestamp.minute
             self._algorithmFormat['day_type'] = timestamp.weekday() 
             self._algorithmFormat['daylight_savings_status'] = self.is_daylight_saving(timestamp)
             for device in self._data.get(timestamp):
