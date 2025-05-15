@@ -27,7 +27,7 @@ class CWReceiver(Thread):
         self._scheduler.shutdown()
 
     def _job(self):
-        print(f"Job Execution Time: {datetime.datetime.now()} House: {self._house}")
+        #print(f"Job Execution Time: {datetime.datetime.now()} House: {self._house}")
         #from_time = (datetime.datetime.now() - datetime.timedelta(seconds=self._time_interval)).isoformat()
         if datetime.datetime.now().timestamp() - self._session_time > 2500:
             self._login()
@@ -69,7 +69,7 @@ class CWReceiver(Thread):
 
 
 def main():
-    logger.info("Starting CWReceiver...")
+    logger.info("CWReceiver: Starting CWReceiver...")
     # Get connection parameters
     connection_params = configurations.get('CWserver')
     # Get CW Houses file and turn it into a dictionary
@@ -94,13 +94,13 @@ def main():
                 time.sleep(0.1)
 
     except KeyboardInterrupt:
-        print("KeyboardInterrupt: Stopping threads...")
+        logger.info("CWReceiver: [KeyboardInterrupt] Stopping threads...")
         for thread in threads:
             thread.stop()
 
         for thread in threads:
             thread.join()
-        print("All threads stopped.")
+        logger.info("CWReceiver: All threads stopped.")
 
 
 

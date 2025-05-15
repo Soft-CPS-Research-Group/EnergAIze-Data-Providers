@@ -8,5 +8,14 @@
             "label": "state_of_charge"
         }
     ]
-}
+    },
+    "ana-house" : {
+    "site": "pulsecharge",
+    "devices": [
+        {
+            "id": "pctesolate",
+            "label": "state_of_charge"
+        }
+    ]
+    }
 }
