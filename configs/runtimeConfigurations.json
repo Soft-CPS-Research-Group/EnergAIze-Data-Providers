@@ -37,6 +37,7 @@
             "response": "freq_resp"
         }
     },
+    "electricity_pricing": "https://ks.innov.cleanwatts.energy/api/2.0/consumptions/instant?from=2025-01-05T08:48:00.0&tags=13389",
     "frequency": {
         "value": 1,
         "unit": "minutes"
