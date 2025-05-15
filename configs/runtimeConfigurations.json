@@ -26,11 +26,11 @@
         }
     },
     "PCserver": {
-        "host": "opevaisep.duckdns.org",
+        "host": "193.136.62.78",
         "port": 5672,
         "credentials": {
-            "username": "softcps",
-            "password": "softcpsmq"
+            "username": "dataprovider",
+            "password": "dataprovidermq"
         },
         "frequency_change": {
             "request": "freq_req",
