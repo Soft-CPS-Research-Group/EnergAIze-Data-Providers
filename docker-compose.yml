@@ -5,6 +5,9 @@ services:
     depends_on:
       rabbitmq:
         condition: service_healthy
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
     volumes:
       - ./logs:/data_provider/logs
       - ./configs:/data_provider/configs

@@ -10,14 +10,13 @@ def run_in_terminal(script_name, *args):
     subprocess.Popen(command, shell=True)
 
 def data_requesters():
-    #run_in_terminal("CPReceiver.py")
+    #run_in_terminal("PCReceiver.py")
     #time.sleep(1)
-    #run_in_terminal("CPProducer.py")
+    #run_in_terminal("PCProducer.py")
     run_in_terminal("runtime.CWReceiver")
     run_in_terminal("runtime.ICReceiver")
     #time.sleep(1)
     #run_in_terminal("ICProducer.py")
-    run_in_terminal("runtime.ICRuntimeRequest")
 
 def start_servers():
     time_interval = DataSet.calculate_interval(configurations.get('frequency'))

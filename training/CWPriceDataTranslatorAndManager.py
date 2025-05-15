@@ -1,14 +1,11 @@
 from datetime import timedelta
 from collections import OrderedDict
 import os
-import sys
 import pandas as pd
-from Translator import Translator
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from utils.data import DataSet
+from training.Translator import Translator
+from utils.config_loader import load_configurations
 
-# Load configurations
-configurations = DataSet.get_schema(os.path.join('..', 'runtimeConfigurations.json'))
+configurations, logger = load_configurations('./configs/historicConfigurations.json',"cleanwatts")
 
 class CWPriceDataTranslatorAndManager(Translator):
         

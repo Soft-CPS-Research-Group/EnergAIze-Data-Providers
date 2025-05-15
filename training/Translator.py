@@ -16,6 +16,8 @@ configurations = DataSet.get_schema('./configs/historicConfigurations.json')
 class Translator:   
     @staticmethod
     def _data_format(data, period, start_date, end_date, columns_to_keep):
+        # Se a variável data não contiver dados (ou seja, estiver vazia), a função cria um DataFrame com uma série de datas que vai de start_date a end_date, com intervalos de tempo definidos por period (em minutos). O period é utilizado para definir a frequência dos dados.
+        # O DataFrame criado terá apenas a coluna Date (com os intervalos de tempo) e a coluna Value será preenchida com NaN (não disponível), indicando que ainda não há valores para essas datas.
         if not data:
             full_date_range = pd.date_range(start=start_date, end=end_date, freq=f'{period}min', tz='UTC')
             df_full = pd.DataFrame(full_date_range, columns=['Date'])

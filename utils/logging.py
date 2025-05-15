@@ -1,20 +1,17 @@
 import sys
 import os
 from loguru import logger
-from utils.data import DataSet
-
-configurations = DataSet.get_schema('./configs/runtimeConfigurations.json')
-fileNames = configurations.get('LogFiles').get('fileNames')
-max_size = configurations.get('LogFiles').get('maxSize')
 
 class Logging():
-    def __init__(self, name):
+    def __init__(self, name, configurations):
+        fileNames = configurations.get('LogFiles').get('fileNames')
+        max_size = configurations.get('LogFiles').get('maxSize')
+
         filepath = os.path.join("logs",fileNames.get(name))
         # Extracts the directory from the given path
         log_dir = os.path.dirname(filepath)
         # Creates the directory if it doesn't exist
         if not os.path.exists(log_dir):
-            print("Creating log directory")
             os.makedirs(log_dir, mode=0o777, exist_ok=True)
         # Removes default handlers
         logger.remove()

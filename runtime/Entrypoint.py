@@ -14,7 +14,9 @@ def data_requesters():
     processes = [
         multiprocessing.Process(target=run_script, args=("CWReceiver",)),
         multiprocessing.Process(target=run_script, args=("ICReceiver",)),
+        multiprocessing.Process(target=run_script, args=("PCReceiver",)),
         multiprocessing.Process(target=run_script, args=("ICRuntimeRequest",))
+        #multiprocessing.Process(target=run_script, args=("PCRuntimeRequest",))
     ]
 
     for process in processes:
@@ -28,7 +30,6 @@ def start_servers():
 
     accumulator_process = multiprocessing.Process(target=run_script, args=("Accumulator",))
     accumulator_process.start()
-
     time.sleep(time_interval)
     data_requesters()
 

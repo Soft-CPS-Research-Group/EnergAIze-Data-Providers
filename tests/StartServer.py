@@ -24,9 +24,9 @@ def run_in_terminal_linux(script_name, *args):
     subprocess.run(command, shell=False)
 
 def data_requesters():
-    #run_in_terminal("CPReceiver.py")
+    #run_in_terminal("PCReceiver.py")
     #time.sleep(1)
-    #run_in_terminal("CPProducer.py")
+    #run_in_terminal("PCProducer.py")
     run_in_terminal_linux("CWReceiver")
     run_in_terminal_linux("ICReceiver")
     #time.sleep(1)

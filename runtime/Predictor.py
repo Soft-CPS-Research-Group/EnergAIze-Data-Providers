@@ -21,6 +21,7 @@ class Predictor():
 
     def _connect_to_db(self):
         try:
+            # Create a MongoDB client using the provided configuration
             self._client = pymongo.MongoClient(
                 host=self._mongo_config['host'],
                 port=self._mongo_config['port'],
@@ -31,7 +32,7 @@ class Predictor():
             )
 
             db = self._client[self._site]
-            self._collection = db[self._house]
+            self._collection = db[f'building_{self._house}']
             logger.info(f"Connected to MongoDB for house {self._house}")
 
         except PyMongoError as e:

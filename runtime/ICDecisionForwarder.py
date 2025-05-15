@@ -1,7 +1,7 @@
 from runtime.IDecisionForwarder import IDecisionForwarder
-from utils.logging import Logging
+from utils.config_loader import load_configurations
 
-logger = Logging("icharging")
+configurations, logger = load_configurations('./configs/runtimeConfigurations.json',"icharging")
 
 class ICDecisionForwarder(IDecisionForwarder):
     @staticmethod

@@ -51,10 +51,14 @@ class CWSchemaBuilder():
     def _processTagsInfo(self):
         for unit in self._unitsAndTags.keys():
             tags = self._unitsAndTags.get(unit)
-            self._unitsAndTags[unit] = []
+            self._unitsAndTags[unit] = {
+                "site": "living lab",
+                "devices": []
+            }
             for tag in tags:
-                if 'label' in self._getTagInfo(tag):
-                    self._unitsAndTags[unit].append(self._getTagInfo(tag))
+                tagInfo = self._getTagInfo(tag)
+                if 'label' in tagInfo:
+                    self._unitsAndTags[unit]["devices"].append(tagInfo)
         
         self._unitsAndTags['provider'] = 'Cleanwatts'
         print(json.dumps(self._unitsAndTags, indent=4))
@@ -67,7 +71,7 @@ class CWSchemaBuilder():
         tagInfo = {}
         self._login()
         tagType = requests.get(f'{self._connection_params.get("TagInfo")}{tagId}?include=[TagType]', headers=self._header).json().get('TagType')
-        tagInfo['id'] = tagId
+        tagInfo['id'] = str(tagId)
         tagInfo['type'] = tagType.get('Description')
         mu = requests.get(f'{self._connection_params.get("MeasurementUnit")}', headers=self._header).json()
         for unit in mu:

@@ -1,6 +1,7 @@
 import pika
 import threading
 import time
+from runtime.ICRuntimeRequest import ICRuntimeRequest
 from runtime.ICTranslator import ICTranslator
 from utils.data import DataSet
 from utils.config_loader import load_configurations
@@ -21,7 +22,7 @@ class ICReceiver(threading.Thread):
         self._stop_event = threading.Event()
  
     def stop(self):
-        print(f"Stopping thread {self._house}...")
+        logger.info(f"ICReceiver: Stopping thread {self._house}...")
         self._stop_event.set()
 
     def _callback(self, ch, method, properties, body):
@@ -29,7 +30,7 @@ class ICReceiver(threading.Thread):
             self._channel.stop_consuming()
             self._channel.close()
             self._connection.close()
-            print(f"Thread {self._house} stopped.")
+            logger.info(f"ICReceiver: Thread {self._house} stopped.")
         else:
             ICTranslator.translate(self._house,self._devices,body)
             self._channel.basic_ack(delivery_tag=method.delivery_tag)
@@ -54,18 +55,18 @@ class ICReceiver(threading.Thread):
                 
             except pika.exceptions.AMQPConnectionError:
                 if self._max_reconnect_attempts == 0:
-                    print(f"Thread {self._house} reached maximum reconnection attempts. Stopping thread.")
+                    logger.error(f"ICReceiver: Thread {self._house} reached maximum reconnection attempts. Stopping thread.")
                 else:
-                    print(f"Thread {self._house} lost connection, attempting to reconnect...")
+                    logger.warning(f"ICReceiver: Thread {self._house} lost connection, attempting to reconnect...")
                     time.sleep(5)  
 
                 self._max_reconnect_attempts -= 1
             except Exception as e:
-                print(f"Thread {self._house} encountered an error: {e}")
+                logger.error(f"ICReceiver: Thread {self._house} encountered an error: {e}")
 
         
 def main():
-    logger.info("Starting ICReceiver...")
+    logger.info("ICReceiver: Starting ICReceiver...")
     # Get connection parameters
     connection_params = configurations.get('ICserver')
     # Get CW Houses file and turn it into a dictionary
@@ -75,12 +76,20 @@ def main():
 
     threads = []
 
+    time_interval = DataSet.calculate_interval(configurations.get('frequency'))
+
     try:
         for house in ICHouses.keys():
             devices = ICHouses[house]["devices"]
             receiver_thread = ICReceiver(house, devices, connection_params)
             receiver_thread.start()
             threads.append(receiver_thread)
+
+        time.sleep(1)
+
+        ICRuntimeRequest(ICHouses, time_interval, connection_params).init()
+
+
 
         while threads:
             for thread in threads:
