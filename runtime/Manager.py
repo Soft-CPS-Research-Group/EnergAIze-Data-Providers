@@ -104,7 +104,7 @@ class Manager():
                         self._dict[device.get('id')] = {'timestamp': 0, 'data': 0, 'generated': 1}
                 else:
                     aux = copy.deepcopy(self._charger_session_format)
-                    aux['Charger Id'] = device.get('id')
+                    aux['charger_id'] = device.get('id')
                     self._dict[device.get('id')] = {'timestamp': 0, 'data': aux, 'generated': 1}
             else:
                 self._substitute_dict[device.get('id')] = self._dict[device.get('id')]

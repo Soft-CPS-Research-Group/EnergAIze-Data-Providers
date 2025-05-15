@@ -43,7 +43,6 @@ class ICReceiver(threading.Thread):
         result = self._channel.queue_declare(queue='', exclusive=True)
         self._queue_name = result.method.queue
 
-        print(f"Queue name: {self._queue_name}")
         self._channel.queue_bind(exchange=self._house, queue=self._queue_name)
         self._channel.basic_consume(queue=self._queue_name, on_message_callback=self._callback)
         self._channel.start_consuming()
