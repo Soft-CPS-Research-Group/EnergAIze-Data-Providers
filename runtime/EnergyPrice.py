@@ -8,7 +8,7 @@ configurations, logger = load_configurations('./configs/runtimeConfigurations.js
 class EnergyPrice:
     @staticmethod
     def getEnergyPrice():
-        connection_params = configurations.get('CWserver')
+        connection_params = configurations.get('electricity_pricing')
 
         try: 
             token = CWLogin.login() 
@@ -19,8 +19,7 @@ class EnergyPrice:
         header = {'Authorization': f"CW {token}"}
 
         try:
-            lastvalue_url = f"{connection_params}13389"
-            response = requests.get(lastvalue_url, headers=header)
+            response = requests.get(connection_params, headers=header)
             if response.status_code == 200:
                 logger.info(f"EnergyPrice: Energy Price successfully retrieved!")
                 json_response = response.json()
