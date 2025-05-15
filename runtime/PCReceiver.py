@@ -14,7 +14,6 @@ configurations, logger = load_configurations('./configs/runtimeConfigurations.js
 class PCReceiver(threading.Thread):
     def __init__(self, house_name, cars, connection_params):
         threading.Thread.__init__(self)
-        print(house_name)
         self._house = house_name
         self._cars = cars
         self._connection_params = pika.ConnectionParameters(host=connection_params.get('host'),
@@ -30,7 +29,7 @@ class PCReceiver(threading.Thread):
         self._stop_event = threading.Event()
 
     def stop(self):
-        print(f"Stopping thread {self._house}...")
+        logger.info(f"PCReceiver: Stopping thread {self._house}...")
         self._stop_event.set()
 
     def _callback(self, ch, method, properties, body):
@@ -38,10 +37,9 @@ class PCReceiver(threading.Thread):
             self._channel.stop_consuming()
             self._channel.close()
             self._connection.close()
-            print(f"Thread {self._house} stopped.")
+            logger.info(f"PCReceiver: Thread {self._house} stopped.")
         else:
-            logger.info("olalallgdfdgh")
-            logger.info(body)
+            logger.info(f"PCReceiver: {body}")
             #PCTranslator.translate(self._house,body)
             self._channel.basic_ack(delivery_tag=method.delivery_tag)
 
@@ -50,17 +48,16 @@ class PCReceiver(threading.Thread):
         self._channel = self._connection.channel()
         try:
             self._channel.exchange_declare(exchange=self._house,passive=True)
-            logger.debug(f"Exchange {self._house} exists!")
+            logger.debug(f"PCReceiver: Exchange {self._house} exists!")
             # If the exchange does not exist, this exception is raised.
         except pika.exceptions.ChannelClosedByBroker as e:
-            logger.debug(f"Exchange {self._house} does not exist")
+            logger.debug(f"PCReceiver: Exchange {self._house} does not exist")
             self._channel = self._connection.channel()
             self._channel.exchange_declare(self._house, durable=True, exchange_type='fanout')
 
         result = self._channel.queue_declare(queue='', exclusive=True)
         self._queue_name = result.method.queue
 
-        print(f"Queue name: {self._queue_name}")
         self._channel.queue_bind(exchange=self._house, queue=self._queue_name)
         self._channel.basic_consume(queue=self._queue_name, on_message_callback=self._callback)
         self._channel.start_consuming()
@@ -72,23 +69,22 @@ class PCReceiver(threading.Thread):
 
             except pika.exceptions.AMQPConnectionError:
                 if self._max_reconnect_attempts == 0:
-                    logger.error(f"Thread {self._house} reached maximum reconnection attempts. Stopping thread.")
+                    logger.error(f"PCReceiver: Thread {self._house} reached maximum reconnection attempts. Stopping thread.")
                 else:
-                    logger.error(f"Thread {self._house} lost connection, attempting to reconnect...")
+                    logger.error(f"PCReceiver: Thread {self._house} lost connection, attempting to reconnect...")
                     time.sleep(5)
 
                 self._max_reconnect_attempts -= 1
             except Exception as e:
-                logger.error(f"Thread {self._house} encountered an error: {e}")
+                logger.error(f"PCReceiver: Thread {self._house} encountered an error: {e}")
 
 def main():
-    logger.info("Starting PCReceiver...")
+    logger.info("PCReceiver: Starting PCReceiver...")
     # Get connection parameters
     connection_params = configurations.get('PCserver')
     # Get CW Houses file and turn it into a dictionary
     PCHouses = DataSet.get_schema(configurations.get('PCfile').get('path'))
 
-    print(PCHouses)
     PCHouses.pop('provider')
     
     threads = []
@@ -108,13 +104,13 @@ def main():
                 time.sleep(0.1)
 
     except KeyboardInterrupt:
-        print("KeyboardInterrupt: Stopping threads...")
+        logger.info("PCReceiver: [KeyboardInterrupt] Stopping threads...")
         for thread in threads:
             thread.stop()
 
         for thread in threads:
             thread.join()
-        print("All threads stopped.")
+        logger.info("PCReceiver: All threads stopped.")
 
 
 

@@ -17,7 +17,6 @@ def data_requesters():
     run_in_terminal("runtime.ICReceiver")
     #time.sleep(1)
     #run_in_terminal("ICProducer.py")
-    run_in_terminal("runtime.ICRuntimeRequest")
 
 def start_servers():
     time_interval = DataSet.calculate_interval(configurations.get('frequency'))

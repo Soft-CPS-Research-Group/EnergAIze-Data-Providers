@@ -52,10 +52,10 @@ class Manager():
     def energy_price(self):
         energyPrice = EnergyPrice.getEnergyPrice()
         if (energyPrice is not None):
-            self._message['energy_price'] = energyPrice
+            self._message['electricity_pricing'] = energyPrice
             self._energy_price = energyPrice
         else:
-            self._message['energy_price'] = self._energy_price
+            self._message['electricity_pricing'] = self._energy_price
 
     def solar_generation(self, device):
         self._message['solar_generation'] = self._dict[device.get('id')]['data']

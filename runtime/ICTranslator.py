@@ -27,10 +27,10 @@ class ICTranslator:
                 channel = connection.channel()
                 channel.queue_declare(queue=house_name, durable=True)
 
-                messageIC = configurations['messageIC']
+                message_ic = configurations['messageIC']
                 for device in devices:
-                    for pm in messageIC.keys():
-                        if pm in message and device.get('label') == messageIC[pm]:
+                    for pm in message_ic.keys():
+                        if pm in message and device.get('label') == message_ic[pm]:
                             if pm == 'meter.values' and message[pm]:
                                 for meter in message[pm]:
                                     if meter.get('id') == device.get('id'):
@@ -38,35 +38,39 @@ class ICTranslator:
                             else:
                                 value = message[pm]
 
-                            newmessage = {
+                            new_message = {
                                 "id": device.get('id'),
                                 "value": value,
                                 "timestamp": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                             }
-                            print(f"House: {house_name} {json.dumps(newmessage, indent=2)}")
-                            message_bytes = json.dumps(newmessage).encode('utf-8') 
+                            print(f"House: {house_name} {json.dumps(new_message, indent=2)}")
+                            message_bytes = json.dumps(new_message).encode('utf-8')
                             #time.sleep(2)
                             channel.basic_publish(exchange='', routing_key=house_name, body=message_bytes)
 
-                chargerSessionFormat = configurations.get('ChargingSessionsFormat')
-                chargersSession = message.get('charging.session')
-                for chargerSession in chargersSession:
-                    cs = copy.deepcopy(chargerSessionFormat)
-                    chargerId = f"{chargerSession.get('serialnumber')}_{chargerSession.get('plug')}"
-                    cs['Charger Id'] = chargerId
-                    cs['soc'] = chargerSession.get('soc')
-                    cs['power'] = chargerSession.get('power')
-                    cs['flexibility'] = chargerSession.get('flexibility')
-                    newmessage = {
-                            "id": chargerId,
+                charger_session_format = configurations.get('ChargingSessionsFormat')
+                chargers_session = message.get('charging.session')
+
+                for charger_session in chargers_session:
+                    cs = copy.deepcopy(charger_session_format)
+                    # TODO futuramente criar algum mapeamento nas defenições ou assim para n ter de alterar aqui caso as coisas mudem de nome
+                    charger_id = f"{charger_session.get('serialnumber')}_{charger_session.get('plug')}"
+                    cs['charger_id'] = charger_id
+                    cs['soc'] = charger_session.get('soc')
+                    cs['power'] = charger_session.get('power')
+                    cs['user_id'] = charger_session.get('user.id')
+                    cs['flexibility'] = charger_session.get('flexibility')
+
+                    new_message = {
+                            "id": charger_id,
                             "value": cs,
                             "timestamp": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                         }
                   
-                    message_bytes = json.dumps(newmessage).encode('utf-8')   
+                    message_bytes = json.dumps(new_message).encode('utf-8')
                     #time.sleep(2)
                     channel.basic_publish(exchange='', routing_key=house_name, body=message_bytes)
-                    print(f"House: {house_name} {json.dumps(newmessage, indent=2)}")
+                    print(f"House: {house_name} {json.dumps(new_message, indent=2)}")
                 break
             except pika.exceptions.AMQPConnectionError as e:
                 max_reconnect_attempts -= 1  # Decrement the retry counter

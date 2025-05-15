@@ -58,23 +58,24 @@
         "timestamp": "",
         "non_shiftable_load": 0,
         "solar_generation": 0,
-        "energy_price": 0,
+        "electricity_pricing": 0,
         "charging_sessions": [],
         "generated": 0
     },
     "ChargingSessionsFormat": {
-        "Charger Id": "",
+        "charger_id": "",
         "soc": 0,
         "power": 0,
+        "user_id": "",
         "flexibility": {
-            "arrival.time": "",
-            "departure.time": "",
-            "vehicle.model": 0,
-            "energy.min": 0,
-            "energy.total": 0,
+            "arrival_time": "",
+            "departure_time": "",
+            "vehicle_model": 0,
+            "energy_min": 0,
+            "energy_total": 0,
             "prioritary": 0,
             "optimization": 0,
-            "departure.soc": 0
+            "departure_soc": 0
         }
     },
     "messageIC":{

@@ -37,6 +37,7 @@ class ICRuntimeRequest:
         self._channel.queue_declare(queue='RPC', durable=True)
         self._returnQueueName = self._channel.queue_declare(queue='', exclusive=True)
 
+    # TODO talvez tornar esta tentativa infinita
     def _send_message(self):
         while self._max_reconnect_attempts > 0 and self._completed == False:
             try:
@@ -78,20 +79,3 @@ class ICRuntimeRequest:
             print("Received response:", body.decode())
             ch.stop_consuming()
             ch.close()
-
-
-def main():
-    print("Starting ICRuntimeRequest...")
-    connection_params = configurations.get('ICserver')
-    # Get CW Houses file and turn it into a dictionary
-    ICHouses = DataSet.get_schema(configurations.get('ICfile').get('path'))
-    # Remove provider key because it does not contain any useful information here
-    ICHouses.pop('provider')
-
-    frequency = DataSet.calculate_interval(configurations.get('frequency'))
-
-    ICRuntimeRequest(ICHouses, frequency, connection_params).init()
-
-
-if __name__ == "__main__":
-    main()
