@@ -6,7 +6,7 @@ class Logging():
     def __init__(self, name, configurations):
         fileNames = configurations.get('LogFiles').get('fileNames')
         max_size = configurations.get('LogFiles').get('maxSize')
-
+        print(name)
         filepath = os.path.join("logs",fileNames.get(name))
         # Extracts the directory from the given path
         log_dir = os.path.dirname(filepath)

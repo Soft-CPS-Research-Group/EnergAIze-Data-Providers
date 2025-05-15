@@ -64,18 +64,18 @@ class ICRuntimeRequest:
                 self._completed = True
             except pika.exceptions.AMQPConnectionError:
                 if self._max_reconnect_attempts == 0:
-                    print(f"Thread ICRuntimeRequest reached maximum reconnection attempts. Stopping thread.")
+                    logger.error(f"Thread ICRuntimeRequest reached maximum reconnection attempts. Stopping thread.")
                 else:
-                    print(f"Thread ICRuntimeRequest lost connection, attempting to reconnect...")
+                    logger.warning(f"Thread ICRuntimeRequest lost connection, attempting to reconnect...")
                     time.sleep(5)
 
                 self._max_reconnect_attempts -= 1
             except Exception as e:
-                print(f"Thread ICRuntimeRequest encountered an error: {e}")
+                logger.error(f"Thread ICRuntimeRequest encountered an error: {e}")
 
 
 
     def _on_response(self, ch, method, properties, body):
-            print("Received response:", body.decode())
+            logger.info(f"Received response: {body.decode()}")
             ch.stop_consuming()
             ch.close()

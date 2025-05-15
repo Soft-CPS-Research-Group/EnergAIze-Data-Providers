@@ -18,11 +18,11 @@
     },
     "CWserver": "https://ks.innov.cleanwatts.energy/api/2.0/consumptions/instant?from=2025-01-05T08:48:00.0&tags=",
     "ICserver": {
-        "host": "opevaisep.duckdns.org",
+        "host": "193.136.62.78",
         "port": 5672,
         "credentials": {
-            "username": "softcps",
-            "password": "softcpsmq"
+            "username": "dataprovider",
+            "password": "dataprovidermq"
         }
     },
     "PCserver": {
